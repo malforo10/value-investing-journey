@@ -19,677 +19,83 @@
   <section class="hero">
     <h1>A Value-Investing Learning Journey</h1>
     <p class="tagline">Reading the filings, doing the arithmetic, and showing my work — one business at a time.</p>
-    <p class="count">37 businesses studied · sorted by margin of safety
-       (intrinsic value vs. today's price)</p>
+    <p class="count">37 businesses studied · 18 with a margin of safety · cheapest <strong>PYPL</strong> +38% · priciest <strong>SPCX</strong> -293%</p>
   </section>
-  
-    <div class="controls">
-      <input id="q" type="search" placeholder="Filter by ticker or company…" autocomplete="off">
-      <div class="sortbtns">
-        <button data-sort="mos" class="active">Margin of safety</button>
-        <button data-sort="ticker">Ticker</button>
-        <button data-sort="company">Company</button>
-      </div>
-    </div>
-  <section class="grid" id="grid">
-    
-    <a class="card" href="companies/PYPL.html"
-       data-ticker="PYPL"
-       data-company="PayPal Holdings"
-       data-mos="0.3824000040690104"
-       data-iv="75">
-      <div class="card-top">
-        <span class="ticker">PYPL</span>
-        <span class="tag tag-buy">Margin of safety</span>
-      </div>
-      <div class="company">PayPal Holdings</div>
-      <div class="industry">Financial Svcs. (Div.)</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$75</span></div>
-        <div><span class="lbl">Price</span><span class="val">$46.32</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-strong">+38%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/ADBE.html"
-       data-ticker="ADBE"
-       data-company="Adobe Inc."
-       data-mos="0.37877777947319885"
-       data-iv="360">
-      <div class="card-top">
-        <span class="ticker">ADBE</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Adobe Inc.</div>
-      <div class="industry">Computer Software</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$360</span></div>
-        <div><span class="lbl">Price</span><span class="val">$223.64</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-strong">+38%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/ZTS.html"
-       data-ticker="ZTS"
-       data-company="Zoetis Inc."
-       data-mos="0.34295654296875"
-       data-iv="115">
-      <div class="card-top">
-        <span class="ticker">ZTS</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Zoetis Inc.</div>
-      <div class="industry">Drug</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$115</span></div>
-        <div><span class="lbl">Price</span><span class="val">$75.56</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-strong">+34%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/INTU.html"
-       data-ticker="INTU"
-       data-company="Intuit"
-       data-mos="0.3126000213623047"
-       data-iv="400">
-      <div class="card-top">
-        <span class="ticker">INTU</span>
-        <span class="tag tag-buy">Margin of safety</span>
-      </div>
-      <div class="company">Intuit</div>
-      <div class="industry">Computer Software</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$400</span></div>
-        <div><span class="lbl">Price</span><span class="val">$274.96</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-strong">+31%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/NVO.html"
-       data-ticker="NVO"
-       data-company="Novo Nordisk"
-       data-mos="0.29314286368233816"
-       data-iv="70">
-      <div class="card-top">
-        <span class="ticker">NVO</span>
-        <span class="tag tag-buy">Margin of safety</span>
-      </div>
-      <div class="company">Novo Nordisk</div>
-      <div class="industry">Drug</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$70</span></div>
-        <div><span class="lbl">Price</span><span class="val">$49.48</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-good">+29%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/LDOS.html"
-       data-ticker="LDOS"
-       data-company="Leidos Holdings Inc."
-       data-mos="0.2865333557128906"
-       data-iv="150">
-      <div class="card-top">
-        <span class="ticker">LDOS</span>
-        <span class="tag tag-buy">Margin of safety</span>
-      </div>
-      <div class="company">Leidos Holdings Inc.</div>
-      <div class="industry">Industrial Services</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$150</span></div>
-        <div><span class="lbl">Price</span><span class="val">$107.02</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-good">+29%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/CMCSA.html"
-       data-ticker="CMCSA"
-       data-company="Comcast Corp."
-       data-mos="0.2857575850053267"
-       data-iv="33">
-      <div class="card-top">
-        <span class="ticker">CMCSA</span>
-        <span class="tag tag-buy">Margin of safety</span>
-      </div>
-      <div class="company">Comcast Corp.</div>
-      <div class="industry">Cable TV</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$33</span></div>
-        <div><span class="lbl">Price</span><span class="val">$23.57</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-good">+29%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/NFLX.html"
-       data-ticker="NFLX"
-       data-company="Netflix Inc."
-       data-mos="0.22768418161492598"
-       data-iv="95">
-      <div class="card-top">
-        <span class="ticker">NFLX</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Netflix Inc.</div>
-      <div class="industry">Entertainment</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$95</span></div>
-        <div><span class="lbl">Price</span><span class="val">$73.37</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-good">+23%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/NKE.html"
-       data-ticker="NKE"
-       data-company="Nike Inc."
-       data-mos="0.17833335311324494"
-       data-iv="54">
-      <div class="card-top">
-        <span class="ticker">NKE</span>
-        <span class="tag tag-buy">Margin of safety</span>
-      </div>
-      <div class="company">Nike Inc.</div>
-      <div class="industry">Shoe</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$54</span></div>
-        <div><span class="lbl">Price</span><span class="val">$44.37</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-good">+18%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/CME.html"
-       data-ticker="CME"
-       data-company="CME Group Inc."
-       data-mos="0.15694735342996172"
-       data-iv="285">
-      <div class="card-top">
-        <span class="ticker">CME</span>
-        <span class="tag tag-buy">Margin of safety</span>
-      </div>
-      <div class="company">CME Group Inc.</div>
-      <div class="industry">Brokers &amp; Exchanges</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$285</span></div>
-        <div><span class="lbl">Price</span><span class="val">$240.27</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-good">+16%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/CMG.html"
-       data-ticker="CMG"
-       data-company="Chipotle Mexican Grill"
-       data-mos="0.11875"
-       data-iv="40.0">
-      <div class="card-top">
-        <span class="ticker">CMG</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Chipotle Mexican Grill</div>
-      <div class="industry">Restaurant</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$40</span></div>
-        <div><span class="lbl">Price</span><span class="val">$35.25</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-slim">+12%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/ICE.html"
-       data-ticker="ICE"
-       data-company="Intercontinental Exchange, Inc."
-       data-mos="0.0982667032877606"
-       data-iv="150">
-      <div class="card-top">
-        <span class="ticker">ICE</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Intercontinental Exchange, Inc.</div>
-      <div class="industry">Brokers &amp; Exchanges</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$150</span></div>
-        <div><span class="lbl">Price</span><span class="val">$135.26</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-slim">+10%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/AMT.html"
-       data-ticker="AMT"
-       data-company="American Tower Corp."
-       data-mos="0.08870272249788867"
-       data-iv="185">
-      <div class="card-top">
-        <span class="ticker">AMT</span>
-        <span class="tag tag-buy">Margin of safety</span>
-      </div>
-      <div class="company">American Tower Corp.</div>
-      <div class="industry">R.E.I.T.</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$185</span></div>
-        <div><span class="lbl">Price</span><span class="val">$168.59</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-slim">+9%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/META.html"
-       data-ticker="META"
-       data-company="Meta Platforms, Inc."
-       data-mos="0.04398568289620536"
-       data-iv="700">
-      <div class="card-top">
-        <span class="ticker">META</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Meta Platforms, Inc.</div>
-      <div class="industry">Internet</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$700</span></div>
-        <div><span class="lbl">Price</span><span class="val">$669.21</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-slim">+4%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/NOC.html"
-       data-ticker="NOC"
-       data-company="Northrop Grumman Corporation"
-       data-mos="0.036374991280691965"
-       data-iv="560">
-      <div class="card-top">
-        <span class="ticker">NOC</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Northrop Grumman Corporation</div>
-      <div class="industry">Aerospace/Defense</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$560</span></div>
-        <div><span class="lbl">Price</span><span class="val">$539.63</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-slim">+4%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/BRK-B.html"
-       data-ticker="BRK-B"
-       data-company="Berkshire Hathaway Inc. (Class B)"
-       data-mos="0.024288554436604496"
-       data-iv="506">
-      <div class="card-top">
-        <span class="ticker">BRK-B</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">Berkshire Hathaway Inc. (Class B)</div>
-      <div class="industry">Insurance (Prop/Cas.)</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$506</span></div>
-        <div><span class="lbl">Price</span><span class="val">$493.71</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-slim">+2%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/PG.html"
-       data-ticker="PG"
-       data-company="The Procter &amp; Gamble Company"
-       data-mos="0.019733378092447917"
-       data-iv="150">
-      <div class="card-top">
-        <span class="ticker">PG</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">The Procter &amp; Gamble Company</div>
-      <div class="industry">Household and Personal Care</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$150</span></div>
-        <div><span class="lbl">Price</span><span class="val">$147.04</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-slim">+2%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/NEE.html"
-       data-ticker="NEE"
-       data-company="NextEra Energy, Inc."
-       data-mos="0.0004545558582652699"
-       data-iv="88">
-      <div class="card-top">
-        <span class="ticker">NEE</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">NextEra Energy, Inc.</div>
-      <div class="industry">Electric Utility (East)</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$88</span></div>
-        <div><span class="lbl">Price</span><span class="val">$87.96</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-slim">+0%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/PGR.html"
-       data-ticker="PGR"
-       data-company="Progressive"
-       data-mos="-0.0031304400900134632"
-       data-iv="230">
-      <div class="card-top">
-        <span class="ticker">PGR</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Progressive</div>
-      <div class="industry">Insurance (Prop/Cas.)</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$230</span></div>
-        <div><span class="lbl">Price</span><span class="val">$230.72</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-premium">-0%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/HON.html"
-       data-ticker="HON"
-       data-company="Honeywell International Inc."
-       data-mos="-0.02918180985884233"
-       data-iv="220">
-      <div class="card-top">
-        <span class="ticker">HON</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">Honeywell International Inc.</div>
-      <div class="industry">Diversified Co.</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$220</span></div>
-        <div><span class="lbl">Price</span><span class="val">$226.42</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-premium">-3%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/BMY.html"
-       data-ticker="BMY"
-       data-company="Bristol-Myers Squibb"
-       data-mos="-0.06629633020471644"
-       data-iv="54">
-      <div class="card-top">
-        <span class="ticker">BMY</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">Bristol-Myers Squibb</div>
-      <div class="industry">Drug</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$54</span></div>
-        <div><span class="lbl">Price</span><span class="val">$57.58</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-premium">-7%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/HD.html"
-       data-ticker="HD"
-       data-company="The Home Depot, Inc."
-       data-mos="-0.07281246185302752"
-       data-iv="320">
-      <div class="card-top">
-        <span class="ticker">HD</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">The Home Depot, Inc.</div>
-      <div class="industry">Retail Building Supply</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$320</span></div>
-        <div><span class="lbl">Price</span><span class="val">$343.30</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-premium">-7%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/V.html"
-       data-ticker="V"
-       data-company="Visa Inc."
-       data-mos="-0.16323333740234375"
-       data-iv="300">
-      <div class="card-top">
-        <span class="ticker">V</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">Visa Inc.</div>
-      <div class="industry">Financial Svcs. (Div.)</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$300</span></div>
-        <div><span class="lbl">Price</span><span class="val">$348.97</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-16%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/EOG.html"
-       data-ticker="EOG"
-       data-company="EOG Resources Inc."
-       data-mos="-0.1660870095957878"
-       data-iv="115">
-      <div class="card-top">
-        <span class="ticker">EOG</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">EOG Resources Inc.</div>
-      <div class="industry">Natural Gas (Div.)</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$115</span></div>
-        <div><span class="lbl">Price</span><span class="val">$134.10</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-17%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/KO.html"
-       data-ticker="KO"
-       data-company="Coca-Cola Co."
-       data-mos="-0.1927142551967076"
-       data-iv="70">
-      <div class="card-top">
-        <span class="ticker">KO</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">Coca-Cola Co.</div>
-      <div class="industry">Beverage</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$70</span></div>
-        <div><span class="lbl">Price</span><span class="val">$83.49</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-19%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/UPS.html"
-       data-ticker="UPS"
-       data-company="United Parcel Service, Inc."
-       data-mos="-0.1964893746883308"
-       data-iv="94">
-      <div class="card-top">
-        <span class="ticker">UPS</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">United Parcel Service, Inc.</div>
-      <div class="industry">Air Transport</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$94</span></div>
-        <div><span class="lbl">Price</span><span class="val">$112.47</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-20%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/MSFT.html"
-       data-ticker="MSFT"
-       data-company="Microsoft Corp."
-       data-mos="-0.20343751907348634"
-       data-iv="320">
-      <div class="card-top">
-        <span class="ticker">MSFT</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">Microsoft Corp.</div>
-      <div class="industry">Computer Software</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$320</span></div>
-        <div><span class="lbl">Price</span><span class="val">$385.10</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-20%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/AMZN.html"
-       data-ticker="AMZN"
-       data-company="Amazon.com"
-       data-mos="-0.226699981689453"
-       data-iv="200">
-      <div class="card-top">
-        <span class="ticker">AMZN</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Amazon.com</div>
-      <div class="industry">E-Commerce</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$200</span></div>
-        <div><span class="lbl">Price</span><span class="val">$245.34</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-23%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/COST.html"
-       data-ticker="COST"
-       data-company="Costco Wholesale Corporation"
-       data-mos="-0.30892857142857144"
-       data-iv="700">
-      <div class="card-top">
-        <span class="ticker">COST</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">Costco Wholesale Corporation</div>
-      <div class="industry">Retail Store</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$700</span></div>
-        <div><span class="lbl">Price</span><span class="val">$916.25</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-31%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/FDX.html"
-       data-ticker="FDX"
-       data-company="FedEx Corporation"
-       data-mos="-0.36821740191915736"
-       data-iv="230">
-      <div class="card-top">
-        <span class="ticker">FDX</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">FedEx Corporation</div>
-      <div class="industry">Air Transport</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$230</span></div>
-        <div><span class="lbl">Price</span><span class="val">$314.69</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-37%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/SLB.html"
-       data-ticker="SLB"
-       data-company="SLB (Schlumberger)"
-       data-mos="-0.40470583298627066"
-       data-iv="34">
-      <div class="card-top">
-        <span class="ticker">SLB</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">SLB (Schlumberger)</div>
-      <div class="industry">Oilfield Svcs/Equip.</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$34</span></div>
-        <div><span class="lbl">Price</span><span class="val">$47.76</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-40%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/DE.html"
-       data-ticker="DE"
-       data-company="Deere &amp; Company"
-       data-mos="-0.5047691932091346"
-       data-iv="390">
-      <div class="card-top">
-        <span class="ticker">DE</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">Deere &amp; Company</div>
-      <div class="industry">Heavy Truck &amp; Equip</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$390</span></div>
-        <div><span class="lbl">Price</span><span class="val">$586.86</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-50%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/NVDA.html"
-       data-ticker="NVDA"
-       data-company="NVIDIA Corp."
-       data-mos="-0.506857190813337"
-       data-iv="140">
-      <div class="card-top">
-        <span class="ticker">NVDA</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">NVIDIA Corp.</div>
-      <div class="industry">Semiconductor</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$140</span></div>
-        <div><span class="lbl">Price</span><span class="val">$210.96</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-51%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/ISRG.html"
-       data-ticker="ISRG"
-       data-company="Intuitive Surgical, Inc."
-       data-mos="-0.5705791458660111"
-       data-iv="259">
-      <div class="card-top">
-        <span class="ticker">ISRG</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">Intuitive Surgical, Inc.</div>
-      <div class="industry">Med Supp Invasive</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$259</span></div>
-        <div><span class="lbl">Price</span><span class="val">$406.78</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-57%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/PSX.html"
-       data-ticker="PSX"
-       data-company="Phillips 66"
-       data-mos="-0.9827368485300167"
-       data-iv="95">
-      <div class="card-top">
-        <span class="ticker">PSX</span>
-        <span class="tag tag-watch">Watch — no margin</span>
-      </div>
-      <div class="company">Phillips 66</div>
-      <div class="industry">Petroleum (Integrated)</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$95</span></div>
-        <div><span class="lbl">Price</span><span class="val">$188.36</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-98%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/CAT.html"
-       data-ticker="CAT"
-       data-company="Caterpillar Inc."
-       data-mos="-1.8430148452075559"
-       data-iv="335">
-      <div class="card-top">
-        <span class="ticker">CAT</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Caterpillar Inc.</div>
-      <div class="industry">Heavy Truck &amp; Equip</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$335</span></div>
-        <div><span class="lbl">Price</span><span class="val">$952.41</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-184%</span></div>
-      </div>
-    </a>
-    <a class="card" href="companies/SPCX.html"
-       data-ticker="SPCX"
-       data-company="Space Exploration Technologies Corp"
-       data-mos="-2.9270271095069678"
-       data-iv="37">
-      <div class="card-top">
-        <span class="ticker">SPCX</span>
-        <span class="tag tag-neutral">Studied</span>
-      </div>
-      <div class="company">Space Exploration Technologies Corp</div>
-      <div class="industry">Aerospace/Defense</div>
-      <div class="card-nums">
-        <div><span class="lbl">IV base</span><span class="val">$37</span></div>
-        <div><span class="lbl">Price</span><span class="val">$145.30</span></div>
-        <div><span class="lbl">Margin</span><span class="val mos-rich">-293%</span></div>
-      </div>
-    </a>
-  </section>
-  <script>
-  (function(){
-    const grid=document.getElementById('grid');
-    const q=document.getElementById('q');
-    const cards=[...grid.children];
-    function apply(sortKey){
-      let cs=[...cards];
-      if(sortKey==='mos') cs.sort((a,b)=>b.dataset.mos-a.dataset.mos);
-      if(sortKey==='ticker') cs.sort((a,b)=>a.dataset.ticker.localeCompare(b.dataset.ticker));
-      if(sortKey==='company') cs.sort((a,b)=>a.dataset.company.localeCompare(b.dataset.company));
-      cs.forEach(c=>grid.appendChild(c));
-    }
-    document.querySelectorAll('.sortbtns button').forEach(b=>{
-      b.onclick=()=>{
-        document.querySelectorAll('.sortbtns button').forEach(x=>x.classList.remove('active'));
-        b.classList.add('active'); apply(b.dataset.sort);
-      };
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search ticker or company…" autocomplete="off">
+    <select id="sector"><option value="">All sectors</option><option value="Aerospace/Defense">Aerospace/Defense</option><option value="Air Transport">Air Transport</option><option value="Beverage">Beverage</option><option value="Brokers &amp; Exchanges">Brokers &amp; Exchanges</option><option value="Cable TV">Cable TV</option><option value="Computer Software">Computer Software</option><option value="Diversified Co.">Diversified Co.</option><option value="Drug">Drug</option><option value="E-Commerce">E-Commerce</option><option value="Electric Utility (East)">Electric Utility (East)</option><option value="Entertainment">Entertainment</option><option value="Financial Svcs. (Div.)">Financial Svcs. (Div.)</option><option value="Heavy Truck &amp; Equip">Heavy Truck &amp; Equip</option><option value="Household and Personal Care">Household and Personal Care</option><option value="Industrial Services">Industrial Services</option><option value="Insurance (Prop/Cas.)">Insurance (Prop/Cas.)</option><option value="Internet">Internet</option><option value="Med Supp Invasive">Med Supp Invasive</option><option value="Natural Gas (Div.)">Natural Gas (Div.)</option><option value="Oilfield Svcs/Equip.">Oilfield Svcs/Equip.</option><option value="Petroleum (Integrated)">Petroleum (Integrated)</option><option value="R.E.I.T.">R.E.I.T.</option><option value="Restaurant">Restaurant</option><option value="Retail Building Supply">Retail Building Supply</option><option value="Retail Store">Retail Store</option><option value="Semiconductor">Semiconductor</option><option value="Shoe">Shoe</option></select>
+    <span class="hint">Click any column to sort · click a row to open</span>
+  </div>
+  <div class="table-wrap">
+  <table class="screener">
+    <thead><tr>
+      <th class="rank-h">#</th>
+      <th data-key="ticker" class="l">Company</th>
+      <th data-key="sector" class="l">Sector</th>
+      <th data-key="price">Price</th>
+      <th data-key="iv">IV base</th>
+      <th data-key="mos" class="sorted" data-dir="desc">Margin&nbsp;of&nbsp;safety</th>
+      <th data-key="verdict" class="l">Verdict</th>
+      <th data-key="pe">P/E</th>
+      <th data-key="dy">Div&nbsp;yield</th>
+      <th data-key="date">Analyzed</th>
+    </tr></thead>
+    <tbody id="tbody"><tr class="row" data-ticker="PYPL" data-company="PayPal Holdings" data-sector="Financial Svcs. (Div.)" data-price="46.31999969482422" data-iv="75" data-mos="0.3824000040690104" data-pe="8.690432" data-dy="1.222063911332995" data-date="2026-07-04" data-verdict="Margin of safety" onclick="location.href='companies/PYPL.html'"><td class="rank"></td><td class="co"><span class="tk">PYPL</span><span class="nm">PayPal Holdings</span></td><td class="sector">Financial Svcs. (Div.)</td><td class="num">$46.32</td><td class="num">$75</td><td class="num mos-strong">+38%</td><td><span class="tag tag-buy">Margin of safety</span></td><td class="num">8.7</td><td class="num">1.22%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="ADBE" data-company="Adobe Inc." data-sector="Computer Software" data-price="223.6399993896484" data-iv="360" data-mos="0.37877777947319885" data-pe="12.786736" data-dy="" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/ADBE.html'"><td class="rank"></td><td class="co"><span class="tk">ADBE</span><span class="nm">Adobe Inc.</span></td><td class="sector">Computer Software</td><td class="num">$223.64</td><td class="num">$360</td><td class="num mos-strong">+38%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">12.8</td><td class="num">—</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="ZTS" data-company="Zoetis Inc." data-sector="Drug" data-price="75.55999755859375" data-iv="115" data-mos="0.34295654296875" data-pe="12.386885" data-dy="2.814584527151195" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/ZTS.html'"><td class="rank"></td><td class="co"><span class="tk">ZTS</span><span class="nm">Zoetis Inc.</span></td><td class="sector">Drug</td><td class="num">$75.56</td><td class="num">$115</td><td class="num mos-strong">+34%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">12.4</td><td class="num">2.81%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="INTU" data-company="Intuit" data-sector="Computer Software" data-price="274.9599914550781" data-iv="400" data-mos="0.3126000213623047" data-pe="16.776083" data-dy="1.766787951327702" data-date="2026-06-30" data-verdict="Margin of safety" onclick="location.href='companies/INTU.html'"><td class="rank"></td><td class="co"><span class="tk">INTU</span><span class="nm">Intuit</span></td><td class="sector">Computer Software</td><td class="num">$274.96</td><td class="num">$400</td><td class="num mos-strong">+31%</td><td><span class="tag tag-buy">Margin of safety</span></td><td class="num">16.8</td><td class="num">1.77%</td><td class="date">2026-06-30</td></tr><tr class="row" data-ticker="NVO" data-company="Novo Nordisk" data-sector="Drug" data-price="49.47999954223633" data-iv="70" data-mos="0.29314286368233816" data-pe="11.865707" data-dy="3.430719514358504" data-date="2026-06-30" data-verdict="Margin of safety" onclick="location.href='companies/NVO.html'"><td class="rank"></td><td class="co"><span class="tk">NVO</span><span class="nm">Novo Nordisk</span></td><td class="sector">Drug</td><td class="num">$49.48</td><td class="num">$70</td><td class="num mos-good">+29%</td><td><span class="tag tag-buy">Margin of safety</span></td><td class="num">11.9</td><td class="num">3.43%</td><td class="date">2026-06-30</td></tr><tr class="row" data-ticker="LDOS" data-company="Leidos Holdings Inc." data-sector="Industrial Services" data-price="107.0199966430664" data-iv="150" data-mos="0.2865333557128906" data-pe="9.791399" data-dy="1.668585363495891" data-date="2026-07-04" data-verdict="Margin of safety" onclick="location.href='companies/LDOS.html'"><td class="rank"></td><td class="co"><span class="tk">LDOS</span><span class="nm">Leidos Holdings Inc.</span></td><td class="sector">Industrial Services</td><td class="num">$107.02</td><td class="num">$150</td><td class="num mos-good">+29%</td><td><span class="tag tag-buy">Margin of safety</span></td><td class="num">9.8</td><td class="num">1.67%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="CMCSA" data-company="Comcast Corp." data-sector="Cable TV" data-price="23.56999969482422" data-iv="33" data-mos="0.2857575850053267" data-pe="4.6215687" data-dy="5.56181593964071" data-date="2026-07-04" data-verdict="Margin of safety" onclick="location.href='companies/CMCSA.html'"><td class="rank"></td><td class="co"><span class="tk">CMCSA</span><span class="nm">Comcast Corp.</span></td><td class="sector">Cable TV</td><td class="num">$23.57</td><td class="num">$33</td><td class="num mos-good">+29%</td><td><span class="tag tag-buy">Margin of safety</span></td><td class="num">4.6</td><td class="num">5.56%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="NFLX" data-company="Netflix Inc." data-sector="Entertainment" data-price="73.37000274658203" data-iv="95" data-mos="0.22768418161492598" data-pe="23.667744" data-dy="" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/NFLX.html'"><td class="rank"></td><td class="co"><span class="tk">NFLX</span><span class="nm">Netflix Inc.</span></td><td class="sector">Entertainment</td><td class="num">$73.37</td><td class="num">$95</td><td class="num mos-good">+23%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">23.7</td><td class="num">—</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="NKE" data-company="Nike Inc." data-sector="Shoe" data-price="44.36999893188477" data-iv="54" data-mos="0.17833335311324494" data-pe="21.128572" data-dy="3.671647597965804" data-date="2026-07-04" data-verdict="Margin of safety" onclick="location.href='companies/NKE.html'"><td class="rank"></td><td class="co"><span class="tk">NKE</span><span class="nm">Nike Inc.</span></td><td class="sector">Shoe</td><td class="num">$44.37</td><td class="num">$54</td><td class="num mos-good">+18%</td><td><span class="tag tag-buy">Margin of safety</span></td><td class="num">21.1</td><td class="num">3.67%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="CME" data-company="CME Group Inc." data-sector="Brokers &amp; Exchanges" data-price="240.2700042724609" data-iv="285" data-mos="0.15694735342996172" data-pe="20.483377" data-dy="2.1690264732714" data-date="2026-07-04" data-verdict="Margin of safety" onclick="location.href='companies/CME.html'"><td class="rank"></td><td class="co"><span class="tk">CME</span><span class="nm">CME Group Inc.</span></td><td class="sector">Brokers &amp; Exchanges</td><td class="num">$240.27</td><td class="num">$285</td><td class="num mos-good">+16%</td><td><span class="tag tag-buy">Margin of safety</span></td><td class="num">20.5</td><td class="num">2.17%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="CMG" data-company="Chipotle Mexican Grill" data-sector="Restaurant" data-price="35.25" data-iv="40.0" data-mos="0.11875" data-pe="32.339447" data-dy="" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/CMG.html'"><td class="rank"></td><td class="co"><span class="tk">CMG</span><span class="nm">Chipotle Mexican Grill</span></td><td class="sector">Restaurant</td><td class="num">$35.25</td><td class="num">$40</td><td class="num mos-slim">+12%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">32.3</td><td class="num">—</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="ICE" data-company="Intercontinental Exchange, Inc." data-sector="Brokers &amp; Exchanges" data-price="135.2599945068359" data-iv="150" data-mos="0.0982667032877606" data-pe="19.6885" data-dy="1.510579685774524" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/ICE.html'"><td class="rank"></td><td class="co"><span class="tk">ICE</span><span class="nm">Intercontinental Exchange, Inc.</span></td><td class="sector">Brokers &amp; Exchanges</td><td class="num">$135.26</td><td class="num">$150</td><td class="num mos-slim">+10%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">19.7</td><td class="num">1.51%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="AMT" data-company="American Tower Corp." data-sector="R.E.I.T." data-price="168.5899963378906" data-iv="185" data-mos="0.08870272249788867" data-pe="27.191936" data-dy="4.297194470234273" data-date="2026-07-04" data-verdict="Margin of safety" onclick="location.href='companies/AMT.html'"><td class="rank"></td><td class="co"><span class="tk">AMT</span><span class="nm">American Tower Corp.</span></td><td class="sector">R.E.I.T.</td><td class="num">$168.59</td><td class="num">$185</td><td class="num mos-slim">+9%</td><td><span class="tag tag-buy">Margin of safety</span></td><td class="num">27.2</td><td class="num">4.30%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="META" data-company="Meta Platforms, Inc." data-sector="Internet" data-price="669.2100219726562" data-iv="700" data-mos="0.04398568289620536" data-pe="24.33491" data-dy="0.3007620827415283" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/META.html'"><td class="rank"></td><td class="co"><span class="tk">META</span><span class="nm">Meta Platforms, Inc.</span></td><td class="sector">Internet</td><td class="num">$669.21</td><td class="num">$700</td><td class="num mos-slim">+4%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">24.3</td><td class="num">0.30%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="NOC" data-company="Northrop Grumman Corporation" data-sector="Aerospace/Defense" data-price="539.6300048828125" data-iv="560" data-mos="0.036374991280691965" data-pe="16.921606" data-dy="1.936512037033476" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/NOC.html'"><td class="rank"></td><td class="co"><span class="tk">NOC</span><span class="nm">Northrop Grumman Corporation</span></td><td class="sector">Aerospace/Defense</td><td class="num">$539.63</td><td class="num">$560</td><td class="num mos-slim">+4%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">16.9</td><td class="num">1.94%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="BRK-B" data-company="Berkshire Hathaway Inc. (Class B)" data-sector="Insurance (Prop/Cas.)" data-price="493.7099914550781" data-iv="506" data-mos="0.024288554436604496" data-pe="14.706881" data-dy="" data-date="2026-07-11" data-verdict="Watch — no margin" onclick="location.href='companies/BRK-B.html'"><td class="rank"></td><td class="co"><span class="tk">BRK-B</span><span class="nm">Berkshire Hathaway Inc. (Class B)</span></td><td class="sector">Insurance (Prop/Cas.)</td><td class="num">$493.71</td><td class="num">$506</td><td class="num mos-slim">+2%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">14.7</td><td class="num">—</td><td class="date">2026-07-11</td></tr><tr class="row" data-ticker="PG" data-company="The Procter &amp; Gamble Company" data-sector="Household and Personal Care" data-price="147.0399932861328" data-iv="150" data-mos="0.019733378092447917" data-pe="21.497074" data-dy="2.957481092601573" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/PG.html'"><td class="rank"></td><td class="co"><span class="tk">PG</span><span class="nm">The Procter &amp; Gamble Company</span></td><td class="sector">Household and Personal Care</td><td class="num">$147.04</td><td class="num">$150</td><td class="num mos-slim">+2%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">21.5</td><td class="num">2.96%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="NEE" data-company="NextEra Energy, Inc." data-sector="Electric Utility (East)" data-price="87.95999908447266" data-iv="88" data-mos="0.0004545558582652699" data-pe="22.324873" data-dy="2.910879975727492" data-date="2026-07-04" data-verdict="Watch — no margin" onclick="location.href='companies/NEE.html'"><td class="rank"></td><td class="co"><span class="tk">NEE</span><span class="nm">NextEra Energy, Inc.</span></td><td class="sector">Electric Utility (East)</td><td class="num">$87.96</td><td class="num">$88</td><td class="num mos-slim">+0%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">22.3</td><td class="num">2.91%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="PGR" data-company="Progressive" data-sector="Insurance (Prop/Cas.)" data-price="230.7200012207031" data-iv="230" data-mos="-0.0031304400900134632" data-pe="11.735504" data-dy="0.1768377244457942" data-date="2026-07-01" data-verdict="Studied" onclick="location.href='companies/PGR.html'"><td class="rank"></td><td class="co"><span class="tk">PGR</span><span class="nm">Progressive</span></td><td class="sector">Insurance (Prop/Cas.)</td><td class="num">$230.72</td><td class="num">$230</td><td class="num mos-premium">-0%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">11.7</td><td class="num">0.18%</td><td class="date">2026-07-01</td></tr><tr class="row" data-ticker="HON" data-company="Honeywell International Inc." data-sector="Diversified Co." data-price="226.4199981689453" data-iv="220" data-mos="-0.02918180985884233" data-pe="18.084663" data-dy="2.068372951979967" data-date="2026-07-04" data-verdict="Watch — no margin" onclick="location.href='companies/HON.html'"><td class="rank"></td><td class="co"><span class="tk">HON</span><span class="nm">Honeywell International Inc.</span></td><td class="sector">Diversified Co.</td><td class="num">$226.42</td><td class="num">$220</td><td class="num mos-premium">-3%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">18.1</td><td class="num">2.07%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="BMY" data-company="Bristol-Myers Squibb" data-sector="Drug" data-price="57.58000183105469" data-iv="54" data-mos="-0.06629633020471644" data-pe="16.128853" data-dy="4.395275997777167" data-date="2026-07-04" data-verdict="Watch — no margin" onclick="location.href='companies/BMY.html'"><td class="rank"></td><td class="co"><span class="tk">BMY</span><span class="nm">Bristol-Myers Squibb</span></td><td class="sector">Drug</td><td class="num">$57.58</td><td class="num">$54</td><td class="num mos-premium">-7%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">16.1</td><td class="num">4.40%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="HD" data-company="The Home Depot, Inc." data-sector="Retail Building Supply" data-price="343.2999877929688" data-iv="320" data-mos="-0.07281246185302752" data-pe="24.382101" data-dy="2.71503068203456" data-date="2026-07-12" data-verdict="Studied" onclick="location.href='companies/HD.html'"><td class="rank"></td><td class="co"><span class="tk">HD</span><span class="nm">The Home Depot, Inc.</span></td><td class="sector">Retail Building Supply</td><td class="num">$343.30</td><td class="num">$320</td><td class="num mos-premium">-7%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">24.4</td><td class="num">2.72%</td><td class="date">2026-07-12</td></tr><tr class="row" data-ticker="V" data-company="Visa Inc." data-sector="Financial Svcs. (Div.)" data-price="348.9700012207031" data-iv="300" data-mos="-0.16323333740234375" data-pe="30.398085" data-dy="0.8096569877400612" data-date="2026-07-12" data-verdict="Watch — no margin" onclick="location.href='companies/V.html'"><td class="rank"></td><td class="co"><span class="tk">V</span><span class="nm">Visa Inc.</span></td><td class="sector">Financial Svcs. (Div.)</td><td class="num">$348.97</td><td class="num">$300</td><td class="num mos-rich">-16%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">30.4</td><td class="num">0.81%</td><td class="date">2026-07-12</td></tr><tr class="row" data-ticker="EOG" data-company="EOG Resources Inc." data-sector="Natural Gas (Div.)" data-price="134.1000061035156" data-iv="115" data-mos="-0.1660870095957878" data-pe="13.19882" data-dy="3.08173736905718" data-date="2026-07-04" data-verdict="Watch — no margin" onclick="location.href='companies/EOG.html'"><td class="rank"></td><td class="co"><span class="tk">EOG</span><span class="nm">EOG Resources Inc.</span></td><td class="sector">Natural Gas (Div.)</td><td class="num">$134.10</td><td class="num">$115</td><td class="num mos-rich">-17%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">13.2</td><td class="num">3.08%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="KO" data-company="Coca-Cola Co." data-sector="Beverage" data-price="83.48999786376953" data-iv="70" data-mos="-0.1927142551967076" data-pe="26.254715" data-dy="2.55786328259894" data-date="2026-07-04" data-verdict="Watch — no margin" onclick="location.href='companies/KO.html'"><td class="rank"></td><td class="co"><span class="tk">KO</span><span class="nm">Coca-Cola Co.</span></td><td class="sector">Beverage</td><td class="num">$83.49</td><td class="num">$70</td><td class="num mos-rich">-19%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">26.3</td><td class="num">2.56%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="UPS" data-company="United Parcel Service, Inc." data-sector="Air Transport" data-price="112.4700012207031" data-iv="94" data-mos="-0.1964893746883308" data-pe="18.228525" data-dy="5.822957169839939" data-date="2026-07-12" data-verdict="Watch — no margin" onclick="location.href='companies/UPS.html'"><td class="rank"></td><td class="co"><span class="tk">UPS</span><span class="nm">United Parcel Service, Inc.</span></td><td class="sector">Air Transport</td><td class="num">$112.47</td><td class="num">$94</td><td class="num mos-rich">-20%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">18.2</td><td class="num">5.82%</td><td class="date">2026-07-12</td></tr><tr class="row" data-ticker="MSFT" data-company="Microsoft Corp." data-sector="Computer Software" data-price="385.1000061035156" data-iv="320" data-mos="-0.20343751907348634" data-pe="22.93627" data-dy="0.9770526980954131" data-date="2026-07-04" data-verdict="Watch — no margin" onclick="location.href='companies/MSFT.html'"><td class="rank"></td><td class="co"><span class="tk">MSFT</span><span class="nm">Microsoft Corp.</span></td><td class="sector">Computer Software</td><td class="num">$385.10</td><td class="num">$320</td><td class="num mos-rich">-20%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">22.9</td><td class="num">0.98%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="AMZN" data-company="Amazon.com" data-sector="E-Commerce" data-price="245.3399963378906" data-iv="200" data-mos="-0.226699981689453" data-pe="29.311829" data-dy="" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/AMZN.html'"><td class="rank"></td><td class="co"><span class="tk">AMZN</span><span class="nm">Amazon.com</span></td><td class="sector">E-Commerce</td><td class="num">$245.34</td><td class="num">$200</td><td class="num mos-rich">-23%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">29.3</td><td class="num">—</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="COST" data-company="Costco Wholesale Corporation" data-sector="Retail Store" data-price="916.25" data-iv="700" data-mos="-0.30892857142857144" data-pe="46.089035" data-dy="0.6669904502046384" data-date="2026-07-12" data-verdict="Watch — no margin" onclick="location.href='companies/COST.html'"><td class="rank"></td><td class="co"><span class="tk">COST</span><span class="nm">Costco Wholesale Corporation</span></td><td class="sector">Retail Store</td><td class="num">$916.25</td><td class="num">$700</td><td class="num mos-rich">-31%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">46.1</td><td class="num">0.67%</td><td class="date">2026-07-12</td></tr><tr class="row" data-ticker="FDX" data-company="FedEx Corporation" data-sector="Air Transport" data-price="314.6900024414062" data-iv="230" data-mos="-0.36821740191915736" data-pe="16.97357" data-dy="1.811338128246172" data-date="2026-07-12" data-verdict="Watch — no margin" onclick="location.href='companies/FDX.html'"><td class="rank"></td><td class="co"><span class="tk">FDX</span><span class="nm">FedEx Corporation</span></td><td class="sector">Air Transport</td><td class="num">$314.69</td><td class="num">$230</td><td class="num mos-rich">-37%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">17.0</td><td class="num">1.81%</td><td class="date">2026-07-12</td></tr><tr class="row" data-ticker="SLB" data-company="SLB (Schlumberger)" data-sector="Oilfield Svcs/Equip." data-price="47.7599983215332" data-iv="34" data-mos="-0.40470583298627066" data-pe="21.039646" data-dy="2.500335096246429" data-date="2026-07-04" data-verdict="Watch — no margin" onclick="location.href='companies/SLB.html'"><td class="rank"></td><td class="co"><span class="tk">SLB</span><span class="nm">SLB (Schlumberger)</span></td><td class="sector">Oilfield Svcs/Equip.</td><td class="num">$47.76</td><td class="num">$34</td><td class="num mos-rich">-40%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">21.0</td><td class="num">2.50%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="DE" data-company="Deere &amp; Company" data-sector="Heavy Truck &amp; Equip" data-price="586.8599853515625" data-iv="390" data-mos="-0.5047691932091346" data-pe="33.23103" data-dy="1.064068117757106" data-date="2026-07-12" data-verdict="Watch — no margin" onclick="location.href='companies/DE.html'"><td class="rank"></td><td class="co"><span class="tk">DE</span><span class="nm">Deere &amp; Company</span></td><td class="sector">Heavy Truck &amp; Equip</td><td class="num">$586.86</td><td class="num">$390</td><td class="num mos-rich">-50%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">33.2</td><td class="num">1.06%</td><td class="date">2026-07-12</td></tr><tr class="row" data-ticker="NVDA" data-company="NVIDIA Corp." data-sector="Semiconductor" data-price="210.9600067138672" data-iv="140" data-mos="-0.506857190813337" data-pe="32.25688" data-dy="0.4945013115281753" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/NVDA.html'"><td class="rank"></td><td class="co"><span class="tk">NVDA</span><span class="nm">NVIDIA Corp.</span></td><td class="sector">Semiconductor</td><td class="num">$210.96</td><td class="num">$140</td><td class="num mos-rich">-51%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">32.3</td><td class="num">0.49%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="ISRG" data-company="Intuitive Surgical, Inc." data-sector="Med Supp Invasive" data-price="406.7799987792969" data-iv="259" data-mos="-0.5705791458660111" data-pe="49.486618" data-dy="" data-date="2026-07-04" data-verdict="Watch — no margin" onclick="location.href='companies/ISRG.html'"><td class="rank"></td><td class="co"><span class="tk">ISRG</span><span class="nm">Intuitive Surgical, Inc.</span></td><td class="sector">Med Supp Invasive</td><td class="num">$406.78</td><td class="num">$259</td><td class="num mos-rich">-57%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">49.5</td><td class="num">—</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="PSX" data-company="Phillips 66" data-sector="Petroleum (Integrated)" data-price="188.3600006103516" data-iv="95" data-mos="-0.9827368485300167" data-pe="18.63106" data-dy="2.699851339733179" data-date="2026-07-04" data-verdict="Watch — no margin" onclick="location.href='companies/PSX.html'"><td class="rank"></td><td class="co"><span class="tk">PSX</span><span class="nm">Phillips 66</span></td><td class="sector">Petroleum (Integrated)</td><td class="num">$188.36</td><td class="num">$95</td><td class="num mos-rich">-98%</td><td><span class="tag tag-watch">Watch — no margin</span></td><td class="num">18.6</td><td class="num">2.70%</td><td class="date">2026-07-04</td></tr><tr class="row" data-ticker="CAT" data-company="Caterpillar Inc." data-sector="Heavy Truck &amp; Equip" data-price="952.4099731445312" data-iv="335" data-mos="-1.8430148452075559" data-pe="47.38358" data-dy="0.6091420883430416" data-date="2026-07-12" data-verdict="Studied" onclick="location.href='companies/CAT.html'"><td class="rank"></td><td class="co"><span class="tk">CAT</span><span class="nm">Caterpillar Inc.</span></td><td class="sector">Heavy Truck &amp; Equip</td><td class="num">$952.41</td><td class="num">$335</td><td class="num mos-rich">-184%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">47.4</td><td class="num">0.61%</td><td class="date">2026-07-12</td></tr><tr class="row" data-ticker="SPCX" data-company="Space Exploration Technologies Corp" data-sector="Aerospace/Defense" data-price="145.3000030517578" data-iv="37" data-mos="-2.9270271095069678" data-pe="" data-dy="" data-date="2026-07-04" data-verdict="Studied" onclick="location.href='companies/SPCX.html'"><td class="rank"></td><td class="co"><span class="tk">SPCX</span><span class="nm">Space Exploration Technologies Corp</span></td><td class="sector">Aerospace/Defense</td><td class="num">$145.30</td><td class="num">$37</td><td class="num mos-rich">-293%</td><td><span class="tag tag-neutral">Studied</span></td><td class="num">—</td><td class="num">—</td><td class="date">2026-07-04</td></tr></tbody>
+  </table>
+  </div>
+<script>
+(function(){
+  const tbody=document.getElementById('tbody');
+  const rows=[...tbody.querySelectorAll('tr')];
+  const q=document.getElementById('q');
+  const sec=document.getElementById('sector');
+  const NUM=new Set(['price','iv','mos','pe','dy']);
+  let sortKey='mos', sortDir=-1;                 // -1 = descending
+  function val(r,k){
+    const d=r.dataset[k];
+    if(NUM.has(k)){ const n=parseFloat(d); return isNaN(n)?null:n; }
+    return (d||'').toLowerCase();
+  }
+  function renumber(){
+    let i=1;
+    rows.forEach(r=>{ if(r.style.display!=='none') r.querySelector('.rank').textContent=i++; });
+  }
+  function sortRows(){
+    rows.sort((a,b)=>{
+      let x=val(a,sortKey), y=val(b,sortKey);
+      const xn=(x===null||x===''), yn=(y===null||y==='');
+      if(xn&&yn) return 0; if(xn) return 1; if(yn) return -1;   // blanks always last
+      if(x<y) return -sortDir; if(x>y) return sortDir; return 0;
     });
-    q.oninput=()=>{
-      const t=q.value.trim().toLowerCase();
-      cards.forEach(c=>{
-        const hit=c.dataset.ticker.toLowerCase().includes(t)||c.dataset.company.toLowerCase().includes(t);
-        c.style.display=hit?'':'none';
-      });
+    rows.forEach(r=>tbody.appendChild(r));
+    document.querySelectorAll('th[data-key]').forEach(th=>{
+      const on=th.dataset.key===sortKey;
+      th.classList.toggle('sorted',on);
+      th.setAttribute('data-dir', on ? (sortDir<0?'desc':'asc') : '');
+    });
+    renumber();
+  }
+  function filter(){
+    const t=q.value.trim().toLowerCase(), s=sec.value;
+    rows.forEach(r=>{
+      const hit=(!t || r.dataset.ticker.toLowerCase().includes(t) || r.dataset.company.toLowerCase().includes(t))
+              && (!s || r.dataset.sector===s);
+      r.style.display=hit?'':'none';
+    });
+    renumber();
+  }
+  document.querySelectorAll('th[data-key]').forEach(th=>{
+    th.onclick=()=>{
+      const k=th.dataset.key;
+      if(sortKey===k) sortDir*=-1;
+      else { sortKey=k; sortDir = NUM.has(k) ? -1 : 1; }   // numbers default desc, text asc
+      sortRows();
     };
-  })();
-  </script>
+  });
+  q.oninput=filter; sec.onchange=filter;
+  sortRows();
+})();
+</script>
 </main>
 <footer class="site-foot">
   <p><strong>Educational only — not investment advice.</strong> These are my own study
