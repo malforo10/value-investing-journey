@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coca-Cola Co. (KO) — intrinsic value</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">§</span>
+    <span class="brand-text">A Value-Investing Learning Journey</span>
+  </a>
+  <nav class="site-nav"><a href="../index.html" class="active">Home</a><a href="../methodology.html" class="">Methodology</a><a href="../journal/index.html" class="">Journal</a></nav>
+</header>
+<main>
+
+  <article class="company-page">
+    <div class="crumbs"><a href="../index.html">← All businesses</a></div>
+    <header class="company-head">
+      <h1>Coca-Cola Co. <span class="tk">(KO)</span></h1>
+      <p class="sub">Beverage · analysis dated 2026-07-04</p>
+    </header>
+    
+  <div class="iv-widget">
+    <div class="iv-cell"><span class="iv-lbl">IV low</span><span class="iv-val">$62</span></div>
+    <div class="iv-cell iv-base"><span class="iv-lbl">IV base</span><span class="iv-val">$70</span></div>
+    <div class="iv-cell"><span class="iv-lbl">IV high</span><span class="iv-val">$78</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Price</span><span class="iv-val">$83.49</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Margin of safety</span><span class="iv-val mos-rich">-19%</span></div>
+  </div>
+    <p class="method"><strong>Method:</strong> Normalized owner-earnings multiple derived three ways (own history ~23x, peers 22-24x, first-principles DCF ~23.6x) and reconciled, cross-checked with look-through/two-column value for the bottler stakes.</p>
+    <div class="verdict"><span class="vlbl">Verdict</span><p>Wonderful business, but priced above value — at $84.14 vs a ~$70 base IV there is NO margin of safety. Quality justifies a fair price, not this. Own the business, wait for the price.</p></div>
+    <div class="seminar">
+    <h1 id="a-value-investing-seminar-the-coca-cola-company-nyse-ko">A Value-Investing Seminar: The Coca-Cola Company (NYSE: KO)</h1>
+<p><em>Co-taught by Benjamin Graham and Warren Buffett</em><br />
+<em>Seminar date: July 4, 2026</em></p>
+<hr />
+<p>Welcome. Pull your chairs in close. Today we are going to do something that sounds simple and is in fact the whole game: we are going to try to figure out what one of the most famous businesses on earth is actually worth, and then compare that to what a nervous fellow named Mr. Market will sell it to us for this afternoon.</p>
+<p>A word before we begin. One of us — Warren — has owned this business for a very long time and it has been very good to Berkshire's shareholders. But affection is not analysis. In this room we check our fondness at the door and let the numbers speak. The lesson matters more than the verdict, and the <em>method</em> matters more than either. If you leave today able to run this pipeline on a business we never mentioned, we have succeeded.</p>
+<p>Everything that follows is grounded in our manual, <em>How to Value a Business</em>. We will name the chapter each time we lean on it.</p>
+<hr />
+<h2 id="1-sources-what-we-read">1. SOURCES — What We Read</h2>
+<p>We insist you know exactly what evidence sits behind every number. Here is our whole file.</p>
+<p><strong>an independent research service company reports</strong> (<code>an independent research service reports/KO_Coca_Cola_Co/</code>), all four editions, oldest to newest:<br />
+- <code>KO_ValueLine_2025-07-11.pdf</code> (price $70.75)<br />
+- <code>KO_ValueLine_2025-10-10.pdf</code><br />
+- <code>KO_ValueLine_2026-01-09.pdf</code> (price $70.16)<br />
+- <code>KO_ValueLine_2026-04-10.pdf</code> — <strong>the current sheet</strong> (price $76.27); this is the one we work from.</p>
+<p><strong>SEC filings</strong> (<code>EDGAR/KO_Coca_Cola_Co/</code>):<br />
+- <code>10-K_2026-02-20/</code> (fiscal year ended 12/31/2025) — the freshest annual report. We read <code>item1_business_part1–3.txt</code> (the business), <code>item7_mda_part1–4.txt</code> (management's discussion), and <strong>all nine</strong> <code>item8_financial_statements_part1–9.txt</code> parts (the three statements plus every footnote we cite: Notes 2, 6, 7, 10, 11, 12, 18, 20).<br />
+- <code>10-Q_2026-04-30/</code> — the first-quarter 2026 report, read for currency (<code>item1_financial_statements_part1.txt</code>, <code>item2_mda</code>).<br />
+- Prior 10-Ks (<code>10-K_2025-02-20/</code>, <code>10-K_2024-02-20/</code>) consulted for multi-year context.</p>
+<p><strong>XBRL history</strong> (<code>EDGAR/KO_Coca_Cola_Co/KO_xbrl_facts.json</code>): a 10-year machine-readable record (2016–2025) of revenue, net income, gross profit, operating income, cash, debt, cash flows, assets, and equity. We used this to verify every figure and to see the business across a full cycle.</p>
+<p><strong>an independent research service Selection &amp; Opinion</strong> (<code>selection and opinion/selection_and_opinion-07102026.pdf</code>): "The an independent research service View," the <em>Selected Yields</em> / <em>Federal Reserve Data</em> tables (our anchor for the discount rate), the <em>Asset Allocation Model</em> (65% stocks), and the <em>Industry Price Performance</em> table.</p>
+<p><strong>Industry report</strong> (<code>an independent research service industries/Beverage/Beverage_ValueLine_Industry_2026-04-10.pdf</code>): the Beverage industry, KO's home group (confirmed via <code>ValueLine_Industries_All.json</code>, key "Beverage").</p>
+<p><strong>Equity Atlas</strong> (<code>equity_atlas.xlsx</code>, sheet "Equity Atlas"): KO's live-price row as of <strong>July 4, 2026, 12:58</strong> — live price <strong>$84.14</strong>, live P/E 26.5, live yield 2.54%, ROE 42.5%, 18-month target $96, 2029–31 target $100, Financial Strength A+, Safety 1, Beta 0.65.</p>
+<p><em>General principle:</em> Before you value anything, be able to list what you read. A valuation you cannot trace back to a filing is an opinion wearing a number's clothes.</p>
+<hr />
+<h2 id="2-opening-the-case-the-business">2. OPENING THE CASE — THE BUSINESS</h2>
+<h3 id="what-coca-cola-actually-does">What Coca-Cola actually does</h3>
+<p>Let us be concrete, because the entire moat lives in one distinction. Coca-Cola is <strong>not, mostly, a company that makes cans of soda</strong>. It is a company that owns trademarks and sells <strong>concentrate</strong>.</p>
+<p>From the 10-K (<code>item1_business_part1.txt</code>): the Company "operates in two lines of business: concentrate operations and finished product operations." In the concentrate business, Coke sells "beverage concentrates … and syrups" to authorized bottling partners. The bottler then adds water, sweetener, and packaging — the heavy, capital-intensive, low-margin work — and sells the finished drink. The bottler "is obligated to purchase its entire requirement of concentrates or syrups … from the Company." Coke keeps the brand, the formula, the marketing, and the pricing power; the bottler keeps the trucks, the warehouses, and the thin margins.</p>
+<p>The numbers show why this matters. In 2025 the Coca-Cola <em>system</em> sold <strong>33.8 billion unit cases</strong> — about <strong>2.2 billion servings a day</strong> across more than 200 countries (<code>item1_business_part1.txt</code>). Yet the parent company booked only <strong>$47.9 billion of revenue</strong> (<code>item8</code> income statement). A company that touches 2.2 billion daily servings but recognizes under $48B in sales is telling you it deliberately does <em>not</em> own most of the value chain's revenue — because it does not want the low-return part. That is the concentrate model in one sentence.</p>
+<p><strong>Segments</strong> (Note 20, <code>item8_financial_statements_part8.txt</code>): five operating segments — EMEA, Latin America, North America, Asia Pacific, and <strong>Bottling Investments</strong>. The four geographic segments "derive a majority of their revenues from the manufacture and sale of beverage concentrates and syrups." Bottling Investments holds the consolidated bottling operations Coke has <em>not yet</em> handed off — "finished product operations generate higher net operating revenues but lower gross profit margins than concentrate operations." Notice the strategy embedded there: for a decade Coke has been <em>refranchising</em> — selling bottling operations to local partners (India, Philippines, Africa are all in progress) so the parent's revenue mix tilts ever more toward high-margin concentrate.</p>
+<p><strong>Customers and brands:</strong> over 500 brands. Sparkling soft drinks are 69% of volume; Trademark Coca-Cola alone is 47% of worldwide volume. International markets are <strong>84% of unit volume</strong> and 60% of net sales. The four largest single-country markets — Mexico, China, Brazil, India — together are 33% of volume.</p>
+<h3 id="the-one-question-that-decides-the-case">The one question that decides the case</h3>
+<p>For a mature global franchise like this, the case does not turn on this quarter's volume or the currency drag. It turns on one durable question:</p>
+<blockquote>
+<p><strong>Will people still reach for a Coca-Cola, and pay a little more for it than for a no-name cola, ten and twenty years from now — and can the Company keep converting that preference into cash without pouring in much new capital?</strong></p>
+</blockquote>
+<p>Everything else — foreign-exchange headwinds, a Mexican sugar tax, a change of CEO — is weather. That question is climate.</p>
+<h3 id="the-circle-of-competence-gate-chapter-4">The circle-of-competence gate (Chapter 4)</h3>
+<p>Our first filter is never price; it is <em>predictability</em>. Can we forecast this business within a sensible range?</p>
+<p>Here the answer is an unusually confident <strong>yes</strong>. The product has been sold since 1886. Demand is famously stable — an independent research service grades KO's <strong>Earnings Predictability a perfect 100</strong> and <strong>Price Stability 100</strong>, the top marks in their system. The economics are simple to state: sell flavored syrup, collect a royalty-like margin, let someone else haul the water. We are not forecasting a technology roadmap or a drug pipeline; we are forecasting whether the world will keep drinking Coke. Within a range, we can.</p>
+<p><em>General principle:</em> The size of your circle does not matter; knowing its edge does. A 140-year-old branded consumable with 100/100 earnings predictability sits near the <em>center</em> of the circle for almost any investor willing to study it. That is exactly the kind of business where the machinery of valuation is allowed to run — because the inputs are forecastable, not guessed.</p>
+<hr />
+<h2 id="3-reading-the-statements-together">3. READING THE STATEMENTS TOGETHER</h2>
+<p>Now we open the three financial statements from the 2025 10-K (<code>item8_financial_statements_part1.txt</code>) and read them as one connected story. Remember our rule: <em>statements are evidence; cash is the truth-teller.</em></p>
+<h3 id="the-balance-sheet-what-it-owns-what-it-owes">The balance sheet — what it owns, what it owes</h3>
+<p>At December 31, 2025 (in $millions):</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>2025</th>
+<th>2024</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cash + short-term investments</td>
+<td>13,872</td>
+<td>12,848</td>
+</tr>
+<tr>
+<td>Total current assets</td>
+<td>31,044</td>
+<td>25,997</td>
+</tr>
+<tr>
+<td>Equity method investments</td>
+<td>20,235</td>
+<td>18,087</td>
+</tr>
+<tr>
+<td>Property, plant &amp; equipment, net</td>
+<td>9,613</td>
+<td>10,303</td>
+</tr>
+<tr>
+<td>Trademarks with indefinite lives</td>
+<td>12,531</td>
+<td>13,301</td>
+</tr>
+<tr>
+<td>Goodwill</td>
+<td>15,491</td>
+<td>18,139</td>
+</tr>
+<tr>
+<td><strong>Total assets</strong></td>
+<td><strong>104,816</strong></td>
+<td><strong>100,549</strong></td>
+</tr>
+<tr>
+<td>Total current liabilities</td>
+<td>21,281</td>
+<td>25,249</td>
+</tr>
+<tr>
+<td>Long-term debt</td>
+<td>42,119</td>
+<td>42,375</td>
+</tr>
+<tr>
+<td><strong>Shareowners' equity (parent)</strong></td>
+<td><strong>32,169</strong></td>
+<td><strong>24,856</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Three things a business owner should notice immediately.</p>
+<p><strong>First, this is an asset-light franchise wearing heavy intangibles.</strong> Physical plant (PP&amp;E) is only <strong>$9.6 billion</strong> — less than a tenth of assets — because the bottlers own the factories. Against that, <strong>$12.5B of trademarks + $15.5B of goodwill = $28.0B of intangibles</strong> (an independent research service footnote C: "In '25: $28.0 bill., $6.51/sh"). The tangible business is tiny; the <em>value</em> is in names on labels. This is the visible fingerprint of <strong>economic goodwill</strong> (Chapter 7) — the worth of a franchise far above its tangible capital.</p>
+<p><strong>Second, the $20.2B of equity-method investments</strong> is not idle — it is Coke's ownership stakes in its big publicly traded bottlers and in Monster. Hold that thought; it drives Section 4.</p>
+<p><strong>Third, leverage looks large but is well-structured.</strong> Total debt is about <strong>$45.5B</strong> (an independent research service, capital structure 12/31/25), against $13.9B of cash and short-term investments — <strong>net debt ~$31.6B</strong>. Equity is $32.2B. We'll test whether that is prudent in Section 5; the preview is that it is.</p>
+<p><em>One caution we teach every year:</em> <strong>never anchor value to book.</strong> Book equity is $32.2B; the market pays over $360B. The gap is not a mistake — it is economic goodwill that GAAP refuses to record. Book value understates a great business (and overstates a poor one). We use it as a solvency input, never as a value.</p>
+<h3 id="the-income-statement-revenue-down-to-profit-layer-by-layer">The income statement — revenue down to profit, layer by layer</h3>
+<p>Three years side by side ($millions), from <code>item8_financial_statements_part1.txt</code>:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Net operating revenues</td>
+<td>47,941</td>
+<td>47,061</td>
+<td>45,754</td>
+</tr>
+<tr>
+<td>Cost of goods sold</td>
+<td>18,397</td>
+<td>18,324</td>
+<td>18,520</td>
+</tr>
+<tr>
+<td><strong>Gross profit</strong></td>
+<td><strong>29,544</strong></td>
+<td><strong>28,737</strong></td>
+<td><strong>27,234</strong></td>
+</tr>
+<tr>
+<td>SG&amp;A</td>
+<td>14,521</td>
+<td>14,582</td>
+<td>13,972</td>
+</tr>
+<tr>
+<td>Other operating charges</td>
+<td>1,261</td>
+<td>4,163</td>
+<td>1,951</td>
+</tr>
+<tr>
+<td><strong>Operating income</strong></td>
+<td><strong>13,762</strong></td>
+<td><strong>9,992</strong></td>
+<td><strong>11,311</strong></td>
+</tr>
+<tr>
+<td>Interest expense</td>
+<td>1,654</td>
+<td>1,656</td>
+<td>1,527</td>
+</tr>
+<tr>
+<td>Equity income (net)</td>
+<td>2,031</td>
+<td>1,770</td>
+<td>1,691</td>
+</tr>
+<tr>
+<td>Income before taxes</td>
+<td>15,998</td>
+<td>13,086</td>
+<td>12,952</td>
+</tr>
+<tr>
+<td><strong>Net income (to shareowners)</strong></td>
+<td><strong>13,107</strong></td>
+<td><strong>10,631</strong></td>
+<td><strong>10,714</strong></td>
+</tr>
+<tr>
+<td>Diluted EPS</td>
+<td>3.04</td>
+<td>2.46</td>
+<td>2.47</td>
+</tr>
+</tbody>
+</table>
+<p>Look at the margins, each layer:<br />
+- <strong>Gross margin: 29,544 ÷ 47,941 = 61.6%.</strong> Extraordinary. Six of every ten revenue dollars survive the cost of goods. That is the concentrate model — syrup is cheap to make relative to what people will pay for the brand.<br />
+- <strong>Operating margin: 13,762 ÷ 47,941 = 28.7%</strong> reported for 2025. But watch the "Other operating charges" line dance: $1,261M in 2025, <strong>$4,163M in 2024</strong>, $1,951M in 2023. An independent research service's <em>normalized</em> operating margin is a steadier <strong>~33.5%</strong> — because they strip the one-timers.<br />
+- <strong>Net margin: 13,107 ÷ 47,941 = 27.3%.</strong> For comparison, a supermarket earns 2–3%. A quarter of every dollar dropping to the bottom line is the mark of a franchise, not a commodity.</p>
+<h3 id="the-earnings-quality-scan-chapter-7">The earnings-quality scan (Chapter 7)</h3>
+<p>This is where we earn our keep, because reported earnings here are <em>noisy</em>, and a careless analyst would either over- or under-state KO's power. Run the checklist:</p>
+<ul>
+<li>
+<p><strong>Recurring "one-time" charges?</strong> Yes — and this is the single most important quality point in the whole case. That "Other operating charges" line is a parade of impairments: a <strong>$960M BodyArmor trademark impairment</strong> in 2025 (and $760M in 2024 — the <em>same</em> trademark, impaired two years running; <code>item8_part8</code>), plus a $3,109M fairlife contingent-consideration remeasurement in 2024. These are real value destruction from a mediocre acquisition (BodyArmor), but they are <em>non-cash</em> and lumpy. They depress reported operating income without touching the core syrup economics. <strong>A serious analyst normalizes them out</strong> to see earning power, then remembers them as evidence about <em>capital allocation</em> (Section 6).</p>
+</li>
+<li>
+<p><strong>EBITDA presented as cash flow?</strong> No — KO does not push an EBITDA-as-cash narrative. Good. (We'd shudder if they did; the tooth fairy does not pay for capex.)</p>
+</li>
+<li>
+<p><strong>Revenue recognition, pension assumptions?</strong> Clean. Revenue is concentrate sold to bottlers under long contracts (Note 3). The U.S. pension is essentially fully funded — assets $3,896M vs obligation $3,907M (<code>item7_mda_part4.txt</code>). No aggressive assumptions hiding a hole.</p>
+</li>
+<li>
+<p><strong>The cash-flow trap you MUST catch.</strong> Reported 2025 operating cash flow is only <strong>$7,408M</strong> — far below $13.1B net income. A lazy reader concludes cash generation collapsed. It did not. The 10-K (<code>item7_mda_part4.txt</code>) tells you why: 2025 operating cash "included <strong>$6.1 billion of the $6.2 billion final milestone payment for fairlife</strong>," and the 2024 figure absorbed the <strong>$6.0 billion IRS Tax Litigation Deposit</strong>. Strip those two one-time boulders and normal operating cash flow is roughly <strong>$13.5 billion</strong>. This is the earnings-quality scan working in <em>both</em> directions: the impairments make earnings look worse than the franchise; the milestone payment makes cash flow look worse than the franchise. Cash is the truth-teller — but only after you remove the one-time noise.</p>
+</li>
+</ul>
+<h3 id="how-the-three-statements-articulate">How the three statements articulate</h3>
+<p>Watch them connect. The income statement's $13.1B net income flows to the top of the cash-flow statement. We add back the $1,050M of non-cash depreciation, subtract the equity earnings we didn't receive as cash ($1,038M retained inside the bottlers — Note 6), and adjust for a <strong>$7,208M</strong> working-capital swing — which is where that fairlife milestone payment sits. The result, $7,408M of operating cash, then funds $2,112M of capex, $8,779M of dividends, and $746M of buybacks on the financing statement, with the shortfall bridged by cash on hand and net new borrowing. Every dollar has to come from somewhere and go somewhere; the three statements are one system.</p>
+<p><em>General principle:</em> Read the three statements as a single organism, and treat every "one-time" and every non-cash charge as a question, not a fact. Here the questions reveal a franchise earning ~27% net margins whose reported cash flow was temporarily buried under a $6.1B acquisition payment. Miss that, and you misprice the whole business.</p>
+<hr />
+<h2 id="4-earnings-power-the-moat">4. EARNINGS POWER &amp; THE MOAT</h2>
+<h3 id="earning-power-across-the-cycle">Earning power across the cycle</h3>
+<p>Let us look through the full ten years (XBRL, verified against filings). Net income to shareowners, $millions: 2016 <strong>6,527</strong>, 2017 1,248 (a tax-reform distortion), 2018 6,434, 2019 8,920, 2020 7,747 (pandemic), 2021 9,771, 2022 9,542, 2023 10,714, 2024 10,631, 2025 13,107.</p>
+<p>Set aside the 2017 tax anomaly and the 2020 pandemic dip, and you see a business grinding steadily upward — roughly doubling reported earnings over the decade while revenue barely grew (revenue was actually <em>higher</em> in 2016 at $41.9B on an old presentation basis). How? <strong>Margin expansion and refranchising.</strong> Coke shed the low-margin bottling revenue and kept the high-margin concentrate. An independent research service's per-share earnings tell the clean story: EPS grew from ~$1.91 (2016) to <strong>$3.00 (2025)</strong>, about a <strong>4–5% annual clip</strong>, and an independent research service projects ~7% ahead.</p>
+<h3 id="owner-earnings-chapter-7-the-number-that-matters">Owner earnings (Chapter 7) — the number that matters</h3>
+<p>Reported earnings are the starting point, not the answer. We want <strong>owner earnings</strong> — the cash an owner could withdraw without weakening the business:</p>
+<blockquote>
+<p>Owner Earnings = Reported earnings + Non-cash charges − Maintenance capex − ΔWorking capital</p>
+</blockquote>
+<p>Working from an independent research service's <em>clean</em> 2025 earnings of <strong>$3.00/share × ~4,313M diluted shares ≈ $12,940M</strong> (this already strips the impairment noise):</p>
+<ul>
+<li><strong>+ Non-cash charges:</strong> depreciation &amp; amortization of <strong>$1,050M</strong> (<code>item8</code> cash-flow statement).</li>
+<li><strong>− Maintenance capex:</strong> total capex was <strong>$2,112M</strong>. But KO is capital-light — the bottlers carry the heavy plant. Maintenance capex (just to hold position and volume) is roughly equal to depreciation, ~<strong>$1,050M</strong>; the rest is growth. So maintenance capex ≈ D&amp;A, and the two adjustments <strong>cancel</strong>.</li>
+<li><strong>− Incremental working capital:</strong> structurally modest for a business collecting cash from bottlers on short terms (ignore the one-time fairlife/IRS swings). We treat the residual drag as roughly offset by the ~$279M of non-cash stock comp we did <em>not</em> add back — a deliberately conservative wash.</li>
+</ul>
+<p><strong>Cash owner earnings ≈ $12.9 billion (~$3.00/share).</strong></p>
+<p>But we are not done, because of one feature this business has that most do not.</p>
+<h3 id="look-through-earnings-chapter-7-the-bottler-stakes">Look-through earnings (Chapter 7) — the bottler stakes</h3>
+<p>Coke does not consolidate its big bottlers; it owns <em>minority</em> stakes and accounts for them by the equity method (Note 6, <code>item8_financial_statements_part4.txt</code>). As of 12/31/2025 it owned <strong>CCEP 18%, Monster 21%, AC Bebidas 20%, Coca-Cola FEMSA 20%, Coca-Cola HBC 28%, and Coca-Cola Bottlers Japan 24%.</strong></p>
+<p>Here is the manual's correction. Coke's income statement shows <strong>$2,031M of equity income</strong> — its share of those investees' 2025 profits. But it only <em>received</em> <strong>$993M in dividends</strong> from them (Note 6). The difference — <strong>$2,031M − $993M = $1,038M</strong> — is Coke's share of earnings the bottlers <em>retained and reinvested</em>. That money is not missing; it is compounding inside CCEP, FEMSA, Monster and the rest, and it belongs to Coke's owners.</p>
+<p><strong>Look-through owner earnings ≈ $12,940M + $1,038M ≈ $14.0 billion (~$3.24/share).</strong></p>
+<p>We will value on the conservative cash figure (~$12.9B) as our base and treat the look-through figure (~$14.0B) as the reason our estimate can lean toward the higher end.</p>
+<p><em>A footnote on how valuable those stakes are:</em> Note 6 discloses that the <strong>market value</strong> of just the four publicly traded bottler stakes far exceeds their carrying value. <strong>Monster alone: fair value $15,659M vs carrying value $5,593M — a $10.1 billion unrecorded gain.</strong> CCEP, FEMSA, and HBC add several billion more. The balance sheet, once again, <em>understates</em> the franchise.</p>
+<h3 id="the-moat-and-what-could-erode-it">The moat — and what could erode it</h3>
+<p>Coke is the textbook <strong>economic franchise</strong> our manual defines (Chapter 5): a product that (1) is desired, (2) is thought to have no close substitute, and (3) is not price-regulated. The moat has three interlocking sources:<br />
+- <strong>Brand</strong> — the strongest single consumer trademark on earth, delivering <em>pricing power</em>. The diagnostic test of a moat is: can it raise price without losing volume? In 2025 unit case volume was <strong>flat</strong>, yet organic revenue rose ~5% on "favorable pricing and mix" (an independent research service, 4/10/26). That is pricing power measured directly.<br />
+- <strong>Distribution scale</strong> — 2.2 billion servings a day through a bottler network no new entrant could replicate.<br />
+- <strong>The bottler network itself</strong> — a system, not a factory, and systems are hard to copy.</p>
+<p><strong>What could erode it in ten years?</strong> Be honest — moats erode. The real threats: (1) the secular shift away from sugary sparkling drinks toward "functional" and better-for-you beverages (the Beverage industry report flags this explicitly — Celsius, Vita Coco, the whole health wave); (2) regulatory pressure — an independent research service names higher Mexican sugar taxes and U.S. restrictions on buying soda with government benefits; (3) Coke's <em>own</em> misfires in the new categories — the BodyArmor impairment is proof they can overpay for growth outside the core. None of these breaks the castle in ten years, but a careful owner watches the volume-and-mix line every year for evidence the pricing power is thinning.</p>
+<h3 id="roic-the-arithmetic-of-quality-chapter-6">ROIC — the arithmetic of quality (Chapter 6)</h3>
+<p>The single best measure of business quality is return on invested capital.</p>
+<blockquote>
+<p>ROIC = NOPAT ÷ Invested Capital</p>
+</blockquote>
+<ul>
+<li><strong>NOPAT:</strong> normalized EBIT ≈ 33.5% × $47,941M ≈ <strong>$16,060M</strong>; taxed at ~20.5% → <strong>NOPAT ≈ $12,770M.</strong></li>
+<li><strong>Invested capital:</strong> equity $32.2B + noncontrolling $2.1B + total debt $45.5B − cash &amp; ST investments $13.9B ≈ $65.9B <em>including</em> the equity-method stakes. But those stakes earn their return <em>separately</em> (in equity income), so we subtract the $20.2B of equity-method investments to isolate the operating business: <strong>operating invested capital ≈ $45.7B.</strong></li>
+<li><strong>ROIC ≈ $12,770M ÷ $45,700M ≈ 28%.</strong></li>
+</ul>
+<p>Twenty-eight percent. Against a discount rate we will set at 8.5%, that is a franchise earning <strong>more than three times its cost of capital.</strong> Even the <em>blunt</em> measure — NOPAT over the full $65.9B including stakes — is ~19%, still far above the hurdle. This is the signature of a capital-light franchise: it can grow while reinvesting only a fraction of its earnings, so most of the profit is free for owners.</p>
+<p><strong>ROE alongside — but watch the leverage.</strong> Return on equity is ~$12,940M ÷ $32,169M ≈ <strong>40%</strong> (an independent research service reports 40.3%, projecting 42.5%). Spectacular — but part of that gaudy number is <em>leverage</em>: equity is deliberately kept lean by decades of buybacks and dividends funded partly with debt. ROIC (28%) is the honest quality signal because it counts the debt in the denominator; ROE (40%) is flattered by the capital structure. Both are excellent, but we trust ROIC.</p>
+<p><em>General principle:</em> Quality is ROIC versus the discount rate, full stop. A business earning 28% on capital it barely needs to grow is worth a high multiple of its earnings — precisely because it can compound while handing most of the cash back. That is what "wonderful business" <em>means</em> in arithmetic.</p>
+<hr />
+<h2 id="5-financial-strength-solvency">5. FINANCIAL STRENGTH &amp; SOLVENCY</h2>
+<p>Now the prior question (Chapter 8): can it <em>survive</em> long enough to keep earning? A great franchise financed recklessly can still be killed in one bad year.</p>
+<ul>
+<li>
+<p><strong>Leverage.</strong> Net debt ≈ total debt $45.5B − cash &amp; ST investments $13.9B ≈ <strong>$31.6B</strong>. Against normalized owner earnings of ~$12.9B, that is <strong>net debt ÷ owner earnings ≈ 2.4×</strong> — Coke could clear its net debt from about two and a half years of its own cash. For a business with 100/100 earnings predictability, that is comfortably conservative.</p>
+</li>
+<li>
+<p><strong>Coverage.</strong> Interest coverage = EBIT ÷ interest. Normalized EBIT ~$16.0B ÷ interest expense $1,654M ≈ <strong>9.7×</strong>; an independent research service states total interest coverage of <strong>10.8×</strong>. A normal year's earnings cover the interest bill roughly ten times over. A routine downturn is a nuisance, not a threat.</p>
+</li>
+<li>
+<p><strong>Liquidity.</strong> Current ratio = current assets ÷ current liabilities = $31,044M ÷ $21,281M ≈ <strong>1.46</strong>. Plus $13.9B of cash and short-term investments on hand. Near-term bills are covered without touching a lender.</p>
+</li>
+<li>
+<p><strong>Refinancing wall.</strong> We checked the maturity ladder (Note 11, <code>item8_part4</code>): debt coming due is <strong>$1,822M (2026), $4,817M (2027), $2,923M (2028), $2,955M (2029), $3,411M (2030).</strong> No single year's maturity exceeds ~$4.8B against ~$13B+ of annual operating cash and $13.9B of liquidity. The debt is <em>laddered</em> — Coke never depends on the kindness of a frozen credit market in any one year. This is what prudent borrowing looks like.</p>
+</li>
+<li>
+<p><strong>Hidden obligations.</strong> Operating leases are tiny — <strong>$1,722M</strong> total lease liability (Note 10). Pension is essentially fully funded (U.S. plan assets $3,896M vs obligation $3,907M). Guarantees of third-party debt are $786M, deemed remote. <strong>The one genuine off-balance-sheet cloud is the IRS dispute:</strong> Coke has already paid a <strong>$6.0B deposit</strong> (sitting in "other noncurrent assets," refundable if it wins on appeal), and management discloses that the <em>potential aggregate</em> remaining tax-and-interest exposure for 2010–2025 "could be approximately <strong>$14 billion</strong>" if it loses (<code>item7_mda_part4.txt</code>). Coke believes it is "more likely than not" to prevail — and an October 2025 appeals-court ruling in the analogous 3M case was "highly supportive" of its position. But an owner must carry a <strong>$6B–$14B contingent liability</strong> in the back of the mind. It would dent financial flexibility; it would not break the company.</p>
+</li>
+</ul>
+<p><strong>One-line verdict: FORTRESS</strong> — an independent research service grades Financial Strength <strong>A+</strong> and Safety <strong>1</strong>, and the numbers earn it. We carry one asterisk into the margin of safety: the tail-risk IRS exposure argues for <em>not</em> paying a full price.</p>
+<p><em>General principle:</em> Financial strength is asymmetric. A fortress balance sheet buys you the right to be patient and the guarantee you are never a forced seller (Chapter 3). Read the maturity ladder, not just the debt total — <em>when</em> debt comes due matters as much as <em>how much</em>.</p>
+<hr />
+<h2 id="6-management-as-partners">6. MANAGEMENT AS PARTNERS</h2>
+<p>Once a business throws off more cash than it needs, management's job is allocation, and that decides how much of the earning power actually reaches you (Chapter 9). Let's grade Coke across the six uses of a dollar.</p>
+<p><strong>The record, 2025 (cash-flow statement + XBRL):</strong><br />
+- <strong>Dividends: $8,779M paid.</strong> The dominant use of cash, and rightly so for a mature franchise.<br />
+- <strong>Buybacks: $746M</strong> (down from $1,795M in 2024, $2,289M in 2023 — repurchases have been <em>shrinking</em>).<br />
+- <strong>Reinvestment: $2,112M capex</strong> — small, because the franchise is capital-light.<br />
+- <strong>Acquisitions:</strong> modest cash M&amp;A, but note the fairlife earn-out and the BodyArmor stumble.<br />
+- <strong>Debt:</strong> roughly rolled flat (issued $4,980M, repaid $4,967M).</p>
+<p><strong>Share count over the decade — the discipline test.</strong> Diluted shares: ~4,584M (2010) → 4,288M (2016) → 4,313M (2025). Over fifteen years the count fell only modestly and has been roughly <em>flat</em> recently. Coke is <strong>not</strong> a great share-shrinker like some franchises; it returns cash mainly through the dividend. The good news: it also isn't diluting you with reckless option grants — stock comp is a restrained ~$279M/year.</p>
+<p><strong>The one-dollar test (Chapter 9).</strong> The test: has each dollar retained created at least a dollar of market value? Over the long run, plainly yes — reinvested capital earning ~28% ROIC creates far more than a dollar per dollar. <strong>But</strong> management should retain a dollar <em>only</em> when it can beat what you could earn elsewhere, and here is the honest tension: with ROIC at 28% and reinvestment needs tiny, Coke <em>correctly</em> returns most cash to owners (it pays out roughly two-thirds of earnings as dividends). The place the one-dollar test <em>fails</em> is the acquisitions: <strong>BodyArmor</strong>, impaired by $760M then another $960M, is a dollar retained that produced well under a dollar of value. That is the "institutional imperative" — the pull to expand into new categories — wilting rational allocation.</p>
+<p><strong>Buybacks judged on price vs value (Chapter 9).</strong> Buybacks create value <em>only</em> below intrinsic value. Coke's repurchases have shrunk to a trickle ($746M) even as the stock trades near record highs — which, if deliberate, is actually <em>disciplined</em>: you don't want management aggressively buying back stock at $84 when our work says it's worth ~$70. We'd rather they pay the dividend than repurchase above value. So far, so rational.</p>
+<p><strong>The dividend record — a Dividend King.</strong> Coke has <strong>raised its dividend every year for more than six decades</strong> (an independent research service; the 2026 hike took the quarterly payout to $0.53). Declared dividends per share: $1.76 (2022) → $1.84 → $1.94 → $2.04 (2025) → ~$2.14 (2026e). That is one of the most reliable dividend records in existence — a genuine sign of a business whose cash generation management can count on, and of a board that treats shareholders as partners.</p>
+<p><strong>Candor.</strong> The disclosure is clean and unusually plain about bad news — the IRS dispute is laid out in full, the BodyArmor impairments are named and explained, divestiture gains and losses are itemized. No EBITDA games. We grade management <strong>honest and mostly rational</strong>, with a demerit for the acquisition misfires.</p>
+<p><em>General principle:</em> Judge management by what it <em>does</em> with the cash, tracked across the whole decade — and hold two ideas at once. Coke allocates its core cash beautifully (high payout, capital-light reinvestment, restrained buybacks) <em>and</em> has stumbled on bolt-on acquisitions. Both are true; a partner tells you both.</p>
+<hr />
+<h2 id="7-what-is-it-worth-intrinsic-value">7. WHAT IS IT WORTH? — INTRINSIC VALUE</h2>
+<p>Here is our north star, the <em>definition</em> of value (Chapter 1):</p>
+<blockquote>
+<p><strong>Intrinsic Value = Σ OEₜ / (1 + r)ᵗ</strong></p>
+</blockquote>
+<p>We hold that equation as the meaning of worth, but — because a literal DCF is hypersensitive to the discount rate and terminal growth — for a stable mature franchise like KO we lean on a <strong>normalized-earnings multiple</strong> and <em>cross-check</em> it against the DCF, a dividend model, and the three universal tests. Triangulation is the whole discipline: arrive at the answer by roads that cannot all be wrong the same way.</p>
+<p><strong>Our inputs, established above:</strong><br />
+- Normalized owner earnings: <strong>~$12.9B cash (~$3.00/sh)</strong>, ~$14.0B look-through (~$3.24/sh).<br />
+- Discount rate <strong>r = 8.5%</strong>. Why: the 30-year Treasury yields <strong>4.86%</strong> and the 10-year 4.38% (S&amp;O <em>Selected Yields</em>, 6/29/26), inflation has <em>reignited</em> (PCE +4.1%, Fed on hold and hawkish under Chair Warsh), so we will not use a cheap rate. To that ~4.9% long bond we add a ~3.5-point premium for equity/forecast risk — but shave it for KO's rock-stability (beta 0.65, A+ strength). 8.5% is our base; we sensitize 8%–9%.<br />
+- Growth: ~6% for a decade (an independent research service projects 7% EPS growth; we take a hair less to be conservative), fading to 3% perpetual (below nominal GDP — no business outgrows the economy forever).</p>
+<h3 id="deriving-the-multiple-three-ways">Deriving the multiple three ways</h3>
+<p><strong>(a) KO's own historical median P/E over a full cycle.</strong> an independent research service's average annual P/E, 2016–2025: 22.8, 23.2, 21.9, 24.1, 25.6, 23.3, 24.9, 22.3, 22.2, 23.0 — a <strong>ten-year average of 23.3×</strong>, and an independent research service's stated <strong>median P/E is 23.0×.</strong> Over a full cycle the market has consistently paid ~22–24× KO's earnings. Apply the median: <strong>23 × $3.00 = $69/share.</strong></p>
+<p><strong>(b) Peer / industry multiple.</strong> In KO's Beverage industry (an independent research service report, 4/10/26; S&amp;O portfolio tables):<br />
+- <strong>PepsiCo (PEP): ~$138.68, a ~4.3% yield, rated Hold</strong> — trading cheaper than KO, but carrying a heavier snacks/bottling business and slower growth.<br />
+- <strong>Keurig Dr Pepper (KDP):</strong> lower multiple, more leverage, weaker brand set.<br />
+- <strong>Monster (MNST):</strong> premium multiple, faster growth (and Coke owns 21% of it).<br />
+KO deserves a <strong>premium to PEP and KDP</strong> — its concentrate model is higher-margin, its ROIC higher, its brand deeper, its balance sheet stronger — but a <strong>discount to a fast-grower like Monster.</strong> That lands KO's justified multiple around <strong>22–24×</strong>, i.e., <strong>$66–$78</strong> on $3.00–$3.25 owner earnings. This cross-check <em>confirms</em> rather than drives — we never let Mr. Market's opinion of PepsiCo set Coke's value, but it's a useful sanity rail.</p>
+<p><strong>(c) Quality-and-growth-justified multiple from first principles.</strong> Run the two-stage DCF on <strong>$12.9B</strong> cash owner earnings, r = 8.5%, g = 6% for 10 years then 3% perpetual: <strong>IV ≈ $306,000M ÷ ~4,300M shares ≈ $71/share</strong>, an <strong>implied multiple of ~23.6×.</strong> On look-through owner earnings ($14.0B), the same model gives <strong>~$77/share.</strong> The DCF, independently, <em>justifies roughly the same 23× multiple</em> the history and peers imply. When three roads meet, you pay attention.</p>
+<p><strong>Reconciling the three:</strong> history says 23× → $69; peers say 22–24× → $66–$78; first-principles DCF says ~23.6× → $71 (cash) to $77 (look-through). They converge beautifully on a <strong>base intrinsic value near $70/share</strong>, with a reasonable range of about <strong>$62 to $78</strong>.</p>
+<h3 id="dividend-discount-cross-check">Dividend-discount cross-check</h3>
+<p>KO is a stable, serial dividend-raiser — the DDM is a legitimate cross-check here. With the 2026 declared dividend ~$2.14, a required return of 8.5%, and sustainable dividend growth of ~5.5% (its long record): <strong>P = D₁ ÷ (r − g) = $2.14 ÷ (0.085 − 0.055) = $71.</strong> Alternatively, anchor on KO's own <em>normal yield</em>: its dividend yield has historically run ~2.8–3.3%. Capitalizing $2.14 at a 3.0% normal yield gives <strong>$71</strong>; at 2.8%, <strong>$76.</strong> The dividend model lands squarely inside our earnings-based range — a reassuring agreement from an entirely different method.</p>
+<h3 id="the-three-universal-cross-checks-as-arithmetic">The three universal cross-checks (as arithmetic)</h3>
+<p><strong>1. No-growth floor = OE ÷ r.</strong> Value KO as if it never grows another dollar: $12,940M ÷ 0.085 = <strong>$152,200M ≈ $35.40/share</strong> (cash); on look-through OE, <strong>~$38.</strong> So of the ~$70 base value, only about <strong>$35 is the business as it stands today</strong> — <em>the other half is payment for growth.</em> And at today's *<em>$84 price, roughly $49 — nearly 60% — is a bet on growth materializing.</em> That is the single most sobering number in this seminar. It doesn't say Coke won't grow; it says the price leaves little room if growth disappoints.</p>
+<p><strong>2. Implied multiple = IV ÷ OE.</strong> $306,000M ÷ $12,940M ≈ <strong>23.7×.</strong> Is 23.7× defensible for a 28%-ROIC franchise growing ~6% then 3%? Yes — it matches KO's own cycle-median and what peers command. The machine did not run away with a 40× terminal-value fantasy. The translation checks out.</p>
+<p><strong>3. Owner-earnings yield vs the long bond.</strong> At our base value of ~$70, the owner-earnings yield is $3.00 ÷ $70 = <strong>4.3%</strong>, roughly matching the 30-year Treasury's 4.86% — but the coupon <em>grows</em> ~6%, so the equity is the better claim at that price. <strong>At the live $84.14, the yield falls to $3.00 ÷ $84.14 = 3.6% — clearly <em>below</em> the 4.86% long bond</strong>, and the whole purchase then leans on growth arriving as forecast. Chapter 12's gravity, applied at the moment of decision: when the risk-free rate is ~4.9%, paying up to a 3.6% growing yield is defensible only if you're very sure of the growth — and demands you pay <em>less</em>, not more.</p>
+<h3 id="triangulated-verdict-on-value">Triangulated verdict on value</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Value/share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No-growth floor (OE ÷ r) — the true floor</td>
+<td>$35–$41</td>
+</tr>
+<tr>
+<td>Historical median P/E (23× × $3.00)</td>
+<td>$69</td>
+</tr>
+<tr>
+<td>Peer/quality multiple (22–24×)</td>
+<td>$66–$78</td>
+</tr>
+<tr>
+<td>DCF, cash OE (r 8.5%, g 6%→3%)</td>
+<td>$71</td>
+</tr>
+<tr>
+<td>DCF, look-through OE</td>
+<td>$77</td>
+</tr>
+<tr>
+<td>Dividend model</td>
+<td>$71–$76</td>
+</tr>
+<tr>
+<td><strong>Sanity vs an independent research service 18-mo target $96 / 2029–31 target $100</strong></td>
+<td><em>(higher; VL uses ~21× on 2029–31 EPS of $4.25)</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Intrinsic value range: ~$62 (low) — $70 (base) — $78 (high).</strong> We anchor on <strong>$70.</strong></p>
+<p><em>General principle:</em> For a stable franchise, derive the multiple three independent ways and make them <em>argue</em> with each other; when history, peers, and a first-principles DCF converge on the same ~23×, you can trust the estimate as a range. And always compute the no-growth floor — it tells you, with brutal clarity, how much of the price is hope.</p>
+<hr />
+<h2 id="8-margin-of-safety-mr-market">8. MARGIN OF SAFETY &amp; MR. MARKET</h2>
+<p>Now, and only now, we consult Mr. Market. From <code>equity_atlas.xlsx</code>, the <strong>live price on July 4, 2026 is $84.14</strong> — a live P/E of 26.5 and a live yield of 2.54%.</p>
+<p>Compare price to our value:</p>
+<blockquote>
+<p>Margin of Safety = (Intrinsic Value − Price) ÷ Intrinsic Value</p>
+</blockquote>
+<ul>
+<li>Against our <strong>base $70:</strong> ($70 − $84.14) ÷ $70 = <strong>−20%.</strong> A <em>negative</em> margin of safety — a 20% premium.</li>
+<li>Against our <strong>high $78:</strong> ($78 − $84.14) ÷ $78 = <strong>−8%.</strong> Still a premium.</li>
+<li>To reach even a modest 15% margin of safety off the base, we'd need a price near <strong>$60.</strong></li>
+</ul>
+<p>There is no margin of safety here. The price sits <strong>above even the generous end of our range.</strong> The corroborating signal is the owner-earnings yield of <strong>3.6%, below the 4.86% long bond</strong> — Chapter 12's gravity is pulling against the buyer at this price.</p>
+<p><strong>Is Mr. Market euphoric, depressed, or rational on KO?</strong> He is <strong>mildly euphoric — or, more precisely, fearful of everything else.</strong> Read the context from Selection &amp; Opinion: inflation has reignited, the Fed is hawkish, midterm-election volatility looms, and the whole market is nervous about an AI-spending bubble. In that mood, investors "flock to safe-haven holdings," and the Beverage report names Coca-Cola first among them. KO's low beta (0.65) and 100/100 stability are exactly what frightened money buys. So Mr. Market is bidding KO up <strong>not because Coke's business suddenly got better, but because he is scared of everything that isn't Coke.</strong> That is Mr. Market's <em>pocketbook and his mood</em> talking — useful to us only as information, never as instruction.</p>
+<p>For a wonderful franchise, part of the safety can live in the <em>quality</em> itself (Chapter 13): a conservatively projected, growing earnings stream makes today's estimate the floor of tomorrow's. That reconciliation lets us pay a <em>fair</em> price for a great business. But it never licenses paying <em>any</em> price — and $84 against a $70 base, with the yield below the bond, is past fair into full.</p>
+<p><em>General principle:</em> Mr. Market is your servant, not your guide. When the crowd bids up "safety" out of fear of everything else, a wonderful business can become a mediocre <em>investment</em> at the wrong price. The margin of safety is non-negotiable precisely so that a great company bought too dear cannot quietly become a permanent loss of capital.</p>
+<hr />
+<h2 id="9-the-verdict-the-lesson">9. THE VERDICT &amp; THE LESSON</h2>
+<p><strong>The business: WONDERFUL.</strong> Let there be no ambiguity. Coca-Cola is a genuine economic franchise — 61% gross margins, 27% net margins, ~28% ROIC on capital it barely needs, demonstrated pricing power, a fortress A+ balance sheet, six-plus decades of dividend increases, and 100/100 earnings predictability. On business quality it is nearly the platonic ideal our manual describes.</p>
+<p><strong>The stock, today: FAIRLY-TO-FULLY VALUED — a HOLD, not a BUY.</strong> At $84.14 it trades at roughly a 20% premium to our $70 base value and above even our $78 high case, with an owner-earnings yield (3.6%) below the long bond (4.9%). A wonderful business at an unwonderful price. The discipline of Chapter 13 is unambiguous: <em>above the conservative range you admire the business and wait; you do not buy in size.</em></p>
+<p><strong>The one question, answered:</strong> <em>Will people still pay a premium for a Coke in 10–20 years, and can Coke keep monetizing that with little new capital?</em> — <strong>Yes, with high confidence.</strong> The moat is intact and the economics are superb. That is exactly why the market will rarely hand it to you cheaply, and why the <em>only</em> thing standing between you and this business today is price.</p>
+<p><strong>Two or three open questions to keep watching:</strong><br />
+1. <strong>The IRS litigation.</strong> A $6B deposit already paid and a <em>potential</em> $14B aggregate exposure. Coke expects to win; a loss would dent (not break) the company and could pressure the stock — possibly <em>creating</em> the entry point discipline is waiting for.<br />
+2. <strong>The health/functional shift.</strong> Volume was flat in 2025; growth came entirely from price/mix. How long can pricing power carry a business whose core category is slowly falling out of fashion? Watch the volume-and-mix line every year.<br />
+3. <strong>Acquisition discipline.</strong> After BodyArmor, will management resist overpaying to "buy" growth in new categories? The one-dollar test lives here.</p>
+<p><strong>Two or three universal lessons this case teaches:</strong><br />
+1. <strong>A great business and a great investment are different things.</strong> Quality is settled at the business level; <em>return</em> is settled at the price. Coke is proof that you can be completely right about the company and still overpay.<br />
+2. <strong>Normalize both directions before you value.</strong> Reported earnings were dragged <em>down</em> by non-cash impairments; reported cash flow was dragged down by a one-time $6.1B milestone payment. Miss either and you misjudge the franchise. Cash is the truth-teller — after you clear the noise.<br />
+3. <strong>The no-growth floor keeps you honest.</strong> When ~$35 of a ~$70 value (and ~60% of an $84 price) is a bet on growth, you <em>know</em> exactly how much hope you are buying. Compute it every time.</p>
+<p><em>This is a teaching case, not personalized investment advice.</em> We have shown you our reasoning so you can dismantle it and build your own. That is the whole point.</p>
+<hr />
+<h2 id="10-the-valuation-checklist-chapter-15">10. THE VALUATION CHECKLIST (Chapter 15)</h2>
+<p>Run the manual's checklist in order. A "no" at a quality gate ends the analysis; the arithmetic is earned only after the business qualifies.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Gate</th>
+<th>KO</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Competence</strong> — can we forecast it?</td>
+<td><strong>PASS</strong></td>
+<td>140-year franchise, 100/100 predictability. Center of the circle.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Moat</strong> — durable? pricing power?</td>
+<td><strong>PASS</strong></td>
+<td>Brand + distribution scale; flat volume, +5% organic on price/mix proves pricing power. Watch the health shift.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Returns</strong> — ROIC &gt; cost of capital?</td>
+<td><strong>PASS</strong></td>
+<td>ROIC ~28% vs r 8.5%. Capital-light. Three-fold coverage.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Trustworthy numbers/management?</strong></td>
+<td><strong>PASS (with care)</strong></td>
+<td>Clean disclosure, no EBITDA games; but you MUST normalize lumpy impairments and the one-time cash-flow items.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Survives a bad year &amp; shut credit market?</strong></td>
+<td><strong>PASS</strong></td>
+<td>A+ / Safety 1. Net debt 2.4× OE, coverage ~10×, laddered maturities, current ratio 1.46. Asterisk: IRS tail risk.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Capital allocation — one-dollar test, share count, buybacks?</strong></td>
+<td><strong>PASS (with a demerit)</strong></td>
+<td>Dividend King, restrained buybacks, capital-light reinvestment; demerit for BodyArmor acquisition misfires.</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Intrinsic value — range + sensitivity + cross-checks?</strong></td>
+<td><strong>DONE</strong></td>
+<td>~$62–$78, base $70. DCF sensitized r 8–9%, g 2.5–3.5%. No-growth floor, implied multiple, yield-vs-bond all run.</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Growth check — funded at ROIC &gt; r?</strong></td>
+<td><strong>PASS</strong></td>
+<td>Growth reinvested at ~28% ROIC vs 8.5% r → value-creating growth.</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Margin of safety — price far below conservative range?</strong></td>
+<td><strong>FAIL</strong></td>
+<td>Live $84.14 is a ~20% <em>premium</em> to base and above the high case. No margin of safety.</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Afterward — monitor the business, sell only for Chapter 16 reasons.</strong></td>
+<td>—</td>
+<td>See below.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The checklist verdict is decisive and clean: nine quality gates PASS; the tenth — margin of safety — FAILS.</strong> This is the textbook picture of a wonderful business trading at too full a price. The right action is to <strong>admire it and wait.</strong></p>
+<p><strong>Post-purchase discipline (Chapter 16).</strong> <em>If</em> you already own Coca-Cola (as Berkshire does), the default posture is <strong>hold — favorite holding period, forever.</strong> Do not sell a compounding franchise merely because it has risen or because the position grew large. Within the method, only <strong>three reasons to sell</strong> survive: (1) <em>the thesis breaks</em> — the moat visibly erodes (watch that volume/mix line and the health shift); (2) <em>the price leaves valuation far behind</em> — for a business this good the bar is high, but no business is worth an infinite multiple, and if Mr. Market's euphoria carried KO to, say, 30–35× earnings, an owner should at least take notice; (3) <em>a decisively better use of capital</em> appears within your circle at a wide margin of safety. Everything else — the IRS headline, the currency drag, the election-year wiggle — is Mr. Market talking, and you do not have to answer.</p>
+<p><em>General principle:</em> The checklist is a gate sequence, not a scorecard — one "no" at the margin-of-safety gate is enough to say "wait," no matter how many gates before it said "yes." And after you own a great business, you monitor the <em>business</em>, not the <em>quote</em>.</p>
+<hr />
+<h2 id="11-glossary-terms-formulas">11. GLOSSARY — TERMS &amp; FORMULAS</h2>
+<p>Each term: one-sentence definition, formula in symbols, and KO's own numbers plugged in.</p>
+<p><strong>Owner earnings.</strong> The cash an owner can withdraw without weakening the business. <em>Reported earnings + non-cash charges − maintenance capex − ΔworkingCapital.</em> KO: ~$12,940M clean earnings + $1,050M D&amp;A − ~$1,050M maintenance capex − ~0 ≈ <strong>$12.9B (~$3.00/sh)</strong> cash owner earnings.</p>
+<p><strong>Free cash flow.</strong> Operating cash flow minus capital expenditure. KO <em>normalized</em>: ~$13.5B OCF (after removing the one-time $6.1B fairlife payment) − $2.1B capex ≈ <strong>~$11.4B</strong>; reported 2025 OCF was only $7.4B because of that one-time payment.</p>
+<p><strong>Maintenance vs. growth capex.</strong> Maintenance = spending to hold position/volume; growth = spending to expand. KO total capex $2,112M; maintenance ≈ depreciation ≈ <strong>$1,050M</strong>, the remainder growth. Asset-light because bottlers own the plant.</p>
+<p><strong>ROIC (return on invested capital).</strong> The core quality measure — return earned on all capital in the operating business. <em>NOPAT ÷ invested capital.</em> KO: ~$12,770M ÷ ~$45,700M operating capital ≈ <strong>28%.</strong></p>
+<p><strong>NOPAT (net operating profit after tax).</strong> After-tax operating profit, ignoring financing. <em>EBIT × (1 − tax rate).</em> KO: ~$16,060M × (1 − 0.205) ≈ <strong>$12,770M.</strong></p>
+<p><strong>Invested capital.</strong> The capital funding operations. <em>Equity + debt − cash</em> (here, less the separately-earning equity-method stakes). KO: ($32.2B + $2.1B + $45.5B − $13.9B) − $20.2B ≈ <strong>$45.7B.</strong></p>
+<p><strong>ROE (return on equity).</strong> Profit relative to book equity; flattered by leverage. <em>Net income ÷ equity.</em> KO: ~$12,940M ÷ $32,169M ≈ <strong>40%</strong> (an independent research service 40.3%, proj. 42.5%).</p>
+<p><strong>Interest coverage.</strong> How many times a normal year's earnings cover the interest bill. <em>EBIT ÷ interest expense.</em> KO: ~$16,060M ÷ $1,654M ≈ <strong>9.7×</strong> (an independent research service states 10.8×).</p>
+<p><strong>Net debt.</strong> Debt net of cash — the real leverage. <em>Total debt − cash &amp; short-term investments.</em> KO: $45.5B − $13.9B ≈ <strong>$31.6B.</strong></p>
+<p><strong>Net debt / owner earnings.</strong> Years of owner earnings to extinguish net debt. KO: $31.6B ÷ $12.9B ≈ <strong>2.4 years.</strong></p>
+<p><strong>Current ratio.</strong> Near-term liquidity. <em>Current assets ÷ current liabilities.</em> KO: $31,044M ÷ $21,281M ≈ <strong>1.46.</strong></p>
+<p><strong>Cost of capital / discount rate (r).</strong> The owner's opportunity cost, anchored to long rates plus a risk premium. KO: 30-yr Treasury 4.86% + ~3.6-pt premium, shaved for low beta → <strong>8.5%</strong> base (sensitized 8–9%).</p>
+<p><strong>Intrinsic value.</strong> The discounted value of all future owner earnings; a <em>range</em>, not a point. <em>IV = Σ OEₜ / (1+r)ᵗ.</em> KO: <strong>~$62–$78, base $70/sh.</strong></p>
+<p><strong>Two-stage DCF.</strong> Explicit-forecast value plus discounted terminal value. <em>IV = Σₜ₌₁ⁿ OEₜ/(1+r)ᵗ + [OEₙ₊₁/(r−g)]/(1+r)ⁿ.</em> KO: $12.9B, 6% for 10y then 3%, at 8.5% → <strong>~$306B ≈ $71/sh.</strong></p>
+<p><strong>No-growth (earning-power) value.</strong> What it's worth if growth stopped today — the floor. <em>OE ÷ r.</em> KO: $12,940M ÷ 0.085 ≈ $152B ≈ <strong>$35.40/sh</strong> — so half of the base value (and ~60% of today's price) is payment for growth.</p>
+<p><strong>Owner-earnings yield.</strong> Owner earnings as a percent of price, compared to the long bond. <em>OE per share ÷ price.</em> KO at live $84.14: $3.00 ÷ $84.14 ≈ <strong>3.6%</strong>, <em>below</em> the 4.86% 30-yr bond.</p>
+<p><strong>P/E ratio.</strong> Price per dollar of earnings. <em>Price ÷ EPS.</em> KO: live 26.5×; cycle median 23.0×; our justified multiple ~23×.</p>
+<p><strong>EV/EBIT.</strong> Enterprise value per dollar of operating profit (a leverage-neutral multiple). Noted for context; we favor owner-earnings-based measures over EBITDA-style ratios, which ignore the cost of maintaining the asset base.</p>
+<p><strong>Dividend yield.</strong> Annual dividend as a percent of price. <em>Dividend ÷ price.</em> KO: live <strong>2.54%</strong> ($2.14 ÷ $84.14); historical normal ~2.8–3.3%.</p>
+<p><strong>Dividend-discount model (DDM / Gordon).</strong> Values a stable payer as next year's dividend over (r − g). <em>P = D₁ ÷ (r − g).</em> KO: $2.14 ÷ (0.085 − 0.055) ≈ <strong>$71.</strong></p>
+<p><strong>Margin of safety.</strong> The discount of price to conservative value — the cushion against error. <em>(IV − Price) ÷ IV.</em> KO: ($70 − $84.14) ÷ $70 ≈ <strong>−20%</strong> — no safety; a premium.</p>
+<p><strong>Look-through earnings.</strong> An owner's true share of investee earnings, including the part retained (not just dividends). <em>Dividends received + retained share of investee earnings.</em> KO: $993M dividends + $1,038M retained ≈ <strong>$2,031M</strong> equity income; adds ~$1.0B to owner earnings.</p>
+<p><strong>Economic moat / franchise.</strong> A durable advantage protecting high returns; its signature is pricing power. KO: brand + global distribution scale; proven by flat volume yet +5% organic revenue on price/mix.</p>
+<p><strong>Economic goodwill.</strong> The worth of a franchise above its tangible capital — invisible on the balance sheet. KO: market cap ~$360B vs book equity $32B; and Monster stake alone carries a $10.1B <em>unrecorded</em> gain.</p>
+<p><strong>Circle of competence.</strong> The set of businesses you can forecast well enough to value; its boundary matters more than its size. KO sits near the center — 100/100 predictability.</p>
+<p><strong>One-dollar test.</strong> Retain a dollar only if it creates at least a dollar of value (incremental ROIC ≥ r). KO: passes overwhelmingly on core reinvestment (28% ROIC); <em>fails</em> on the BodyArmor acquisition.</p>
+<hr />
+<p><em>Prepared as a teaching seminar, July 4, 2026. Every valuation-driving figure was verified against the underlying 10-K financial statements and the XBRL history. This document is an educational case study in applying the method of "How to Value a Business," not personalized investment advice. Intrinsic value is an estimate and a range; reasonable analysts will differ. Do your own work — that is the entire lesson.</em></p>
+    </div>
+  </article>
+</main>
+<footer class="site-foot">
+  <p><strong>Educational only — not investment advice.</strong> These are my own study
+  notes and intrinsic-value estimates, published to learn in public. I am not a licensed
+  financial advisor. Do your own work; verify every figure against primary filings.</p>
+  <p class="muted">Built 2026-07-12 · figures from public SEC EDGAR filings and my own arithmetic.</p>
+</footer>
+</body>
+</html>

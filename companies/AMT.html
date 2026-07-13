@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>American Tower Corp. (AMT) — intrinsic value</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">§</span>
+    <span class="brand-text">A Value-Investing Learning Journey</span>
+  </a>
+  <nav class="site-nav"><a href="../index.html" class="active">Home</a><a href="../methodology.html" class="">Methodology</a><a href="../journal/index.html" class="">Journal</a></nav>
+</header>
+<main>
+
+  <article class="company-page">
+    <div class="crumbs"><a href="../index.html">← All businesses</a></div>
+    <header class="company-head">
+      <h1>American Tower Corp. <span class="tk">(AMT)</span></h1>
+      <p class="sub">R.E.I.T. · analysis dated 2026-07-04</p>
+    </header>
+    
+  <div class="iv-widget">
+    <div class="iv-cell"><span class="iv-lbl">IV low</span><span class="iv-val">$150</span></div>
+    <div class="iv-cell iv-base"><span class="iv-lbl">IV base</span><span class="iv-val">$185</span></div>
+    <div class="iv-cell"><span class="iv-lbl">IV high</span><span class="iv-val">$225</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Price</span><span class="iv-val">$168.59</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Margin of safety</span><span class="iv-val mos-slim">+9%</span></div>
+  </div>
+    <p class="method"><strong>Method:</strong> AFFO-based: P/AFFO (17x base on $10.81 AFFO/sh) + Gordon dividend-discount + AFFO-yield-vs-bond, cross-checked with no-growth floor and two-stage AFFO DCF; NAV secondary</p>
+    <div class="verdict"><span class="vlbl">Verdict</span><p>Hold / accumulate on weakness (low $150s or below); fair-to-modestly-cheap, thin margin of safety at current price</p></div>
+    <div class="seminar">
+    <h1 id="valuing-american-tower-corp-amt-a-value-investing-seminar">Valuing American Tower Corp. (AMT) — A Value-Investing Seminar</h1>
+<p><em>Co-taught by Benjamin Graham and Warren Buffett</em><br />
+<em>Method: "How to Value a Business — A Security-Analysis Manual"</em><br />
+<em>Date: 2026-07-04 · Live price: $166.03 · This is a teaching case, not investment advice.</em></p>
+<hr />
+<p>Welcome. Today we are going to do something the two of us disagree about just often enough to make it interesting: we are going to value a <strong>real-estate investment trust</strong> — American Tower Corp., a company that owns roughly 149,686 cell towers and 30 data centers around the world. Ben spent his life insisting you buy a dollar for fifty cents. I spent mine learning that a wonderful business at a fair price beats a fair business at a wonderful price. A tower REIT is a rare thing that tests both instincts at once: it has one of the finest real-asset moats we have ever studied, and it sits on a mountain of debt in a world of 5% interest rates. Hold both thoughts.</p>
+<p>Before we touch a single number, one warning that governs everything that follows. <strong>If you value this company the way you value Coca-Cola — on earnings and the price-to-earnings ratio — you will get the wrong answer by a mile.</strong> The stock trades near 27 times reported earnings, which sounds expensive. It is not the right lens. We will spend a good part of today explaining why, and what the right lens is. That single lesson — <em>value a REIT on AFFO, not EPS</em> — is the one I want you to carry out the door.</p>
+<hr />
+<h2 id="1-sources">1. SOURCES</h2>
+<p>Everything below is worked from primary documents. No number appears without a source.</p>
+<ul>
+<li><strong>The method</strong> — <em>How to Value a Business: A Security-Analysis Manual</em> (revised 2026-07-04): the pipeline we follow — competence → moat → returns vs. cost of capital → owner earnings → capital allocation → valuation → margin of safety.</li>
+<li><strong>Company 10-K</strong> — filed 2026-02-24, for fiscal year ended 2025-12-31. Item 1 (Business), Item 7 (MD&amp;A, including the Adjusted EBITDA / Nareit FFO / AFFO reconciliations and the debt-maturity table), Item 8 (financial statements).</li>
+<li><strong>Company 10-Q</strong> — filed 2026-04-28, for the quarter ended 2026-03-31.</li>
+<li><strong>XBRL history</strong> — <code>AMT_xbrl_facts.json</code> (multi-year revenue, net income, operating cash flow, debt, equity, shares).</li>
+<li><strong>an independent research service — American Tower</strong> — report dated 2026-06-26 (report price $185.76; FFO and AFFO per-share history and projections; Financial Strength B++).</li>
+<li><strong>an independent research service — REIT Industry</strong> — dated 2026-06-26 (industry timeliness 87 of 94; rate-sensitivity and the data-center/AI theme).</li>
+<li><strong>an independent research service — Selection &amp; Opinion</strong>, July 10 2026 (macro anchor: 30-year Treasury ≈ 4.9–5.0%; Fed funds 3.6%; core PCE 3.4%).</li>
+<li><strong>Live/market context (2026-07-04):</strong> price $166.03; trailing GAAP P/E 28.6; dividend yield 4.36%; beta 0.85.</li>
+</ul>
+<p><strong>PRINCIPLE.</strong> <em>An estimate of value is only as honest as its sources. We read the filings, not the headline multiples, because the filings are where a REIT tells you the number that actually matters — and it is not net income.</em></p>
+<hr />
+<h2 id="2-opening-the-case-the-business">2. OPENING THE CASE — THE BUSINESS</h2>
+<p><strong>What American Tower actually does.</strong> Strip away the acronyms and this is a landlord. American Tower owns the vertical steel — the tower — and rents space on it to wireless carriers who bolt their antennas and radios onto it. As of 2025-12-31 the portfolio was 149,686 communications sites: 42,224 in the U.S. &amp; Canada, 47,081 in Latin America, 32,524 in Europe, 27,857 in Africa &amp; Asia-Pacific — plus 30 U.S. data-center facilities (the CoreSite business, acquired late 2021). Property operations were <strong>97% of 2025 revenue</strong> (10-K, Item 1); the tower-leasing piece alone is about 82% of property revenue.</p>
+<p><strong>The economic engine — and why it is beautiful.</strong> Read this sentence from the 10-K slowly, because it is the whole moat in one line:</p>
+<blockquote>
+<p>"our tenant leases … have initial non-cancellable terms of five to ten years with multiple renewal terms, with provisions that periodically increase the rent … typically annually, based on a fixed escalation percentage (averaging approximately 3% in the United States)…"</p>
+</blockquote>
+<p>Three features do all the work:</p>
+<ol>
+<li><strong>Escalators.</strong> Rent rises ~3% a year in the U.S. (an inflation index abroad) <em>automatically</em>, written into the contract. That is a built-in raise the landlord does not have to negotiate.</li>
+<li><strong>Co-location.</strong> A tower built for one carrier can hold two or three. The steel, the land lease, the maintenance — those costs are already paid by tenant #1. Tenant #2's rent is almost pure profit; the incremental margin on the second and third tenant approaches 100%. This is the single most important economic fact about towers.</li>
+<li><strong>Switching costs and irreplaceability.</strong> A carrier will not move its equipment off a tower — repositioning degrades network quality and is expensive — so leases renew. AMT's reported <strong>churn was ~2%</strong> of tenant billings in 2025 (10-K). And you cannot easily build a new competing tower next door: zoning, permitting, and community opposition make sites scarce. The result is a <strong>$54 billion backlog of non-cancellable tenant lease revenue</strong> already contracted (10-K, Item 1).</li>
+</ol>
+<p><strong>The CoreSite / data-center pivot.</strong> AMT is redirecting capital toward interconnection data centers — 30 U.S. facilities — betting that AI and cloud workloads make dense, network-rich real estate the next tower-like asset. An independent research service calls data centers "a primary growth driver … in the years ahead." Note it, but weigh it: it is still a small slice of a $10.6B revenue base, and it is a more competitive, more capital-hungry business than towers.</p>
+<p><strong>The international story.</strong> AMT has been <em>pruning</em>. It sold its India, Australia, and New Zealand businesses in 2024; Mexico fiber and Poland in 2023; South Africa fiber in 2025 (10-K, Item 1). Management is explicit: it is shifting capital "into developed markets, including the U.S. &amp; Canada, Europe and the data centers markets." This is rational — emerging-market towers carried currency risk and one giant, troubled Indian tenant base — but it means the growth runway is narrower and more mature than the past decade's.</p>
+<p><strong>THE ONE QUESTION.</strong> For every business we ask a single question whose answer we must be able to defend. For AMT it is:</p>
+<blockquote>
+<p><em>Will carriers keep paying escalating rent on irreplaceable towers for decades — and can American Tower carry ~$37 billion of debt through a 5% interest-rate world without ever being forced to sell an asset or cut the dividend at the bottom?</em></p>
+</blockquote>
+<p>The first half is about the moat (easy to answer yes). The second half is about the balance sheet (the whole risk). Both must be yes.</p>
+<p><strong>CIRCLE OF COMPETENCE GATE.</strong> Can we forecast this business? The revenue is contractual, escalating, and diversified across tens of thousands of tenants and four continents; churn is 2%. That is about as forecastable a top line as exists in the public market — <em>far</em> inside the circle. The one part that strains the circle is the refinancing math: a REIT's fate depends on capital-market access we cannot control or fully predict. We keep it inside the circle, but we mark that dependency in red and demand a wider margin of safety for it. <strong>Gate: PASS.</strong></p>
+<p><strong>PRINCIPLE.</strong> <em>A moat you can see in the contract — non-cancellable leases with automatic escalators and near-100% incremental margins on co-location — is the kind of durable, forecastable economics a valuation can actually rest on. The circle of competence is not "do I like the story"; it is "can I forecast the cash." Here, largely, we can.</em></p>
+<hr />
+<h2 id="3-reading-the-statements-together">3. READING THE STATEMENTS TOGETHER</h2>
+<p>Now the crucial lesson. Let us look at what the three statements say, and then at why the first one lies to you if you're not careful.</p>
+<p><strong>What the income statement reports (FY2025, from the 10-K):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>FY2025 ($M)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total revenue</td>
+<td>10,644.6</td>
+</tr>
+<tr>
+<td>Operating income</td>
+<td>4,845.8</td>
+</tr>
+<tr>
+<td>Depreciation, amortization &amp; accretion</td>
+<td>2,041.6</td>
+</tr>
+<tr>
+<td>Interest expense</td>
+<td>1,359.4</td>
+</tr>
+<tr>
+<td>Net income</td>
+<td>2,628.5</td>
+</tr>
+<tr>
+<td>Diluted EPS (GAAP)</td>
+<td>~5.40</td>
+</tr>
+</tbody>
+</table>
+<p>At $166.03 on $5.40 of GAAP EPS, the stock trades near <strong>27–29× earnings</strong>. An independent research service's <em>median</em> historical P/E is shown as "NMF" — not meaningful — and it reports the stock on a <strong>P/FFO</strong> basis instead. That is your first clue that the market itself refuses to value this company on GAAP earnings.</p>
+<p><strong>WHY GAAP NET INCOME MISLEADS — THE HEART OF THE MATTER.</strong> Look at that depreciation line: <strong>$2,041.6 million</strong>, nearly as large as net income itself. GAAP forces American Tower to depreciate its towers on a schedule as if they were wasting assets — as if a steel tower on a leased, irreplaceable site is worth less each year, like a delivery truck. But a well-located tower does the <em>opposite</em>: it appreciates, because you keep adding tenants at ~100% incremental margin and raising rent 3% a year. The depreciation charge is <strong>non-cash</strong> and, economically, largely <strong>fictional</strong>. It crushes reported earnings while the real cash the business throws off keeps climbing. That is why GAAP EPS is the wrong denominator, and why a "27× P/E" is comparing a real price to a made-up number.</p>
+<p><strong>THE BRIDGE: NET INCOME → FFO → AFFO.</strong> The REIT industry solved this decades ago. We add the fictional real-estate depreciation back to get <strong>FFO</strong> (Funds From Operations), then subtract the real cash costs of keeping the assets running to get <strong>AFFO</strong> (Adjusted Funds From Operations). Here is American Tower's own reconciliation from the 10-K, which I want you to see in full because <em>this</em> is the earnings statement that matters:</p>
+<table>
+<thead>
+<tr>
+<th>Bridge (FY2025, $M)</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Net income</td>
+<td>2,628.5</td>
+</tr>
+<tr>
+<td>+ Real-estate depreciation, amortization &amp; accretion</td>
+<td>1,899.6</td>
+</tr>
+<tr>
+<td>+ Losses on disposal / RE impairment</td>
+<td>83.5</td>
+</tr>
+<tr>
+<td>− Adjustments for unconsolidated affiliates &amp; noncontrolling interests</td>
+<td>(450.7)</td>
+</tr>
+<tr>
+<td><strong>= Nareit FFO (common stockholders)</strong></td>
+<td><strong>4,160.9</strong></td>
+</tr>
+<tr>
+<td>− Straight-line revenue (net of expense)</td>
+<td>(64.8)</td>
+</tr>
+<tr>
+<td>+ Stock-based compensation</td>
+<td>174.2</td>
+</tr>
+<tr>
+<td>+ Deferred tax &amp; other tax adjustments</td>
+<td>150.0</td>
+</tr>
+<tr>
+<td>+ Non-real-estate D&amp;A</td>
+<td>142.0</td>
+</tr>
+<tr>
+<td>+ Amortization of financing costs</td>
+<td>54.1</td>
+</tr>
+<tr>
+<td>+ Other (expense)/income</td>
+<td>576.2</td>
+</tr>
+<tr>
+<td>− <strong>Maintenance capex</strong> (capital improvement $185.2 + corporate $10.4)</td>
+<td><strong>(195.6)</strong></td>
+</tr>
+<tr>
+<td>+ Other NCI / affiliate adjustments</td>
+<td>44.6</td>
+</tr>
+<tr>
+<td><strong>= AFFO (common stockholders)</strong></td>
+<td><strong>5,041.6</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Notice the two facts that make a tower REIT extraordinary. First, <strong>AFFO ($5,041.6M) is nearly double GAAP net income ($2,628.5M)</strong> — the depreciation add-back is that large. Second, <strong>maintenance capex is only $195.6M</strong> — under 2% of revenue. A tower, once built, barely needs money to keep standing. Compare that to an airline or a steel mill, where maintenance capex devours the cash flow. This is a <strong>capital-light</strong> franchise wearing a <strong>capital-intensive</strong> costume.</p>
+<p><strong>Per share:</strong> AFFO of $5,041.6M on ~466.3M shares = <strong>$10.81 of AFFO per share</strong> (this matches an independent research service's per-share FFO line of $10.81 for 2025). <em>That</em> is the number we value — not the $5.40 EPS.</p>
+<p><strong>Ratios as arithmetic:</strong><br />
+- <strong>P/AFFO at $166.03</strong> = 166.03 ÷ 10.81 = <strong>15.4×</strong>. Suddenly the "expensive" stock looks reasonable — its own history runs 18–28× (an independent research service P/FFO), and it printed 18.8× in 2025.<br />
+- <strong>AFFO yield</strong> = 10.81 ÷ 166.03 = <strong>6.51%</strong>. Hold that against the ~5% long bond — we will return to it.<br />
+- <strong>AFFO payout ratio</strong> = dividend $6.72 ÷ AFFO $10.81 = <strong>62%</strong>. Comfortable coverage (an independent research service puts 2026's payout at 65% of its AFFO target). The dividend is not being paid out of thin air.</p>
+<p><strong>ARTICULATION CHECK.</strong> Do the statements tie together? Operating cash flow was <strong>$5,464M</strong> in 2025 (XBRL). AFFO of $5,041.6M sits just below OCF — sensible, since AFFO subtracts maintenance capex and some cash items OCF doesn't. Net income $2,628.5M is far below OCF because of the $2.0B non-cash depreciation. The three statements corroborate each other: the cash is real; the depreciation is the accounting fiction.</p>
+<p><strong>EARNINGS-QUALITY SCAN.</strong> The manual warns us: is EBITDA being passed off as free cash flow? Here AMT reports Adjusted EBITDA ($7,130M) <em>and</em> AFFO — and AFFO honestly subtracts maintenance capex, exactly as our owner-earnings definition demands. That is the <em>right</em> way to use these non-GAAP measures. One yellow flag to watch: "Other expense/income" of $576.2M was added back to reach AFFO; some of that is FX and mark-to-market noise, which is fair, but we keep an eye on how often "other" items recur. Straight-line revenue is properly <em>removed</em> — good discipline. Overall earnings quality is <strong>high and transparent</strong>.</p>
+<p><strong>PRINCIPLE.</strong> <em>For a REIT, GAAP depreciation is an accounting fiction imposed on an appreciating asset. Add it back to get FFO; subtract real maintenance capex to get AFFO; and value the business on AFFO, which is simply owner earnings by another name. A "27× P/E" that becomes a "15× P/AFFO" is not financial engineering — it is finally measuring the right thing.</em></p>
+<hr />
+<h2 id="4-earnings-power-the-moat">4. EARNINGS POWER &amp; THE MOAT</h2>
+<p><strong>The trend (XBRL + an independent research service).</strong> Revenue per an independent research service: $5,785.7M (2016) → $9,356.9M (2021) → $10,644.6M (2025) — a steady climb, briefly dented by the India/asset sales (2024 revenue dipped to $10,127M as divested businesses left the books, then recovered). Operating cash flow marched almost straight up: $2,701.7M (2016) → $4,819.9M (2021) → <strong>$5,464.0M (2025)</strong> (XBRL). AFFO per share (an independent research service "FFO/sh"): $5.56 (2016) → $9.43 (2021) → <strong>$10.81 (2025)</strong>, projected to $11.00 (2026e) and $11.40 (2027e). This is a business whose owner earnings compound like clockwork — the escalators and co-location doing exactly what the contracts promise.</p>
+<p><strong>Owner earnings = AFFO.</strong> The manual defines owner earnings as reported earnings + non-cash charges − maintenance capex − Δworking capital. For a tower REIT, that computation <em>is</em> AFFO: we added back $2.0B of non-cash real-estate depreciation and subtracted only $195.6M of maintenance capex. <strong>Normalized owner earnings ≈ $5.0 billion, or $10.81 per share.</strong> The stream is unusually stable, so I do not normalize heavily — but I note 2024–25 carried some noise from asset sales, and I lean on the clean ~$10.81 AFFO/share as sustainable earning power.</p>
+<p><strong>The moat, argued not assumed.</strong> The manual's test for a moat is pricing power. AMT has it in a peculiarly durable form:<br />
+- <strong>Escalators = contractual pricing power.</strong> 3% annual raises, pre-agreed. No negotiation, no volume loss.<br />
+- <strong>Co-location = operating leverage no competitor can match.</strong> The economics of the second tenant (near-100% margin) mean AMT's returns <em>rise</em> as towers fill, and a new entrant starting from one tenant per tower simply cannot compete on cost.<br />
+- <strong>Switching costs + irreplaceable sites = a wall around the castle.</strong> 2% churn; carriers physically cannot leave cheaply; new sites are choked by zoning.</p>
+<p>This is, genuinely, one of the best real-asset moats in the market. It qualifies as an "economic franchise" on all three of the manual's tests: the service is needed (wireless demand grows with data consumption), has no close substitute (you can't beam a network without antennas somewhere high), and is not price-regulated.</p>
+<p><strong>The moat's limits — argue the erosion too.</strong> (a) <strong>Tenant concentration:</strong> AT&amp;T, Verizon, and T-Mobile together are ~49% of revenue (an independent research service). U.S. carrier <em>consolidation</em> — the Sprint/T-Mobile merger — permanently removed a tenant and drove a wave of churn as overlapping leases were cancelled; that is most of AMT's 2% churn today. (b) <strong>U.S. saturation:</strong> North American tower count is essentially flat (26,918 towers, "market saturation," an independent research service Q1 2026) — domestic growth now comes from adding tenants and escalators, not new towers. (c) <strong>The data-center bet is unproven and more competitive</strong> — Digital Realty and Equinix are formidable, and data centers are more capital-hungry than towers.</p>
+<p><strong>Returns on capital vs. cost of capital.</strong> Here we must be careful, because a REIT's balance sheet distorts the usual ratios.<br />
+- <strong>an independent research service reports Return on Shareholders' Equity of 81.5%</strong> for 2025. Do <strong>not</strong> take that at face value. It is flattered to the point of meaninglessness by two things: (1) the equity base is tiny (book value ~$3.65B against $63B of assets) <em>because</em> GAAP depreciation has written the asset base down, and (2) the enormous debt load. An 81% ROE on a sliver of depreciated book equity tells you almost nothing about business quality.<br />
+- The more honest read: AMT earns roughly <strong>$7.1B of Adjusted EBITDA on ~$63B of assets</strong> and generates ~$5B of AFFO. Return on the <em>total</em> capital employed (an independent research service's "Return on Total Cap'l") is a more sober <strong>~8.4%</strong> for 2025. That is <em>above</em> but not dramatically above our ~8.5% cost of capital — which is the honest verdict: a wonderful <em>business</em> whose <em>returns on invested capital</em>, after you account for the price paid for CoreSite and the debt funding it all, are good but not the 25%-ROIC fireworks of a See's Candy. The moat is wide; the returns on the capital deployed are solid, not spectacular, and heavily levered.</p>
+<p><strong>PRINCIPLE.</strong> <em>A contractual moat — escalators, co-location, switching costs — makes owner earnings unusually forecastable, which is precisely the input a valuation lives on. But do not let a REIT's 81% "ROE" fool you: leverage and depreciated book equity manufacture that number. Judge the economics on returns on total capital (~8%) against the cost of capital (~8.5%) — good, durable, but not spectacular, and earned with a great deal of borrowed money.</em></p>
+<hr />
+<h2 id="5-financial-strength-solvency">5. FINANCIAL STRENGTH &amp; SOLVENCY</h2>
+<p>This is the chapter that decides whether the wonderful business survives to keep being wonderful. For a leveraged REIT, it is <em>the</em> chapter.</p>
+<p><strong>The leverage, in the company's own numbers (from the 10-K and an independent research service, as of 3/31/26):</strong><br />
+- Total debt ≈ <strong>$37,322M</strong>; long-term debt ≈ $31,203M; cash ≈ $1,608.8M.<br />
+- <strong>Net debt ≈ $35,713M.</strong><br />
+- <strong>Adjusted EBITDA (FY2025) = $7,130M.</strong></p>
+<p><strong>Net debt / EBITDA = 35,713 ÷ 7,130 = 5.0×.</strong> The REIT world targets the "5× area," and AMT sits right on it. This is high — a mediocre business at 5× leverage would frighten us — but it is carried against the <em>most contractual, escalating, diversified</em> cash stream in the equity market, which is exactly the case the manual makes for judging leverage "by the company's own stability." A utility-like stream can carry debt that would sink a cyclical. Still: 5× is the ceiling of prudent, not the middle.</p>
+<p><em>(an independent research service's headline "Debt/OCF 7.1×" uses total debt over operating cash flow; net-debt/EBITDA at 5.0× is the cleaner solvency gauge and the one the credit-rating agencies use — but both say the same thing: this is a heavily levered balance sheet.)</em></p>
+<p><strong>Interest coverage.</strong><br />
+- On operating income: EBIT $4,845.8M ÷ interest $1,359.4M = <strong>3.6×</strong>.<br />
+- On Adjusted EBITDA: 7,130 ÷ 1,359.4 = <strong>5.2×</strong>.</p>
+<p>Coverage of 3.6× on EBIT is <em>adequate</em> — a normal year covers the interest bill several times — but it is not a fortress. A 300-basis-point jump in the <em>average</em> cost of debt (not just new debt) would take a real bite. That is the whole rate story.</p>
+<p><strong>THE MATURITY WALL — against a ~5% refinancing world.</strong> This is where I want every student leaning forward. Here is the actual debt-maturity schedule from the 10-K ($M):</p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Debt maturing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026</td>
+<td>3,387.8</td>
+</tr>
+<tr>
+<td>2027</td>
+<td>4,726.7</td>
+</tr>
+<tr>
+<td>2028</td>
+<td><strong>7,513.2</strong></td>
+</tr>
+<tr>
+<td>2029</td>
+<td>3,782.0</td>
+</tr>
+<tr>
+<td>2030</td>
+<td>4,925.3</td>
+</tr>
+<tr>
+<td>Thereafter</td>
+<td>13,099.9</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>37,434.9</strong></td>
+</tr>
+</tbody>
+</table>
+<p>American Tower must <strong>refinance roughly $4–7.5 billion every single year</strong> for the rest of the decade — and it is doing so into a market where the 30-year Treasury is ~5% and its own new notes price at 4.9%–5.35% (the 10-K shows 2025 issuance at exactly those coupons). Much of the maturing debt was struck in the zero-rate era at coupons like 1.3%, 1.375%, 2.4%, 2.95%. <strong>Every rollover swaps a ~2% coupon for a ~5% coupon.</strong> That is a slow, grinding headwind on AFFO that will play out over years, not a one-time shock. The good news: management has been extending maturities and its credit facilities now run to 2028–2030, so there is no single cliff. The risk: a REIT "depends on the continued kindness of lenders," in the manual's phrase, and if credit markets seize at the wrong moment, a company rolling $5B a year does not control its own fate. <strong>This is where the permanent-loss-of-capital risk sits</strong> — not in the towers, but in the refinancing calendar.</p>
+<p><strong>Liquidity.</strong> Cash ~$1.6B plus undrawn revolving credit facilities (multicurrency + 2021 credit facility, extended to 2028/2030) cover the near-term maturities. The current ratio is weak (current liabilities exceed current assets — normal for a REIT that funds long assets with rolling debt), which is <em>by design</em> but reinforces the dependence on market access.</p>
+<p><strong>Hidden obligations.</strong> Do not miss these. AMT leases the <em>land</em> under many towers, and the 10-K discloses <strong>$11,976.6M of operating-lease (ground-lease) obligations</strong> — a real, off-the-headline-balance-sheet claim on future cash. Add that to the $37.4B of debt and the total contractual burden is closer to <strong>$49B</strong>. There is no defined-benefit pension (a plus). Also note the Stonepeak mandatorily-convertible preferred equity — a form of leverage that sits above common.</p>
+<p><strong>ONE-LINE VERDICT: Adequate but leveraged.</strong> an independent research service rates Financial Strength <strong>B++</strong> — investment-grade-ish, not a fortress. AMT will very likely survive; it is not going bust. But it carries no spare tire, and its earnings are exposed to the refinancing wall. <strong>We carry a wider margin-of-safety demand forward</strong> because of exactly this.</p>
+<p><strong>PRINCIPLE.</strong> <em>A great business financed at 5× net-debt/EBITDA with a $5-billion-a-year refinancing wall in a 5% world is not fragile, but it is not free either. Leverage buys a little extra return in good times and threatens permanent loss in bad ones. When financial strength is merely "adequate," you do not pass — you widen the margin of safety and let the price pay you for the risk.</em></p>
+<hr />
+<h2 id="6-management-as-partners">6. MANAGEMENT AS PARTNERS</h2>
+<p>The manual gives six uses of a dollar of free cash. Grade management across all six.</p>
+<ol>
+<li><strong>Reinvest in the existing business.</strong> AMT spends ~$3.60/share of capital (an independent research service) building and upgrading towers and, increasingly, data centers. Where it funds high-tenancy towers, incremental ROIC is excellent (co-location). The data-center pivot is the open question — those returns are unproven.</li>
+<li><strong>Acquire.</strong> The record is mixed. The 2021 <strong>CoreSite acquisition (~$10B+)</strong> is the big bet — bought at a full price at the top of the data-center cycle; the jury is out on whether it clears the cost of capital. Historically, tower M&amp;A (Telxius, Viom) built the franchise.</li>
+<li><strong>Pay down debt.</strong> Management has been <em>repaying</em> maturing notes and extending the ladder rather than levering up further — net leverage has drifted from ~6.5×+ toward ~5×. That is the right direction.</li>
+<li><strong>Pay dividends.</strong> This is AMT's signature. It is a <strong>serial dividend raiser</strong>: dividends/share went from $2.17 (2016) to <strong>$6.72 (2025)</strong>, a ~23.5% annualized 10-year growth rate (an independent research service) — and the 2026 payout is set higher again ($1.79/quarter). Crucially, test it on <strong>AFFO, not EPS</strong>: payout is <strong>62% of 2025 AFFO</strong> (65% of the 2026e AFFO target). On GAAP EPS of $5.40 the $6.72 dividend looks <em>unsustainable</em> (&gt;100% payout!) — which is exactly the trap of using the wrong metric. On AFFO it is well-covered. This is the FFO/AFFO lesson made concrete: the wrong lens would tell you the dividend is being paid out of borrowed money; the right lens shows a comfortable 62% payout.</li>
+<li><strong>Repurchase shares.</strong> Minimal and opportunistic — $364.6M in 2025, essentially nil in 2021–2024 (XBRL). REITs must distribute 90% of taxable income, so buybacks are naturally a small tool here.</li>
+<li><strong>Issue shares — watch dilution.</strong> This is the REIT-specific caution. Because REITs pay out most of their cash, they fund growth by <em>issuing equity and debt</em>. Share count crept from 427M (2016) to 466M (2025) — modest (~0.9%/year) dilution, and it funded real asset growth, so per-share AFFO still rose strongly. Acceptable, but the manual is right to make us watch it: intrinsic value is per-share, and a REIT that over-issues gives away the owners' claim.</li>
+</ol>
+<p><strong>The one-dollar test on the two big bets.</strong> On <em>towers</em>, retained/reinvested dollars clearly create more than a dollar of value — the co-location economics guarantee it. On <em>CoreSite/data centers</em>, the verdict is genuinely uncertain: bought at a rich multiple, funded partly with debt now refinancing at 5%, competing with Equinix and Digital Realty. Management is candid that the international pruning (India, Australia, South Africa fiber) was a rational reallocation <em>away</em> from sub-hurdle assets toward developed markets — that is exactly the discipline the one-dollar test demands, and I credit them for it.</p>
+<p><strong>Candor.</strong> The 10-K disclosure is thorough and legible: it reconciles every non-GAAP number to GAAP, breaks out discontinued operations honestly, and states the risk factors plainly. No EBITDA-as-cash-flow sleight of hand. This is a management that reports its arithmetic.</p>
+<p><strong>PRINCIPLE.</strong> <em>Judge a REIT's management on the AFFO payout ratio, not the EPS payout — a 62% AFFO payout is prudent where a "&gt;100% EPS payout" would look reckless, and only the right metric reveals which is true. And watch the share count: a REIT grows by issuing paper, so per-share discipline is the test of whether growth is enriching owners or diluting them. AMT largely passes.</em></p>
+<hr />
+<h2 id="7-what-is-it-worth-intrinsic-value">7. WHAT IS IT WORTH? — INTRINSIC VALUE</h2>
+<p>Now the arithmetic. Our owner earnings are <strong>AFFO = $10.81 per share</strong> (FY2025; ~$11.00 forward for 2026e). The manual's master equation says value is the discounted stream of that owner earnings. We will estimate it three ways, cross-check three ways, and triangulate a range.</p>
+<p><strong>The discount rate is gravity — and for a REIT the gravity is heavy.</strong> Start from the ~5% long bond (30-year Treasury ≈ 4.9–5.0%, per an independent research service S&amp;O). Add a premium for a leveraged, but highly contractual, cash flow. For AMT I set a <strong>base r = 8.5%</strong>, and I <em>stress it hard</em> from 7.5% to 9.5%, because for a bond-proxy REIT carrying $37B of debt, the discount rate is not one input among many — it is <em>the</em> swing factor. Rising rates hurt AMT twice: they lift r (crushing the present value of its cash) <em>and</em> they raise its refinancing cost (shrinking the cash itself). That double-hit is why we lean conservative.</p>
+<h3 id="method-a-paffo-derived-and-reconciled">Method (a) — P/AFFO, derived and reconciled</h3>
+<p>We anchor the multiple three ways:<br />
+- <strong>History:</strong> AMT's own P/FFO ran 18–28× over the last decade, 18.8× in 2025 (an independent research service). But those were mostly <em>zero-rate</em> years. In a 5% world the multiple <em>deserves to compress</em>.<br />
+- <strong>Peers:</strong> Tower REITs SBAC and CCI trade in a broadly similar 15–20× AFFO band today, also compressed by rates.<br />
+- <strong>Quality-justified:</strong> A wide moat with 3% built-in growth and 62% payout deserves a premium to the average REIT, but the leverage and the refinancing wall argue <em>against</em> stretching it.</p>
+<p>I therefore assign a <strong>base multiple of 17× AFFO</strong> — below AMT's history (rate regime), above a no-moat REIT (quality). On $10.81: <strong>17 × 10.81 = $183.8</strong>. Range: 16× = $173 (low), 18–19× = $195–205 (high). On forward 2026e AFFO of $11.00, 17× = $187.</p>
+<h3 id="method-b-dividend-discount-gordon-cross-check">Method (b) — Dividend-discount (Gordon) cross-check</h3>
+<p>AMT is a dividend machine, so the Gordon model is apt: <strong>Value = D₁ / (r − g)</strong>, with D₀ = $6.72.</p>
+<table>
+<thead>
+<tr>
+<th>r ↓ / g →</th>
+<th>3%</th>
+<th>4%</th>
+<th>5%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8.0%</td>
+<td>$138</td>
+<td>$175</td>
+<td>$235</td>
+</tr>
+<tr>
+<td>8.5%</td>
+<td>$126</td>
+<td>$155</td>
+<td>$202</td>
+</tr>
+<tr>
+<td>9.0%</td>
+<td>$115</td>
+<td>$140</td>
+<td>$176</td>
+</tr>
+</tbody>
+</table>
+<p>At our base r = 8.5% and a defensible <strong>g = 4%</strong> (below the ~5% dividend-growth an independent research service projects, itself far below the historical 23% — dividend growth is normalizing as the business matures), the DDM says <strong>≈ $155</strong>. This is the <em>conservative</em> estimator — it values only the cash actually distributed, ignoring the ~38% of AFFO retained and reinvested — so I treat ~$155 as the <em>low-to-base</em> anchor.</p>
+<h3 id="method-c-affo-yield-vs-the-long-bond">Method (c) — AFFO yield vs. the long bond</h3>
+<p>At $166.03, AMT yields <strong>6.51% on AFFO</strong>, and that coupon grows ~3–4% a year via escalators. Against a <em>static</em> ~5% long-bond coupon, a growing 6.5% claim is clearly the superior instrument — the yield gap says the stock is <em>not</em> expensive relative to bonds. Flip it: for AMT's AFFO yield to merely <em>match</em> the 5% bond, the price would be $10.81 ÷ 0.05 = <strong>$216</strong>. So on a pure yield-vs-bond basis, fair value sits well above today's price — the growth is a free extra.</p>
+<h3 id="two-stage-affo-dcf-the-generous-estimator">Two-stage AFFO DCF (the generous estimator)</h3>
+<p>Growing AFFO 5% for 5 years, 4% for the next 5, terminal g, discounted:</p>
+<table>
+<thead>
+<tr>
+<th>r ↓ / terminal g →</th>
+<th>2.5%</th>
+<th>3.0%</th>
+<th>3.5%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7.5%</td>
+<td>$261</td>
+<td>$280</td>
+<td>$305</td>
+</tr>
+<tr>
+<td>8.5%</td>
+<td>$216</td>
+<td>$229</td>
+<td>$243</td>
+</tr>
+<tr>
+<td>9.5%</td>
+<td>$185</td>
+<td>$193</td>
+<td>$202</td>
+</tr>
+</tbody>
+</table>
+<p>At base r = 8.5%, g = 3%: <strong>≈ $229</strong>. This is the <em>high</em> estimator — it assumes the moat fully delivers a decade of ~4–5% AFFO growth, which the escalators support but the mature U.S. market and refinancing drag argue against taking at face value. I use it as the top of the range, discounted for optimism.</p>
+<h3 id="three-universal-cross-checks-arithmetic">THREE UNIVERSAL CROSS-CHECKS (arithmetic)</h3>
+<ol>
+<li><strong>No-growth floor = AFFO ÷ r.</strong> At r = 8.5%: $10.81 ÷ 0.085 = <strong>$127.20</strong>. This is what AMT is worth if it <em>never grows another dollar</em> — pure escalators offset by nothing. At today's $166.03, roughly <strong>$39 (≈23%) of the price is a payment for growth</strong>; the other ~77% is covered by the standing, no-growth cash. That is a <em>low</em> reliance on growth — a comforting result. (Floor range: r=7.5% → $144; r=9.5% → $114.)</li>
+<li><strong>Implied P/AFFO.</strong> Our base IV of ~$185 ÷ $10.81 = <strong>17.1×</strong> — internally consistent with the multiple we derived, and defensible for this moat in this rate regime. No runaway terminal value hiding in the machine.</li>
+<li><strong>AFFO yield vs. bond.</strong> Covered above: 6.51% growing vs. 5% static — the stock offers a positive real spread over the long bond, the opposite of an overvaluation signal.</li>
+</ol>
+<h3 id="triangulation-the-range">TRIANGULATION → the range</h3>
+<table>
+<thead>
+<tr>
+<th>Estimator</th>
+<th>What it captures</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No-growth floor (r=8.5%)</td>
+<td>Zero-growth downside</td>
+<td>$127</td>
+</tr>
+<tr>
+<td>DDM, r=8.5%, g=4%</td>
+<td>Only distributed cash</td>
+<td>$155</td>
+</tr>
+<tr>
+<td><strong>P/AFFO 17×</strong></td>
+<td>History + peers + quality</td>
+<td><strong>$184</strong></td>
+</tr>
+<tr>
+<td>Two-stage DCF, r=8.5%, g=3%</td>
+<td>Full moat delivery</td>
+<td>$229</td>
+</tr>
+<tr>
+<td>Yield-parity vs. bond</td>
+<td>Bond-equivalent value</td>
+<td>$216</td>
+</tr>
+</tbody>
+</table>
+<p>The estimators arrive by different roads and cluster sensibly. I set:<br />
+- <strong>Low (conservative): $150</strong> — anchored on the DDM and a compressed 16× multiple; leans on distributed cash and a higher-rate world.<br />
+- <strong>Base: $185</strong> — the 17× P/AFFO center, corroborated by the yield check and consistent with an independent research service's $185.76 report price.<br />
+- <strong>High: $225</strong> — the DCF/yield-parity zone, if rates ease and the data-center bet pays.</p>
+<p><strong>Sensitivity — rate is the dominant swing (fair-value zone implied by the DCF/multiple methods at each rate regime):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Discount-rate regime</th>
+<th>Fair-value zone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r = 7.5% (rates fall)</td>
+<td>$215–260</td>
+</tr>
+<tr>
+<td>r = 8.5% (base, ~5% long bond)</td>
+<td>$155–195</td>
+</tr>
+<tr>
+<td>r = 9.5% (rates rise further)</td>
+<td>$115–150</td>
+</tr>
+</tbody>
+</table>
+<p>Read that table as the whole thesis: <strong>AMT is a leveraged bet on the direction of long rates wrapped around a magnificent tower moat.</strong> If the 30-year drifts back toward 4%, this is a $220+ stock; if it pushes toward 6%, fair value falls toward the $120s. That rate-sensitivity is exactly why beta (0.85) <em>understates</em> the real risk here.</p>
+<p><strong>Sanity vs. An independent research service.</strong> VL's 18-month target midpoint is ~$200 and its 2029–31 target range is $230–345. Our base $185 is deliberately <em>below</em> VL's — we apply a heavier rate discount and a more conservative growth path. That is the margin-of-safety mindset, not a disagreement about the business.</p>
+<p><strong>PRINCIPLE.</strong> <em>Value a REIT on AFFO through three lenses — a multiple, a dividend-discount, and a yield-vs-bond check — and let the discount rate do the heavy lifting, because for a leveraged bond-proxy the discount rate is not one variable but the master variable. Produce a range, not a point: here, roughly $150–225, centered near $185, swinging violently with long rates.</em></p>
+<hr />
+<h2 id="8-margin-of-safety-mr-market">8. MARGIN OF SAFETY &amp; MR. MARKET</h2>
+<p><strong>The arithmetic.</strong> Live price is <strong>$166.03</strong>. Against our range:</p>
+<ul>
+<li>vs. <strong>base $185:</strong> margin of safety = (185 − 166.03) ÷ 185 = <strong>+10.3%</strong>. Modest.</li>
+<li>vs. <strong>low $150:</strong> the price is <em>above</em> our conservative floor by ~11% — <strong>no margin of safety at the low end.</strong></li>
+<li>vs. <strong>high $225:</strong> discount of ~26% — meaningful <em>if</em> the optimistic case holds.</li>
+<li>vs. <strong>no-growth floor $127:</strong> the price is ~31% above the zero-growth value — so you are paying a reasonable, not reckless, premium for growth.</li>
+</ul>
+<p><strong>Where the safety sits — and where it doesn't.</strong> Part of AMT's safety lives in <em>quality</em>, exactly as the manual describes for a durable franchise: the escalators make today's AFFO the floor of tomorrow's, and the no-growth floor ($127) covers ~77% of the price. That is real protection. <strong>But the purchase-price discount is thin</strong> — ~10% to base, and <em>negative</em> to our conservative low. The manual is emphatic: a small margin of safety offers no protection. At $166 you are paying a fair price for a wonderful business — Buffett's own doctrine says that can be acceptable <em>for a business this good</em> — but you are <strong>not</strong> getting Graham's fifty-cent dollar, and the rate risk is precisely the kind of error the margin is supposed to cushion.</p>
+<p><strong>Mr. Market's mood on REITs.</strong> Why is a franchise this good available at only ~15× AFFO and a 4.36% yield? Because Mr. Market is in a foul, rate-obsessed mood about REITs. An independent research service ranks the REIT industry <strong>87th of 94</strong> for year-ahead performance; the whole sector is out of favor as a bond-proxy in a 5% world. That is the <em>opportunity</em> — Mr. Market is selling the sector for its rate sensitivity, not for any deterioration in AMT's towers. The business is intact; the quote is depressed by macro sentiment. That is exactly the gap the manual tells us to exploit — <em>if</em> the price falls far enough.</p>
+<p><strong>PRINCIPLE.</strong> <em>A ~10% discount to a fair-value estimate that itself swings ±30% with interest rates is not a margin of safety — it is a coin flip dressed up as one. Mr. Market's rate-driven gloom on REITs is the source of opportunity, but the discipline is to demand that the gloom push the price to a real discount (toward the $140s–150s) before acting. At $166, you admire the business and wait for a wider margin — or you buy small, eyes open to the rate risk, and let a lower price bring you size.</em></p>
+<hr />
+<h2 id="9-the-verdict-the-lesson">9. THE VERDICT &amp; THE LESSON</h2>
+<p><strong>Quality tier.</strong> American Tower is a <strong>high-quality, wide-moat business carried on an adequate-but-leveraged balance sheet.</strong> The moat — non-cancellable escalating leases, near-100%-margin co-location, irreplaceable sites, 2% churn, a $54B contracted backlog — is among the best real-asset franchises in the market. What keeps it from the very top tier is the leverage (5× net-debt/EBITDA, a $5B/year refinancing wall in a 5% world) and returns on <em>total</em> capital (~8%) that are solid rather than spectacular once you strip away the flattering 81% ROE.</p>
+<p><strong>Answering THE ONE QUESTION.</strong> <em>Will carriers keep paying escalating rent on irreplaceable towers for decades, and can AMT carry ~$37B of debt through a 5% world without becoming a forced seller?</em> On the first half — <strong>yes</strong>, with high confidence; the contracts and physics guarantee it. On the second half — <strong>probably yes</strong>, but this is where the real risk lives, and it depends on capital-market access AMT does not control. The honest answer is "yes, but the margin of safety must pay us for the refinancing risk."</p>
+<p><strong>Verdict: HOLD / accumulate on weakness — a wonderful business at a merely fair price.</strong> At $166.03 the stock is roughly fairly valued to modestly cheap against our $185 base, with a thin ~10% margin to base and none to our conservative low. That is not the fat, obvious discount the method demands for a decisive buy. It <em>is</em> a business worth owning, and the rate-driven sector gloom could hand you a better price. Discipline: I would want the <strong>low $150s or below</strong> — a 15–20% discount to base, which would restore a genuine Graham margin — before buying in size. Above ~$225 you would be paying for the optimistic case and should trim.</p>
+<p><strong>Open questions to monitor (the thesis-break watchlist):</strong><br />
+- <strong>Long rates.</strong> The single most important variable. Track the 30-year Treasury and AMT's <em>average</em> cost of debt as the low-coupon notes reprice.<br />
+- <strong>CoreSite/data centers.</strong> Do the returns clear the cost of capital, or was it a top-of-cycle overpay?<br />
+- <strong>U.S. carrier behavior.</strong> Further consolidation or a churn spike from the big three (49% of revenue) would matter.<br />
+- <strong>AFFO-per-share growth</strong> holding in the 3–5% range as international pruning continues.</p>
+<p><strong>Universal lessons from this case:</strong><br />
+1. <strong>Value a REIT on AFFO, not EPS.</strong> A 27× "P/E" became a 15× P/AFFO the moment we added back the fictional depreciation. The GAAP earnings of a REIT are an accounting artifact; the AFFO is the owner earnings. Get the <em>denominator</em> right before you argue about the multiple.<br />
+2. <strong>Leverage and rates are the REIT's real risk</strong> — not the towers. The permanent-loss danger sits in the refinancing calendar, not the income statement.<br />
+3. <strong>The discount rate is the master variable for a bond-proxy.</strong> When a business's value swings ±30% with long rates, "beta 0.85" wildly understates the real risk, and the margin of safety must be sized for the rate error specifically.<br />
+4. <strong>A wonderful business at a fair price is not a decisive buy.</strong> Quality earns a fair price; it does not repeal the margin of safety. Wait for Mr. Market's gloom to widen the discount.</p>
+<p><strong>Teaching-case reminder.</strong> This is a seminar exercise on public documents as of 2026-07-04, built to demonstrate a repeatable method — not a recommendation to buy or sell any security.</p>
+<hr />
+<h2 id="10-the-valuation-checklist-ch-15-adapted-for-a-reit">10. THE VALUATION CHECKLIST (Ch. 15, adapted for a REIT)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Gate</th>
+<th>AMT</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Competence</strong> — can I forecast it?</td>
+<td>Contractual, escalating, diversified revenue; 2% churn. Only the refinancing math strains the circle.</td>
+<td><strong>PASS</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Moat</strong> — durable, with pricing power?</td>
+<td>Escalators, co-location, switching costs, irreplaceable sites, $54B backlog. One of the best real-asset moats.</td>
+<td><strong>PASS</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Returns vs. cost of capital</strong></td>
+<td>Return on total capital ~8% vs. r ~8.5%. Good, not spectacular; 81% ROE is a leverage illusion.</td>
+<td><strong>PASS (qualified)</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Owner earnings (AFFO)</strong> — real, normalized, honest accounts?</td>
+<td>AFFO $5.04B / $10.81 per share; near-2%-of-revenue maintenance capex; transparent non-GAAP reconciliation.</td>
+<td><strong>PASS</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Financial strength</strong> — survive a bad year + shut credit market?</td>
+<td>5.0× net-debt/EBITDA; 3.6× EBIT coverage; $5B/yr refi wall vs. 5% rates; $12B ground-lease obligations. B++.</td>
+<td><strong>UNSURE — adequate but leveraged; the one red flag</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Capital allocation</strong> — one-dollar test, candor, share count</td>
+<td>Serial dividend raiser (62% AFFO payout); rational international pruning; CoreSite bet unproven; modest dilution.</td>
+<td><strong>PASS (CoreSite = watch)</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Intrinsic value</strong> — range via AFFO methods</td>
+<td>$150 (low) / $185 (base) / $225 (high).</td>
+<td><strong>Range set</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Growth check</strong> — funded above r?</td>
+<td>Tower co-location: yes (ROIC &gt; r). Data centers: uncertain.</td>
+<td><strong>MIXED</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Margin of safety</strong> — price far below conservative range?</td>
+<td>$166 vs. base $185 = +10%; vs. low $150 = <em>negative</em>. Thin.</td>
+<td><strong>FAIL at this price for a size buy</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Afterward</strong> — monitor business, not quote</td>
+<td>Watch long rates, CoreSite returns, carrier churn, AFFO/share.</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Hold/sell discipline.</strong> Thesis-break sell triggers: a sustained spike in AMT's average cost of debt that pushes AFFO/share into decline; evidence CoreSite is destroying capital; or a carrier event that lifts churn structurally. Valuation-sell trigger: price well above ~$225 (paying for the optimistic case). Absent those, the default for a moat this durable is patience. <strong>At $166: hold; accumulate decisively only in the low $150s or below.</strong></p>
+<hr />
+<h2 id="11-glossary-terms-formulas">11. GLOSSARY — TERMS &amp; FORMULAS</h2>
+<p>Ordered as they appeared. Each with its formula and AMT's numbers.</p>
+<p><strong>REIT (Real Estate Investment Trust).</strong> A company that owns income-producing real estate and, to avoid corporate tax, must distribute ≥90% of taxable income to shareholders. <em>AMT</em>: elected REIT status 2012; distributes via a serial-growth dividend.</p>
+<p><strong>Escalator.</strong> A contractual annual rent increase built into a lease. <em>AMT</em>: ~3% fixed in the U.S., inflation-indexed internationally — contractual pricing power requiring no negotiation.</p>
+<p><strong>Co-location.</strong> Multiple tenants on one tower. Because the tower's fixed costs are already covered by tenant #1, the incremental margin on tenants #2 and #3 approaches ~100%. <em>AMT</em>: the core driver of tower economics and its cost-advantage moat.</p>
+<p><strong>Churn.</strong> Tenant billings lost to non-renewal or cancellation ÷ prior-year billings. <em>AMT</em>: ~2% in 2025 (mostly U.S. carrier consolidation).</p>
+<p><strong>FFO (Funds From Operations).</strong> Nareit-defined REIT earnings measure: net income + real-estate depreciation/amortization/accretion − gains on property sales (± NCI/affiliate adjustments). Corrects for the fiction of depreciating appreciating real estate.</p>
+<blockquote>
+<p><strong>FFO = Net income + RE depreciation &amp; amortization − RE sale gains + adjustments</strong><br />
+<em>AMT FY2025:</em> $2,628.5M + $1,899.6M + $83.5M − $450.7M = <strong>$4,160.9M</strong>.</p>
+</blockquote>
+<p><strong>AFFO (Adjusted Funds From Operations).</strong> FFO adjusted for straight-line rent, stock comp, deferred taxes, non-RE D&amp;A, financing amortization, and other items, <strong>less maintenance (recurring) capex</strong>. The REIT equivalent of <em>owner earnings</em>.</p>
+<blockquote>
+<p><strong>AFFO = FFO ± non-cash/normalizing items − maintenance capex</strong><br />
+<em>AMT FY2025:</em> <strong>$5,041.6M</strong>, or <strong>$10.81 per share</strong> on ~466.3M shares. Maintenance capex was only $195.6M.</p>
+</blockquote>
+<p><strong>Owner earnings.</strong> Reported earnings + non-cash charges − maintenance capex − Δworking capital; the cash an owner can withdraw. <em>For a REIT, owner earnings = AFFO.</em> <em>AMT</em>: ~$10.81/share.</p>
+<p><strong>P/AFFO.</strong> Price ÷ AFFO per share — the correct valuation multiple for a REIT (the P/E is meaningless because GAAP EPS is depressed by non-cash depreciation).</p>
+<blockquote>
+<p><strong>P/AFFO = Price ÷ AFFO per share</strong><br />
+<em>AMT at $166.03:</em> 166.03 ÷ 10.81 = <strong>15.4×</strong> (history 18–28×; our base fair multiple 17×).</p>
+</blockquote>
+<p><strong>AFFO yield.</strong> AFFO per share ÷ price — the REIT's "coupon," to be compared to the long bond.</p>
+<blockquote>
+<p><strong>AFFO yield = AFFO per share ÷ Price</strong><br />
+<em>AMT:</em> 10.81 ÷ 166.03 = <strong>6.51%</strong>, growing ~3–4%/yr, vs. ~5% static long bond.</p>
+</blockquote>
+<p><strong>AFFO payout ratio.</strong> Dividend ÷ AFFO — the test of dividend sustainability (never use the EPS payout for a REIT).</p>
+<blockquote>
+<p><strong>Payout = Dividend per share ÷ AFFO per share</strong><br />
+<em>AMT:</em> 6.72 ÷ 10.81 = <strong>62%</strong> (65% on 2026e AFFO). On GAAP EPS it would falsely read &gt;100%.</p>
+</blockquote>
+<p><strong>Adjusted EBITDA.</strong> Earnings before interest, taxes, depreciation, amortization, accretion (and stock comp), adjusted — a REIT's operating-cash-flow proxy and the denominator of the leverage ratio. <em>AMT FY2025:</em> <strong>$7,130.0M</strong>.</p>
+<p><strong>Net debt / EBITDA.</strong> The core REIT leverage gauge; ~5× is the prudent target.</p>
+<blockquote>
+<p><strong>Net debt / EBITDA = (Total debt − cash) ÷ Adjusted EBITDA</strong><br />
+<em>AMT:</em> (37,322 − 1,608.8) ÷ 7,130 = <strong>5.0×</strong>.</p>
+</blockquote>
+<p><strong>Interest coverage.</strong> How many times operating earnings cover the interest bill.</p>
+<blockquote>
+<p><strong>Coverage = EBIT ÷ Interest expense</strong><br />
+<em>AMT:</em> 4,845.8 ÷ 1,359.4 = <strong>3.6×</strong> (5.2× on Adjusted EBITDA).</p>
+</blockquote>
+<p><strong>Maturity wall.</strong> The schedule of debt coming due that must be refinanced. <em>AMT</em>: ~$3.4B (2026), $4.7B (2027), $7.5B (2028), $3.8B (2029), $4.9B (2030) — ~$5B/year rolling from ~2% coupons to ~5% coupons.</p>
+<p><strong>NAV (Net Asset Value).</strong> The market value of a REIT's assets minus its liabilities — the private-market worth of the real estate, a secondary check on the AFFO-based value. <em>AMT</em>: book equity ~$3.65B understates NAV badly (GAAP-depreciated towers); true NAV of 149,686 sites + 30 data centers far exceeds book — a reason book value is a <em>floor</em>, not a fair-value measure, for this REIT.</p>
+<p><strong>Dividend-discount model (Gordon growth).</strong> Values a stock as its next dividend divided by (discount rate − perpetual growth).</p>
+<blockquote>
+<p><strong>Value = D₁ / (r − g)</strong>, where D₁ = D₀ × (1 + g)<br />
+<em>AMT base:</em> D₀ = $6.72, r = 8.5%, g = 4% → 6.72 × 1.04 ÷ (0.085 − 0.04) = <strong>≈ $155</strong> (the conservative estimator).</p>
+</blockquote>
+<p><strong>No-growth (earning-power) floor.</strong> AFFO ÷ r — value if the business never grows again; the conservative floor and the gauge of how much of the price is a growth bet.</p>
+<blockquote>
+<p><strong>Floor = AFFO per share ÷ r</strong><br />
+<em>AMT:</em> 10.81 ÷ 0.085 = <strong>$127.20</strong> (77% of the $166 price is covered without any growth).</p>
+</blockquote>
+<p><strong>Discount rate (r).</strong> Owner's opportunity cost = long bond + risk premium; for a leveraged tower REIT, ~8.5% base (stressed 7.5–9.5%). The <em>master variable</em> here — the value swings ±30% across that band.</p>
+<p><strong>Margin of safety.</strong> (Intrinsic value − price) ÷ intrinsic value; the discount that protects against error.</p>
+<blockquote>
+<p><strong>MoS = (IV − Price) ÷ IV</strong><br />
+<em>AMT:</em> (185 − 166.03) ÷ 185 = <strong>+10.3%</strong> to base; negative to the $150 conservative low.</p>
+</blockquote>
+<p><strong>Mr. Market.</strong> Graham's manic-depressive partner whose daily quote reflects mood, not value. <em>AMT</em>: currently gloomy on all REITs (industry ranked 87/94) for rate reasons — the source of the opportunity, if the price falls far enough.</p>
+<hr />
+<p><em>End of seminar. — B.G. &amp; W.B., 2026-07-04</em></p>
+    </div>
+  </article>
+</main>
+<footer class="site-foot">
+  <p><strong>Educational only — not investment advice.</strong> These are my own study
+  notes and intrinsic-value estimates, published to learn in public. I am not a licensed
+  financial advisor. Do your own work; verify every figure against primary filings.</p>
+  <p class="muted">Built 2026-07-12 · figures from public SEC EDGAR filings and my own arithmetic.</p>
+</footer>
+</body>
+</html>

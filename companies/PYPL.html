@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PayPal Holdings (PYPL) — intrinsic value</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">§</span>
+    <span class="brand-text">A Value-Investing Learning Journey</span>
+  </a>
+  <nav class="site-nav"><a href="../index.html" class="active">Home</a><a href="../methodology.html" class="">Methodology</a><a href="../journal/index.html" class="">Journal</a></nav>
+</header>
+<main>
+
+  <article class="company-page">
+    <div class="crumbs"><a href="../index.html">← All businesses</a></div>
+    <header class="company-head">
+      <h1>PayPal Holdings <span class="tk">(PYPL)</span></h1>
+      <p class="sub">Financial Svcs. (Div.) · analysis dated 2026-07-04</p>
+    </header>
+    
+  <div class="iv-widget">
+    <div class="iv-cell"><span class="iv-lbl">IV low</span><span class="iv-val">$60</span></div>
+    <div class="iv-cell iv-base"><span class="iv-lbl">IV base</span><span class="iv-val">$75</span></div>
+    <div class="iv-cell"><span class="iv-lbl">IV high</span><span class="iv-val">$90</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Price</span><span class="iv-val">$46.32</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Margin of safety</span><span class="iv-val mos-strong">+38%</span></div>
+  </div>
+    <p class="method"><strong>Method:</strong> Normalized owner-earnings multiple (11-15x on ~$5.3B OE), cross-checked by two-stage DCF, no-growth floor, reverse-DCF, and owner-earnings yield vs. 5% long bond</p>
+    <div class="verdict"><span class="vlbl">Verdict</span><p>Cheap - good business at a wonderful price; buy-worthy with ~24-39% margin of safety</p></div>
+    <div class="seminar">
+    <h1 id="paypal-holdings-pypl-a-value-investing-seminar">PayPal Holdings (PYPL) — A Value-Investing Seminar</h1>
+<p><em>Co-taught by Benjamin Graham and Warren Buffett · valuation date 2026-07-04 · live price $45.47</em></p>
+<p><em>A teaching case, not investment advice. We work the real numbers to teach a repeatable method — the pipeline of the manual "How to Value a Business": circle of competence → moat → ROIC vs. cost of capital → owner earnings → capital allocation → valuation → margin of safety.</em></p>
+<hr />
+<h2 id="1-sources">1. SOURCES</h2>
+<p>Everything below is read in the Graham–Buffett order: the method first, then the company's own filings, then the market's mood last.</p>
+<ul>
+<li><strong>Method manual</strong> — <em>How to Value a Business — A Security-Analysis Manual</em> (revised 2026-07-04). The backbone; every term and equation here comes from it.</li>
+<li><strong>an independent research service — company report</strong> — <code>PYPL_ValueLine_2026-05-01.pdf</code> (report price $51.46; Median P/E 41.0; Timeliness 3, Safety 3, Financial Strength B++; 18-mo target $38–$83; 2029–31 target $70–$105).</li>
+<li><strong>an independent research service — industry report</strong> — <code>Financial_Svcs_Div_ValueLine_Industry_2026-05-01.pdf</code> (PayPal placed under "Specialty Services / merchant services," Industry Timeliness 42 of 94).</li>
+<li><strong>SEC 10-K, filed 2026-02-03 (fiscal year 2025)</strong> — read in full: <code>item1_business_part1/2.txt</code> (business), <code>item7_mda_part1/2/3.txt</code> (MD&amp;A), and <code>item15_item15_part1/4/5/6/8.txt</code> (the face financial statements, footnotes, debt note, segment note, tax note).</li>
+<li><strong>SEC 10-Q, filed 2026-05-05 (Q1 2026)</strong> — <code>full_text.txt</code> (the freshest quarter — TPV, transaction margin, key metrics).</li>
+<li><strong>XBRL long history</strong> — <code>PYPL_xbrl_facts.json</code>, parsed in Python for 10-year trends of revenue, net income, operating cash flow, shares outstanding, equity, buybacks (older years verified against an independent research service before trusting).</li>
+<li><strong>Live / macro context (2026-07-04)</strong> — equity_atlas.xlsx live price $45.47; an independent research service <em>Selection &amp; Opinion</em>, July 10 2026 issue, for the discount-rate anchor (30-yr Treasury ~4.9–5.0%; core PCE 3.4%).</li>
+</ul>
+<hr />
+<h2 id="2-opening-the-case-the-business">2. OPENING THE CASE — THE BUSINESS</h2>
+<p><strong>What it does.</strong> PayPal operates a two-sided digital-payments network: 439 million active accounts across ~200 markets, connecting consumers who want to pay and merchants who want to get paid. In 2025 roughly <strong>$1.79 trillion</strong> of Total Payment Volume (TPV) — the dollar value of payments completed on the platform — flowed across it. PayPal takes a small slice of each of those dollars.</p>
+<p><strong>How it makes money — two revenue lines.</strong> The 10-K classifies revenue into exactly two buckets, and understanding the split <em>is</em> the case:</p>
+<ul>
+<li><strong>Transaction revenues</strong> — $29,798M in 2025 (90% of the total). Fees charged per transaction, based on TPV, plus currency conversion, cross-border, instant-transfer, and crypto fees.</li>
+<li><strong>Revenues from other value-added services</strong> — $3,374M (10%). Partnerships, referral and subscription fees, gateway fees, <strong>interest and fees on the loan book, and interest earned on the assets underlying customer balances</strong> (this last piece falls when interest rates fall — a live headwind).</li>
+</ul>
+<p><strong>The two engines inside "transaction revenue."</strong> This is the fork in the road:</p>
+<ul>
+<li><strong>Branded checkout</strong> — the yellow <em>PayPal</em> button and <em>Venmo</em> at online checkout. The consumer chooses PayPal; PayPal owns the customer relationship on both sides. This is the <strong>high-margin franchise</strong> and the two-sided network's crown jewel.</li>
+<li><strong>Unbranded processing (Braintree)</strong> — PayPal processes cards for a big merchant (think a large marketplace) without the PayPal brand ever appearing. It is a commodity card-processing utility: enormous volume, <strong>low margin, higher expense rates</strong> (the 10-K says Braintree "generally [has] higher expense rates than our other products and services").</li>
+</ul>
+<p><em>Warren:</em> One company, two economically opposite businesses. One is See's Candy; the other is close to a toll bridge that has to hand most of the toll to the road crew. If you value the whole thing on a single blended multiple, you will misprice both — the manual's warning in Chapter 8 about businesses that must be valued in parts.</p>
+<p><strong>Segments.</strong> PayPal reports as <strong>one</strong> operating segment, so we get no clean sub-P&amp;L for branded vs. unbranded — we must reconstruct the economics from take-rate arithmetic (Section 4).</p>
+<p><strong>Circle-of-competence gate (Chapter 4).</strong> <em>Ben:</em> Can we forecast this business within a sensible range? Partly. Payments are a durable human need; PayPal's scale, its float, and its 20-year brand are real and understandable. But the decisive variables — will branded checkout hold its share against Apple Pay, Shop Pay, and stablecoins? will the network effect keep two-sidedness intact? — are genuinely contestable. This sits <strong>at the edge of the circle</strong>: understandable as a business, but with a moat whose durability is the open question. That is precisely where the manual says expensive errors live, so we proceed with humility and a wide margin of safety, not false precision.</p>
+<p><strong>THE ONE QUESTION THAT DECIDES THE CASE:</strong></p>
+<blockquote>
+<p><strong>Is branded checkout — the PayPal button and Venmo — a durable, defended franchise, or a slowly eroding brand whose owner-earnings are being quietly hollowed out even as headline volume grows?</strong></p>
+</blockquote>
+<p>Everything in the valuation turns on the answer. If the franchise holds, $45.47 is a gift. If it erodes, the low multiple is the market being right.</p>
+<p><strong>PRINCIPLE.</strong> <em>Separate volume from profit, and separate the parts of a mixed business.</em> A single revenue line can hide two businesses with opposite economics; find where the profit actually comes from before you value a dollar of it.</p>
+<hr />
+<h2 id="3-reading-the-statements-together">3. READING THE STATEMENTS TOGETHER</h2>
+<p>The three statements are one story told three ways. Let's read them as evidence, with the arithmetic shown.</p>
+<h3 id="the-income-statement-fy2025-m">The income statement (FY2025, $M)</h3>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Net revenues</td>
+<td>33,172</td>
+<td>31,797</td>
+<td>29,771</td>
+</tr>
+<tr>
+<td>— Transaction revenues</td>
+<td>29,798</td>
+<td>28,842</td>
+<td>26,857</td>
+</tr>
+<tr>
+<td>— Other value-added services</td>
+<td>3,374</td>
+<td>2,955</td>
+<td>2,914</td>
+</tr>
+<tr>
+<td>Transaction expense</td>
+<td>15,987</td>
+<td>15,697</td>
+<td>14,385</td>
+</tr>
+<tr>
+<td>Transaction + credit losses</td>
+<td>1,720</td>
+<td>1,442</td>
+<td>1,682</td>
+</tr>
+<tr>
+<td>Customer support &amp; ops</td>
+<td>1,704</td>
+<td>1,768</td>
+<td>1,919</td>
+</tr>
+<tr>
+<td>Sales &amp; marketing</td>
+<td>2,283</td>
+<td>2,001</td>
+<td>1,809</td>
+</tr>
+<tr>
+<td>Technology &amp; development</td>
+<td>3,103</td>
+<td>2,979</td>
+<td>2,973</td>
+</tr>
+<tr>
+<td>General &amp; administrative</td>
+<td>1,979</td>
+<td>2,147</td>
+<td>2,059</td>
+</tr>
+<tr>
+<td>Restructuring &amp; other</td>
+<td>331</td>
+<td>438</td>
+<td>(84)</td>
+</tr>
+<tr>
+<td><strong>Operating income</strong></td>
+<td><strong>6,065</strong></td>
+<td><strong>5,325</strong></td>
+<td><strong>5,028</strong></td>
+</tr>
+<tr>
+<td>Other income (expense), net</td>
+<td>227</td>
+<td>4</td>
+<td>383</td>
+</tr>
+<tr>
+<td>Income tax</td>
+<td>1,059</td>
+<td>1,182</td>
+<td>1,165</td>
+</tr>
+<tr>
+<td><strong>Net income</strong></td>
+<td><strong>5,233</strong></td>
+<td><strong>4,147</strong></td>
+<td><strong>4,246</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Operating margin = 6,065 ÷ 33,172 = <strong>18.3%</strong> (up from 16.7% in 2024). Net income jumped +26%, but read the fine print: the tax rate fell from <strong>22.2% to 16.8%</strong> on one-time discrete items, and <em>Other income</em> swung +$223M largely on <strong>strategic-investment gains ($162M gain in 2025 vs. a $285M loss in 2024)</strong>. Both are non-operating tailwinds. Strip them and the real engine — operating income — grew a healthier-but-humbler <strong>+14%</strong>.</p>
+<h3 id="the-balance-sheet-12312025-m-and-the-customer-funds-trap">The balance sheet (12/31/2025, $M) — and the customer-funds trap</h3>
+<p>This is where PYPL's balance sheet fools the careless. Total assets are $80,173M and total liabilities $59,917M — but <strong>$40,198M</strong> of those liabilities is <em>"Funds payable and amounts due to customers,"</em> matched by <strong>$38,198M</strong> of <em>"Funds receivable and customer accounts"</em> on the asset side. <strong>That is customer money PayPal merely custodies, not corporate leverage.</strong> You must strip both sides out to see the real balance sheet:</p>
+<ul>
+<li><strong>Corporate cash + short-term investments:</strong> 8,049 + 2,373 = <strong>$10,422M</strong></li>
+<li><strong>Corporate debt</strong> (long-term notes 9,987 + commercial paper 200): <strong>$10,187M</strong></li>
+<li><strong>Net corporate position:</strong> 10,422 − 10,187 = <strong>+$235M — essentially net-cash-neutral.</strong></li>
+<li>Total equity: <strong>$20,256M</strong> (down slightly from $20,417M — buybacks are shrinking book equity even as retained earnings rise; see Section 6).</li>
+</ul>
+<p><em>Ben:</em> The float (customer balances PayPal invests in the meantime) is real and valuable — it even earns interest income. But it is <em>liabilities of high quality</em>, not a war chest. Judge the fortress on the corporate columns alone.</p>
+<h3 id="the-cash-flow-statement-fy2025-m-the-truth-serum">The cash-flow statement (FY2025, $M) — the truth serum</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Net income</td>
+<td>5,233</td>
+<td>4,147</td>
+<td>4,246</td>
+</tr>
+<tr>
+<td>+ Depreciation &amp; amortization</td>
+<td>963</td>
+<td>1,032</td>
+<td>1,072</td>
+</tr>
+<tr>
+<td>+ Stock-based compensation</td>
+<td>1,002</td>
+<td>1,230</td>
+<td>1,475</td>
+</tr>
+<tr>
+<td><strong>Operating cash flow</strong></td>
+<td><strong>6,416</strong></td>
+<td><strong>7,450</strong></td>
+<td><strong>4,843</strong></td>
+</tr>
+<tr>
+<td>− Purchases of property &amp; equipment (capex)</td>
+<td>(852)</td>
+<td>(683)</td>
+<td>(623)</td>
+</tr>
+<tr>
+<td><strong>Free cash flow</strong></td>
+<td><strong>5,564</strong></td>
+<td><strong>6,767</strong></td>
+<td><strong>4,220</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Note capex ($852M) runs <em>below</em> D&amp;A ($963M) — a capital-light signature; the business does not need heavy reinvestment to stand still. OCF <em>fell</em> from $7,450M to $6,416M in 2025, but that is a timing artifact of the loan book: PayPal originated $36.7B of held-for-sale loans and sold $35.4B under forward-flow arrangements; the net swing is working-capital noise inside a financing-adjacent activity, not a deterioration of the core.</p>
+<h3 id="earnings-quality-scan-chapter-7-red-flag-checklist">Earnings-quality scan (Chapter 7 red-flag checklist)</h3>
+<ul>
+<li><strong>SBC treated as free?</strong> No — and this is the crucial quality point. SBC ($1,002M) <em>is</em> expensed in GAAP net income. An independent research service's "adjusted" $5.31 EPS and the company's non-GAAP figures <strong>add SBC back</strong>, which the manual forbids: SBC is a <em>real cost</em> — it dilutes owners (see the share-count discipline in Section 6). We will keep it as a cost.</li>
+<li><strong>"Restructuring / one-time" charges?</strong> Recurring: $331M in 2025, $438M in 2024. When a charge shows up every year it is a cost of doing business, not a one-timer. We normalize through it.</li>
+<li><strong>EBITDA-as-cash-flow?</strong> Management does not lean on it here. Good.</li>
+<li><strong>Aggressive assumptions / opacity?</strong> Disclosure is clear and detailed. No pension plan. The one soft spot is <em>reliance on non-operating tailwinds</em> (tax discretes, investment gains) to flatter 2025 net income — we discount those.</li>
+</ul>
+<p><strong>PRINCIPLE.</strong> <em>The three statements must articulate — reconcile net income to the cash that actually appeared, and strip the balance sheet down to what the corporation truly owns and owes.</em> A payments company's customer float and a lender's loan-book flows can make a healthy business look levered or a good year look weak; do the subtraction yourself.</p>
+<hr />
+<h2 id="4-earnings-power-the-moat">4. EARNINGS POWER &amp; THE MOAT</h2>
+<h3 id="the-long-trend-xbrl-an-independent-research-service-verified">The long trend (XBRL + an independent research service, verified)</h3>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Revenue ($M)</th>
+<th>Net income ($M)</th>
+<th>Op. cash flow ($M)</th>
+<th>Shares out (M)</th>
+<th>Equity ($M)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016</td>
+<td>10,842</td>
+<td>1,401</td>
+<td>3,158</td>
+<td>1,207</td>
+<td>14,712</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>15,451</td>
+<td>2,057</td>
+<td>5,480</td>
+<td>1,174</td>
+<td>15,386</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>21,454</td>
+<td>4,202</td>
+<td>6,219</td>
+<td>1,172</td>
+<td>20,019</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>25,371</td>
+<td>4,169</td>
+<td>5,797</td>
+<td>1,168</td>
+<td>21,727</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>27,518</td>
+<td>2,419</td>
+<td>5,813</td>
+<td>1,136</td>
+<td>20,274</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>29,771</td>
+<td>4,246</td>
+<td>4,843</td>
+<td>1,072</td>
+<td>21,051</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>31,797</td>
+<td>4,147</td>
+<td>7,450</td>
+<td>993</td>
+<td>20,417</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>33,172</td>
+<td>5,233</td>
+<td>6,416</td>
+<td>920</td>
+<td>20,256</td>
+</tr>
+</tbody>
+</table>
+<p>Revenue has tripled in a decade (15.5% annualized) — but growth is <em>decelerating hard</em>: only +4% in 2025. And share count has fallen from 1,207M to <strong>920M — a 24% reduction</strong> — so per-share figures grow faster than the totals. That share-count trend is the second half of the earnings-power story (Section 6).</p>
+<h3 id="the-owner-earnings-ladder-chapter-7-the-key-earnings-quality-lesson">The owner-earnings ladder (Chapter 7) — the key earnings-quality lesson</h3>
+<p>The manual defines <strong>Owner Earnings = Reported earnings + non-cash charges − maintenance capex − ΔWorking capital</strong>, keeping every real cost. Watch how the "earnings" number balloons as you climb the wrong direction of the ladder:</p>
+<table>
+<thead>
+<tr>
+<th>Rung</th>
+<th>$M</th>
+<th>Per share (÷920M)</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GAAP net income</td>
+<td>5,233</td>
+<td>$5.69</td>
+<td>The honest floor — SBC already a cost</td>
+</tr>
+<tr>
+<td><strong>+ D&amp;A</strong></td>
+<td>+963</td>
+<td></td>
+<td>add back non-cash depreciation</td>
+</tr>
+<tr>
+<td><strong>− maintenance capex</strong></td>
+<td>−852</td>
+<td></td>
+<td>cash to stand still (≈ all of capex; biz is capital-light)</td>
+</tr>
+<tr>
+<td><strong>− ΔWorking capital</strong></td>
+<td>≈ 0</td>
+<td></td>
+<td>core WC roughly neutral (float self-funds)</td>
+</tr>
+<tr>
+<td><strong>= OWNER EARNINGS</strong></td>
+<td><strong>≈ 5,344</strong></td>
+<td><strong>$5.81</strong></td>
+<td><em>the cash an owner can withdraw</em></td>
+</tr>
+<tr>
+<td>— for contrast —</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>+ add back SBC ($1,002M)</td>
+<td>6,346</td>
+<td></td>
+<td>← <strong>the non-GAAP sleight of hand</strong></td>
+</tr>
+<tr>
+<td>+ add back intangible amort ($175M)</td>
+<td>≈ 6,410</td>
+<td>$6.62</td>
+<td>≈ an independent research service "adjusted" earnings</td>
+</tr>
+</tbody>
+</table>
+<p><em>Warren:</em> Look at the last two rungs. The distance between honest owner earnings (<strong>$5.81</strong>) and the polished non-GAAP number (<strong>$6.62</strong>) is almost entirely <strong>stock-based compensation</strong> — a billion dollars of real cost, paid in shares instead of cash, that the adjusted figure pretends is free. The tooth fairy does not pay for stock comp any more than she pays for capex. <strong>We value PayPal on ~$5.3–5.4B of owner earnings, not on $6.4B of dressed-up "earnings."</strong></p>
+<p>We normalize <em>down</em> slightly to <strong>~$5,300M</strong> owner earnings, because 2025 leaned on a low tax rate and investment gains that won't repeat, and because interest income on customer balances is falling as rates drop (Section 5). Call normalized OE ≈ <strong>$5.76 per share</strong>.</p>
+<h3 id="maintenance-vs-growth-capex">Maintenance vs. growth capex</h3>
+<p>Capex $852M sits <em>below</em> D&amp;A $963M, and the business grew anyway. That tells us maintenance capex is modest and most of reported capex is arguably discretionary/growth. We conservatively treated <em>all</em> capex as maintenance in the ladder — if anything that understates owner earnings. This is the mark of a <strong>capital-light franchise</strong> (Chapter 6): it can grow while consuming little incremental capital.</p>
+<h3 id="the-moat-the-heart-of-the-case">The moat — the heart of the case</h3>
+<p><strong>The bull evidence (a real moat exists):</strong><br />
+- <strong>Two-sided network</strong> — 439M consumers and tens of millions of merchants; each side makes the other more valuable. Genuine network effect.<br />
+- <strong>Brand &amp; trust</strong> — 20+ years; the PayPal button converts because buyers trust it. Branded checkout is the high-margin core.<br />
+- <strong>Capital-light, high returns</strong> — the signature of pricing power and a franchise.</p>
+<p><strong>The bear evidence (the moat is being tested) — and this is the sharpest number in the case:</strong></p>
+<p>Compare the freshest quarter, Q1 2026, from the 10-Q:<br />
+- <strong>TPV grew +11%</strong> (to $463,955M).<br />
+- But <strong>transaction revenue grew only +7%</strong>, and — the killer — <strong>transaction-margin dollars were essentially flat.</strong> Do the arithmetic the company won't hand you on one line:<br />
+  - Q1 2026 transaction margin $ = transaction revenue 7,501 − transaction expense 4,165 − transaction &amp; credit losses 378 = <strong>$2,958M</strong><br />
+  - Q1 2025 transaction margin $ = 7,016 − 3,704 − 371 = <strong>$2,941M</strong><br />
+  - Growth = 2,958 ÷ 2,941 − 1 = <strong>+0.6%</strong> — profit stood still while volume rose 11%.</p>
+<p>Why? The 10-Q is explicit: of the ~$620M gross rise in transaction revenue, <strong>~$410M came from Braintree</strong> — the low-margin, unbranded processing. The company is moving oceans of volume and keeping almost none of the incremental profit. Meanwhile, for the <em>full year 2025</em>, PayPal deliberately <strong>shed</strong> low-margin Braintree volume ("profitable growth"): full-year payment transactions actually <strong>fell 4%</strong> and transactions-per-account fell 5%, even as TPV rose 7%.</p>
+<p><em>Ben:</em> This is the two-faced number I warned about. In the quarter, growth comes from the wrong (low-margin) engine; over the year, they starve that engine to protect margins — and branded checkout is not visibly accelerating to fill the gap. The franchise is not obviously <em>shrinking</em>, but it is not obviously <em>widening</em> either, while Apple Pay, Shop Pay and stablecoins press on the branded button. <strong>The moat is narrow and contested, not wide and secure.</strong> We will call it a <em>good</em> business, not a <em>wonderful</em> one.</p>
+<h3 id="roic-vs-cost-of-capital-chapter-6-the-arithmetic">ROIC vs. cost of capital (Chapter 6) — the arithmetic</h3>
+<p><strong>ROIC = NOPAT ÷ Invested Capital.</strong><br />
+- NOPAT = operating income × (1 − normalized tax rate) = 6,065 × (1 − 0.20) = <strong>$4,852M</strong><br />
+- Invested capital, <em>gross</em> (equity + corporate debt) = 20,256 + 10,187 = <strong>$30,443M</strong> → ROIC = 4,852 ÷ 30,443 = <strong>15.9%</strong><br />
+- Invested capital, <em>net of the ~$10.4B corporate cash it doesn't need</em> = 20,256 + 10,187 − 10,422 = <strong>$20,021M</strong> → ROIC = 4,852 ÷ 20,021 = <strong>24.2%</strong></p>
+<p>Either way, <strong>ROIC (16–24%) comfortably exceeds our cost of capital r ≈ 10.5%</strong> (Section 7). By the manual's decisive test, growth here <em>creates</em> value — <em>if</em> it is branded, high-margin growth. The catch, again: unbranded Braintree growth earns close to r or below, so mix is everything.</p>
+<p><strong>ROE = 5,233 ÷ 20,256 = 25.8%</strong> (an independent research service shows 25.4%). A leverage caveat: buybacks have shrunk equity, which mechanically <em>inflates</em> ROE — so don't read 25.8% as pure operating brilliance; part of it is a smaller denominator bought with cash. ROIC is the cleaner read.</p>
+<p><strong>PRINCIPLE.</strong> <em>Owner earnings, not "adjusted" earnings — and a moat must be argued from margin dollars, not headline volume.</em> The test of a payments moat is whether transaction-margin dollars per unit of volume hold; growing TPV while margin dollars stagnate is a moat leaking, not a moat working.</p>
+<hr />
+<h2 id="5-financial-strength-solvency">5. FINANCIAL STRENGTH &amp; SOLVENCY</h2>
+<p>Judged on the <strong>corporate</strong> balance sheet (customer float excluded), each answer with its arithmetic and citation.</p>
+<ul>
+<li><strong>Leverage.</strong> Corporate debt = notes $9,987M + commercial paper $200M = <strong>$10,187M</strong>. Corporate cash + ST investments = <strong>$10,422M</strong>. <strong>Net debt = −$235M — the company is essentially net-cash.</strong> Net debt ÷ owner earnings ≈ 0. <em>(10-K balance sheet &amp; Note 12.)</em></li>
+<li><strong>Coverage.</strong> Interest coverage = operating income ÷ interest expense = 6,065 ÷ 441 = <strong>13.8×</strong>. A normal year covers the interest bill nearly fourteen times over — a wide cushion. <em>(10-K income statement; Note 7.)</em></li>
+<li><strong>Liquidity.</strong> Current assets $59,759M vs. current liabilities $46,443M (mostly customer funds payable, matched by customer-fund assets). Corporate liquidity is ample: $10.4B cash/ST + an <strong>undrawn $5.0B revolving credit facility</strong> (matures 2028). <em>(10-K balance sheet; Note 12.)</em></li>
+<li><strong>Refinancing wall.</strong> Well laddered. Notes mature $1,250M (Oct 2026), $500M (2027), then staggered out to 2028, 2029, 2030, 2032, 2034, 2035, and 30–40-yr maturities to 2050–2062, at coupons of 1.65%–5.50%. No cliff. The nearest $1.25B 2026 note is trivially covered by $10.4B of cash. <em>(Note 12.)</em></li>
+<li><strong>Hidden obligations.</strong> <strong>No defined-benefit pension.</strong> Uncapitalized operating-lease rentals only ~$174M/yr (an independent research service). The real "hidden leverage" in a payments firm is the customer float and the loan book — and here the float is high-quality (invested in cash and AFS debt securities), and the loan book is largely sold forward. Legal reserves are "not material." <em>(10-K Notes 12, 13.)</em></li>
+</ul>
+<p><strong>Verdict: FORTRESS.</strong> Net-cash, 13.8× interest coverage, an undrawn $5B revolver, no pension, no near-term wall. An independent research service's B++ Financial Strength is, if anything, slightly conservative — the corporate balance sheet is very strong. This matters enormously: a fortress balance sheet means PayPal <em>can never be forced to sell</em> while it fights the moat battle. It buys time to be right.</p>
+<p><strong>PRINCIPLE.</strong> <em>Survivability is the precondition for every earnings forecast — and for a financial-adjacent business you must first strip out the money that isn't yours.</em> Strength is measured on the corporate columns, against the cash that must service the debt.</p>
+<hr />
+<h2 id="6-management-as-partners">6. MANAGEMENT AS PARTNERS</h2>
+<p>Capital allocation across the manual's six uses, judged on the record:</p>
+<ol>
+<li><strong>Reinvest in the business</strong> — modest and capital-light (capex $852M &lt; D&amp;A). Tech &amp; development $3.1B, sales &amp; marketing $2.3B ("PayPal Everywhere," "Venmo Everything"). Appropriate given high ROIC — <em>if</em> it defends the branded franchise.</li>
+<li><strong>Acquisitions</strong> — restrained lately; no large, value-destroying deals in the period. A welcome contrast to the industry's institutional imperative.</li>
+<li><strong>Pay down debt</strong> — net-cash already; no urgency. Fine.</li>
+<li><strong>Dividends</strong> — <strong>first-ever dividend initiated December 2025</strong> ($0.14/quarter, ~$130M/yr; ~1.24% yield today). A signal of maturity and confidence in cash generation.</li>
+<li><strong>Repurchase shares — the headline act.</strong> This is where management has been most aggressive, and we judge it <em>on price</em> (Chapter 9):</li>
+</ol>
+<p><strong>The decade share-count trend (XBRL):</strong><br />
+| 2016 | 2018 | 2020 | 2022 | 2023 | 2024 | 2025 |<br />
+|---|---|---|---|---|---|---|<br />
+| 1,207M | 1,174M | 1,172M | 1,136M | 1,072M | 993M | <strong>920M</strong> |</p>
+<p>That is a <strong>24% reduction</strong> in shares — a real, owner-friendly shrinking of the pie into fewer slices. In 2025 alone PayPal spent <strong>$6,052M</strong> on buybacks (net share reduction 993→920M ≈ 73M shares).</p>
+<p><strong>Judged on price — the manual's only test that matters:</strong> buybacks create value <em>only below intrinsic value</em>. PayPal repurchased through 2024–2025 at an average in the <strong>$60–$90s</strong>, and now trades at <strong>$45.47</strong>. Against our intrinsic-value estimate of <strong>$60–$90</strong> (Section 7), buying back stock in the $50s–$80s was value-<em>neutral to modestly accretive</em>, and <strong>buying at today's $45.47 would be decisively value-creating</strong> — the company is retiring dollars of owner earnings at ~8× while they are worth ~11–15×. This is exactly the capital allocation the manual applauds: retiring undervalued shares.</p>
+<ol start="6">
+<li><strong>Share issuance discipline (the sixth use).</strong> The counterweight: <strong>SBC of $1,002M/yr</strong> streams shares <em>out</em> the back door even as buybacks pull them in the front. Gross buybacks of $6B bought only ~73M net shares partly because option/RSU grants dilute. The <em>net</em> count still fell sharply, so management is winning the tug-of-war — but owners should keep score on the <strong>net</strong> number and treat SBC as the real cost it is.</li>
+</ol>
+<p><strong>The one-dollar test (Chapter 9).</strong> With ROIC (16–24%) above r (10.5%), a dollar retained <em>should</em> create more than a dollar — provided it funds branded, high-margin growth. The initiation of a dividend and heavy buybacks says management itself judges that not every dollar can be reinvested at those returns, and is returning the surplus. That is rational.</p>
+<p><strong>Candor.</strong> Management is plain about the hard truths: it disclosed deliberately shrinking Braintree volume for "profitable growth," and an independent research service notes the board conceded "the pace of change and execution was not in line with expectations," replacing CEO Alex Chriss with Enrique Lores (effective March 1, 2026). Owning the miss and changing the driver is candor, not spin.</p>
+<p><strong>PRINCIPLE.</strong> <em>Share count is capital allocation, and buybacks are only as good as the price paid.</em> Retiring 24% of the shares is wonderful if done below value and merely expensive if done above it — always score buybacks against your own intrinsic-value estimate, and always net out the shares handed back through stock comp.</p>
+<hr />
+<h2 id="7-what-is-it-worth-intrinsic-value">7. WHAT IS IT WORTH? — INTRINSIC VALUE</h2>
+<h3 id="choosing-the-method">Choosing the method</h3>
+<p>Intrinsic value is <em>the discounted value of future owner earnings</em> (Chapter 10) — that is the definition, always. But we choose the <strong>estimator the business deserves.</strong> PayPal is a stable, cash-generative, capital-light franchise trading at a distressed multiple with a genuine moat question. For such a business the manual points to a <strong>normalized owner-earnings approach</strong>, cross-checked hard. So:</p>
+<ul>
+<li><strong>Primary:</strong> a <strong>normalized owner-earnings multiple</strong>, with the multiple <em>derived</em>, not borrowed.</li>
+<li><strong>Cross-checks:</strong> a <strong>reverse-DCF</strong> (what is the market assuming?), the <strong>no-growth floor</strong>, and the <strong>owner-earnings yield vs. the 5% long bond</strong>.</li>
+<li><strong>Sensitivity table</strong> to make the false-precision point.</li>
+</ul>
+<h3 id="the-discount-rate-as-gravity-chapter-12">The discount rate as gravity (Chapter 12)</h3>
+<p>Rates are the gravity that pulls on every asset value. The 30-year Treasury is ~<strong>5.0%</strong> (Selection &amp; Opinion, July 2026). We add an equity-and-uncertainty premium — larger than usual because the moat is contested and the business carries a 1.35 beta and real disruption risk:</p>
+<blockquote>
+<p><strong>r = 5.0% long bond + ~5.5% premium = 10.5%.</strong></p>
+</blockquote>
+<h3 id="deriving-the-multiple-never-borrow-one-blindly">Deriving the multiple (never borrow one blindly)</h3>
+<p>Three independent reads of the fair multiple for ~$5.3B of normalized owner earnings:<br />
+1. <strong>Quality-justified.</strong> A capital-light business with 16–24% ROIC and low-single-digit <em>defensible</em> growth, discounted at 10.5%, is worth roughly the no-growth floor (≈9.5×, see below) plus a few turns for modest growth → <strong>~11–13× owner earnings.</strong><br />
+2. <strong>Historical.</strong> an independent research service's <em>Median</em> P/E is 41 and recent-year average P/Es ran 13–47×. Those reflect PayPal's growth-stock past — clearly too rich for today's decelerating reality. We <em>discard</em> the exuberant end and anchor to the <strong>low-teens</strong>, matching where a mature, contested franchise belongs.<br />
+3. <strong>Reverse-engineered from the floor.</strong> No-growth value ÷ owner earnings = ($5,300M ÷ 0.105) ÷ $5,300M = <strong>9.5×</strong> — the multiple if PayPal <em>never grows again</em>. Any growth at all lifts it above that.</p>
+<p>Reconciling the three, a defensible multiple is <strong>~11–15× owner earnings</strong> (11× ≈ no-growth-plus-a-little; 15× ≈ modest durable growth).</p>
+<h3 id="triangulating-the-value">Triangulating the value</h3>
+<p>Normalized owner earnings ≈ <strong>$5,300M</strong>, or <strong>$5.76 per share</strong> (÷920M shares).</p>
+<ul>
+<li><strong>LOW (~11× OE):</strong> 11 × $5.76 = <strong>~$63/sh</strong> → round down to <strong>~$60</strong> honoring the moat risk — the barely-any-growth case.</li>
+<li><strong>BASE (~13× OE):</strong> 13 × $5.76 = <strong>~$75/sh</strong> — modest 3–4% durable owner-earnings growth.</li>
+<li><strong>HIGH (~15× OE):</strong> 15 × $5.76 = <strong>~$86/sh</strong> → <strong>~$90</strong> — branded checkout holds and re-accelerates.</li>
+</ul>
+<p><em>Cross-checked with an explicit two-stage DCF</em> (10-yr explicit, r = 10.5%): even a <em>cautious</em> DCF (4% growth then 2.5% terminal) produces <strong>~$82/sh</strong>, and a 6%/3% base produces ~$98/sh. The DCF sits <strong>above</strong> our multiple range. <em>Warren:</em> When the DCF runs hotter than the multiple, trust the more conservative machine — the DCF is capitalizing owner earnings that the transaction-margin evidence tells us may not compound as smoothly as a formula assumes. We deliberately <strong>haircut to the multiple range</strong> and set:</p>
+<blockquote>
+<p><strong>Intrinsic value range: LOW ~$60 · BASE ~$75 · HIGH ~$90 per share.</strong></p>
+</blockquote>
+<h3 id="the-three-universal-cross-checks-as-arithmetic">The three universal cross-checks (as arithmetic)</h3>
+<ol>
+<li><strong>No-growth floor (checks the growth assumption).</strong> OE ÷ r = $5,300M ÷ 0.105 = <strong>$50,476M → $54.87/sh.</strong> <em>Read this carefully:</em> the no-growth floor <strong>alone is $54.87 — already above the $45.47 price.</strong> The market is paying <em>less than PayPal is worth even if it never grows another dollar.</em> Every dollar of future growth is being handed to the buyer for free.</li>
+<li><strong>Implied multiple (checks the output).</strong> Base IV ÷ OE = $75 ÷ $5.76 = <strong>~13×</strong> owner earnings — eminently defensible for a 16–24% ROIC, net-cash, capital-light franchise. No runaway terminal value hiding here.</li>
+<li><strong>Owner-earnings yield vs. the bond (checks the anchor to rates).</strong> At $45.47, OE yield = $5,300M ÷ (45.47 × 920M) = $5,300M ÷ $41,832M = <strong>12.7%</strong> — versus a <strong>5.0%</strong> long bond. You are buying a growing 12.7% coupon against a static 5% coupon. Free-cash-flow yield is a similar <strong>13.3%.</strong> This is Chapter 12's gravity working <em>for</em> the buyer.</li>
+</ol>
+<h3 id="the-reverse-dcf-closer-what-is-the-market-actually-assuming">The reverse-DCF closer — what is the market actually assuming?</h3>
+<p>Solve for the owner-earnings growth rate that today's <strong>$45.47</strong> implies (r = 10.5%, 2.5% terminal): the price can only be justified if owner earnings <strong>shrink about 4–5% per year, forever.</strong> <em>Ben:</em> Sit with that. At 8.5× earnings, Mr. Market is not pricing slow growth — he is pricing <strong>terminal, permanent decline</strong> of the whole franchise. That is a bet that Apple Pay and stablecoins don't just contest the moat but <em>destroy</em> it. Possible — but that is the negative analysis the market has done <em>for</em> us, and it is a demanding assumption to bake into perpetuity.</p>
+<h3 id="sensitivity-table-the-false-precision-point">Sensitivity table (the false-precision point)</h3>
+<p><em>Intrinsic value per share — two-stage DCF, 6% explicit growth for 10 yrs, varying r and terminal g:</em></p>
+<table>
+<thead>
+<tr>
+<th>r ↓ / terminal g →</th>
+<th>2.0%</th>
+<th>2.5%</th>
+<th>3.0%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>9.5%</strong></td>
+<td>$105</td>
+<td>$109</td>
+<td>$114</td>
+</tr>
+<tr>
+<td><strong>10.5%</strong></td>
+<td>$92</td>
+<td>$95</td>
+<td>$98</td>
+</tr>
+<tr>
+<td><strong>11.5%</strong></td>
+<td>$81</td>
+<td>$84</td>
+<td>$86</td>
+</tr>
+</tbody>
+</table>
+<p>Even the <em>harshest</em> corner of a reasonable DCF (11.5% discount, 2% terminal growth) is <strong>$81</strong> — well above today's $45.47. The spread ($81–$114) is the point: precision is an illusion, but every reasonable cell of the machine says the same <em>direction</em> — the stock is cheap. When the whole grid clears the price by a wide margin, you don't need the decimal places. (We nonetheless anchor our headline range to the more conservative <em>multiple</em> method — $60–$90 — precisely because that DCF assumes a smoother 6% compounding than the margin-dollar evidence yet supports.)</p>
+<h3 id="sanity-check-vs-an-independent-research-service-the-live-multiple">Sanity check vs. An independent research service &amp; the live multiple</h3>
+<ul>
+<li>An independent research service 18-month target range: <strong>$38–$83</strong> (midpoint $61); 2029–31 target <strong>$70–$105.</strong> Our $60–$90 range sits squarely inside VL's own longer-run band.</li>
+<li>Live P/E ≈ <strong>8.5×</strong>; historical/median P/E far higher. Our implied ~13× base is a <em>deliberately humble</em> re-rating, not a return to growth-stock froth.</li>
+</ul>
+<p><strong>PRINCIPLE.</strong> <em>Choose the estimator the business deserves, derive every multiple, and let the cross-checks fail differently.</em> When the no-growth floor, the yield-vs-bond, the DCF, and a conservative multiple all point the same way, the conclusion is robust to your ignorance of the exact number — which is the only kind of conclusion worth acting on.</p>
+<hr />
+<h2 id="8-margin-of-safety-mr-market">8. MARGIN OF SAFETY &amp; MR. MARKET</h2>
+<p><strong>The arithmetic (Chapter 13).</strong> Margin of safety = (Intrinsic Value − Price) ÷ Intrinsic Value.</p>
+<ul>
+<li>Against <strong>BASE $75:</strong> (75 − 45.47) ÷ 75 = <strong>39%.</strong></li>
+<li>Against the <strong>conservative LOW $60:</strong> (60 − 45.47) ÷ 60 = <strong>24%.</strong></li>
+<li>Against the <strong>no-growth floor $54.87</strong> (the harshest honest yardstick): (54.87 − 45.47) ÷ 54.87 = <strong>17%</strong> — <em>you still have a margin of safety even assuming the business never grows again.</em></li>
+</ul>
+<p><strong>Where the safety sits.</strong> The manual distinguishes safety bought with <em>price discount</em> from safety that lives in <em>quality</em>. Here it is unusually <strong>stacked in the price</strong> — a 24–39% discount to conservative value — <em>and</em> buttressed by the <strong>fortress balance sheet</strong> (can't be forced to sell) and the <strong>capital-light, high-ROIC</strong> economics. The one place safety does <em>not</em> live is in <em>certainty about the moat</em> — that risk is real and undiscounted. So the price discount is doing the heavy lifting, which is exactly right for a <em>good</em> (not <em>wonderful</em>) business at the edge of the circle: when quality is uncertain, demand the discount in cash.</p>
+<p><strong>Is Mr. Market euphoric, depressed, or rational?</strong> On PayPal specifically, <strong>depressed</strong> — pricing perpetual decline (the reverse-DCF's −4% to −5% forever) into a net-cash, 13.8×-covered, 16–24%-ROIC franchise still generating $5.5B of free cash. The broad market is the opposite: An independent research service's median P/E is 18.2 and the market is a tech/AI-capex bull. PayPal is a distinctly <em>out-of-favor</em> name in an <em>in-favor</em> market — the classic setup where Mr. Market's pocketbook, not his wisdom, is useful to us.</p>
+<p><strong>PRINCIPLE.</strong> <em>The margin of safety is a discount in price, not a hope in the story.</em> When a good business is priced for terminal decline, the depressed quote is the raw material — but you still demand the discount in cash precisely because the moat question is not settled.</p>
+<hr />
+<h2 id="9-the-verdict-the-lesson">9. THE VERDICT &amp; THE LESSON</h2>
+<p><strong>Business quality: GOOD</strong> (not <em>wonderful</em>, not <em>fair</em>). Capital-light, high-ROIC, fortress balance sheet, real two-sided network and brand — but a <strong>contested, narrowing moat</strong> where headline volume growth is not converting to transaction-margin-dollar growth. That single fact is what keeps it out of the "wonderful" tier.</p>
+<p><strong>Verdict: a GOOD business at a conspicuously CHEAP price — attractive on the numbers, with an honest, unresolved moat risk.</strong> Intrinsic value <strong>$60–$90</strong> (base $75) against a <strong>$45.47</strong> price is a <strong>24–39% margin of safety</strong>, and the stock is priced for perpetual decline that the fundamentals do not yet show. In the manual's language: this is closer to <em>a good company at a wonderful price</em> than <em>a wonderful company at a fair price</em> — the Graham end of the spectrum, where the discount must carry the thesis.</p>
+<p><strong>Answering THE ONE QUESTION</strong> — <em>is branded checkout a durable franchise or an eroding brand?</em> — <strong>the honest answer is "contested, and not yet resolved either way."</strong> The bull case (network effect, brand, high ROIC, aggressive buybacks below value) and the bear case (flat transaction-margin dollars, −4% payment transactions, Apple Pay / Shop Pay / stablecoin pressure) both have real evidence. The <em>price</em>, however, has resolved the question pessimistically — and that gap between an open question and a settled-pessimistic price is the entire opportunity.</p>
+<p><strong>Two or three open questions to monitor (the thesis stands or falls here):</strong><br />
+1. <strong>Transaction-margin dollars</strong> — do they resume growing? This, not TPV, is the moat's vital sign. (Flat in Q1 2026 is the yellow flag.)<br />
+2. <strong>Branded checkout share</strong> — does the PayPal button hold against Apple Pay, Shop Pay, and stablecoin rails? Any disclosure that isolates branded volume is gold.<br />
+3. <strong>Interest income on customer balances</strong> — how much owner earnings erodes as rates fall (already down: interest income $662M→$517M year over year).</p>
+<p><strong>Two or three universal lessons from this case:</strong><br />
+- <strong>Volume is not profit.</strong> A payments business can grow TPV 11% while transaction-margin dollars grow 0.6%. Always find the <em>margin dollars</em>.<br />
+- <strong>"Adjusted earnings" often just means adding stock-comp back.</strong> The $5.81 owner-earnings vs. $6.62 non-GAAP gap here <em>is</em> SBC. Keep it as a cost.<br />
+- <strong>A cheap price can carry a merely-good business</strong> — Graham's insight — but only with a fortress balance sheet (so you're never forced to sell) and a real margin of safety in cash (so an honest error can't ruin you). PayPal has both.</p>
+<p><em>This is a teaching case built to demonstrate a method — not investment advice, and not a recommendation to buy or sell PayPal.</em></p>
+<hr />
+<h2 id="10-the-valuation-checklist-manual-ch-15">10. THE VALUATION CHECKLIST (Manual Ch. 15)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Gate</th>
+<th>Verdict</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Circle of competence</strong> — can we forecast it?</td>
+<td><strong>UNSURE</strong></td>
+<td>Business understandable; moat durability genuinely contestable — at the edge of the circle.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Moat / pricing power</strong></td>
+<td><strong>PARTIAL</strong></td>
+<td>Real network + brand, but transaction-margin dollars flat vs. +11% TPV; contested by Apple Pay/Shop Pay/stablecoins.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>ROIC &gt; cost of capital</strong></td>
+<td><strong>PASS</strong></td>
+<td>ROIC 16% (gross) to 24% (net-cash) vs. r 10.5%. Capital-light (capex &lt; D&amp;A).</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Trustworthy numbers &amp; management</strong></td>
+<td><strong>PASS</strong></td>
+<td>Clean disclosure; SBC properly expensed (we don't add it back); candid on Braintree cuts &amp; CEO change. Watch reliance on tax/investment tailwinds.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Balance-sheet survivability</strong></td>
+<td><strong>PASS (fortress)</strong></td>
+<td>Net-cash −$235M corporate; 13.8× interest coverage; undrawn $5B revolver; no pension; laddered maturities.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Capital allocation</strong></td>
+<td><strong>PASS</strong></td>
+<td>24% share-count reduction; buybacks at/below IV; new dividend; restrained M&amp;A. Score net of SBC.</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Valuation method + sensitivity</strong></td>
+<td><strong>DONE</strong></td>
+<td>Normalized OE multiple (11–15×) cross-checked by DCF, no-growth floor, yield vs. bond; sensitivity grid $81–$114 (DCF) / $60–$90 (chosen, haircut).</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Growth check (ROIC vs. r)</strong></td>
+<td><strong>PASS, with caveat</strong></td>
+<td>Branded growth value-creating (ROIC≫r); <em>unbranded Braintree</em> growth near/below r — mix decides.</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Margin of safety</strong></td>
+<td><strong>PASS</strong></td>
+<td>24–39% below conservative IV; 17% below even the no-growth floor.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Post-purchase hold/sell discipline (Ch. 16).</strong> If one <em>hypothetically</em> owned PYPL bought at this discount, the manual's three (and only three) sell triggers would be: <strong>(a) the thesis breaks</strong> — transaction-margin dollars enter sustained decline and branded checkout visibly loses share (the moat erodes for real); <strong>(b) price runs far past value</strong> — Mr. Market re-rates back above ~$90–$100 with no fundamental improvement; or <strong>(c) a decisively better use of capital appears</strong> within the circle at a wider margin of safety. Absent those, monitor the <em>business</em> (margin dollars, branded share), not the <em>quote</em> — and let the 24% buyback compounding work.</p>
+<hr />
+<h2 id="11-glossary-terms-formulas-with-pypls-own-numbers">11. GLOSSARY — TERMS &amp; FORMULAS (with PYPL's own numbers)</h2>
+<p><strong>Total Payment Volume (TPV).</strong> Dollar value of payments completed on the platform. <em>PYPL:</em> ~$1.79 trillion (FY2025); +11% YoY in Q1 2026 — but growth concentrated in low-margin Braintree.</p>
+<p><strong>Transaction margin dollars.</strong> Transaction revenue − transaction expense − transaction &amp; credit losses; the profit actually kept per unit of volume. <em>Formula:</em> TR − TE − losses. <em>PYPL Q1'26:</em> 7,501 − 4,165 − 378 = <strong>$2,958M</strong>, vs $2,941M a year prior = <strong>+0.6%</strong> while TPV +11%. The moat's vital sign.</p>
+<p><strong>Take rate.</strong> Revenue as a % of TPV. <em>PYPL:</em> transaction revenue $29,798M ÷ TPV ~$1,790,000M ≈ <strong>1.66%</strong>, drifting down as unbranded Braintree grows.</p>
+<p><strong>Branded vs. unbranded.</strong> Branded = the PayPal/Venmo button (high margin, owns the customer). Unbranded = Braintree card processing (low margin, commodity). <em>PYPL:</em> ~$410M of Q1'26's ~$620M transaction-revenue rise came from Braintree — volume without much profit.</p>
+<p><strong>Circle of competence.</strong> The set of businesses you can forecast within a sensible range; its boundary matters more than its size. <em>PYPL:</em> at the <em>edge</em> — understandable business, contestable moat.</p>
+<p><strong>Moat / economic franchise.</strong> A durable advantage (network, brand, low cost, scale) protecting high returns; its signature is pricing power. <em>PYPL:</em> two-sided network + brand, but <em>narrow and contested.</em></p>
+<p><strong>Owner earnings.</strong> <em>Formula:</em> Reported earnings + non-cash charges − maintenance capex − ΔWorking capital. The cash an owner can withdraw. <em>PYPL:</em> 5,233 + 963 − 852 − 0 ≈ <strong>$5,344M</strong> (~$5.81/sh); normalized to <strong>~$5,300M</strong>. SBC ($1,002M) is kept as a real cost, <em>not</em> added back.</p>
+<p><strong>Stock-based compensation (SBC).</strong> Pay in shares; a real, dilutive cost. <em>PYPL:</em> $1,002M FY2025 — the entire gap between honest owner earnings ($5.81/sh) and non-GAAP "adjusted" earnings ($6.62/sh).</p>
+<p><strong>Maintenance capex.</strong> Capital spending to preserve competitive position/unit volume, vs. growth capex. <em>PYPL:</em> capex $852M &lt; D&amp;A $963M — capital-light; we treated all capex as maintenance (conservative).</p>
+<p><strong>Free cash flow.</strong> <em>Formula:</em> Operating cash flow − capex. <em>PYPL:</em> 6,416 − 852 = <strong>$5,564M</strong> (~$6.05/sh); FCF yield at $45.47 = <strong>13.3%</strong>.</p>
+<p><strong>ROIC (Return on Invested Capital).</strong> <em>Formula:</em> NOPAT ÷ Invested Capital; NOPAT = op income × (1 − tax). <em>PYPL:</em> 6,065 × 0.80 = $4,852M; ÷ $30,443M (gross) = <strong>15.9%</strong>, ÷ $20,021M (net of corporate cash) = <strong>24.2%.</strong> Above r → value-creating.</p>
+<p><strong>NOPAT.</strong> After-tax operating profit. <em>PYPL:</em> $6,065M × (1 − 0.20) = <strong>$4,852M</strong>.</p>
+<p><strong>ROE (Return on Equity).</strong> <em>Formula:</em> Net income ÷ equity. <em>PYPL:</em> 5,233 ÷ 20,256 = <strong>25.8%</strong> — but flattered by buyback-shrunk equity; read ROIC instead.</p>
+<p><strong>Discount rate (r).</strong> Owner's opportunity cost = long bond + uncertainty premium. <em>PYPL:</em> 5.0% (30-yr Treasury) + 5.5% = <strong>10.5%.</strong></p>
+<p><strong>No-growth (earning-power) value.</strong> <em>Formula:</em> Owner earnings ÷ r. The value if growth stopped today. <em>PYPL:</em> 5,300 ÷ 0.105 = <strong>$50,476M → $54.87/sh</strong> — already above the $45.47 price.</p>
+<p><strong>Intrinsic value (two-stage DCF).</strong> <em>Formula:</em> Σ OEₜ/(1+r)ᵗ + [OEₙ₊₁/(r−g)]/(1+r)ⁿ. <em>PYPL:</em> even a cautious 4%/2.5% DCF ≈ $82/sh; we haircut to a multiple-based <strong>$60–$90</strong> range.</p>
+<p><strong>Implied multiple.</strong> IV ÷ owner earnings — the DCF restated in one number. <em>PYPL:</em> $75 ÷ $5.76 = <strong>~13× owner earnings</strong> at base.</p>
+<p><strong>Owner-earnings yield.</strong> <em>Formula:</em> Owner earnings ÷ market cap. <em>PYPL:</em> 5,300 ÷ 41,832 = <strong>12.7%</strong> vs. a 5.0% long bond.</p>
+<p><strong>Reverse DCF.</strong> Solve for the growth the current price implies. <em>PYPL:</em> at $45.47 (r 10.5%), implied owner-earnings growth ≈ <strong>−4% to −5% forever</strong> — the market pricing terminal decline.</p>
+<p><strong>Interest coverage.</strong> <em>Formula:</em> Operating income (EBIT) ÷ interest expense. <em>PYPL:</em> 6,065 ÷ 441 = <strong>13.8×.</strong></p>
+<p><strong>Net debt / owner earnings.</strong> <em>Formula:</em> (Total corporate debt − corporate cash) ÷ owner earnings. <em>PYPL:</em> (10,187 − 10,422) ÷ 5,300 = <strong>≈ 0</strong> (net-cash).</p>
+<p><strong>Customer float / funds payable.</strong> Customer money PayPal custodies and invests; a high-quality liability, not corporate leverage. <em>PYPL:</em> funds payable &amp; due to customers <strong>$40,198M</strong>, matched by funds receivable &amp; customer accounts <strong>$38,198M</strong> — stripped out before judging solvency.</p>
+<p><strong>Margin of safety.</strong> <em>Formula:</em> (Intrinsic value − price) ÷ intrinsic value. <em>PYPL:</em> (75 − 45.47) ÷ 75 = <strong>39%</strong> at base; <strong>17%</strong> even against the no-growth floor.</p>
+<p><strong>Mr. Market.</strong> The manic-depressive partner whose price, not wisdom, you use. <em>PYPL:</em> currently <em>depressed</em> on this name — pricing perpetual decline into a net-cash, high-ROIC franchise.</p>
+<p><strong>One-dollar test.</strong> Retain a dollar only if incremental ROIC ≥ r. <em>PYPL:</em> ROIC 16–24% &gt; r 10.5% → retention justified for branded growth; surplus rightly returned via buybacks + new dividend.</p>
+<p><em>End of seminar.</em></p>
+    </div>
+  </article>
+</main>
+<footer class="site-foot">
+  <p><strong>Educational only — not investment advice.</strong> These are my own study
+  notes and intrinsic-value estimates, published to learn in public. I am not a licensed
+  financial advisor. Do your own work; verify every figure against primary filings.</p>
+  <p class="muted">Built 2026-07-12 · figures from public SEC EDGAR filings and my own arithmetic.</p>
+</footer>
+</body>
+</html>

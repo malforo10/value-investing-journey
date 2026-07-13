@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CME Group Inc. (CME) — intrinsic value</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">§</span>
+    <span class="brand-text">A Value-Investing Learning Journey</span>
+  </a>
+  <nav class="site-nav"><a href="../index.html" class="active">Home</a><a href="../methodology.html" class="">Methodology</a><a href="../journal/index.html" class="">Journal</a></nav>
+</header>
+<main>
+
+  <article class="company-page">
+    <div class="crumbs"><a href="../index.html">← All businesses</a></div>
+    <header class="company-head">
+      <h1>CME Group Inc. <span class="tk">(CME)</span></h1>
+      <p class="sub">Brokers &amp; Exchanges · analysis dated 2026-07-04</p>
+    </header>
+    
+  <div class="iv-widget">
+    <div class="iv-cell"><span class="iv-lbl">IV low</span><span class="iv-val">$255</span></div>
+    <div class="iv-cell iv-base"><span class="iv-lbl">IV base</span><span class="iv-val">$285</span></div>
+    <div class="iv-cell"><span class="iv-lbl">IV high</span><span class="iv-val">$315</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Price</span><span class="iv-val">$240.27</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Margin of safety</span><span class="iv-val mos-good">+16%</span></div>
+  </div>
+    <p class="method"><strong>Method:</strong> Triangulated: normalized owner-earnings multiple (21x/23x/26x on ~$12.20 OE) + two-stage DCF (OE $12.20, g1 6% x10yr, terminal 2.5-3.0%, r 8-9%) + total-dividend-yield cross-check; clearing collateral gross-up stripped before all ratios/ROIC</p>
+    <div class="verdict"><span class="vlbl">Verdict</span><p>Wonderful - wide-moat toll bridge now at a fair-to-attractive price after a ~23% drop, offering a moderate (~17%) margin of safety</p></div>
+    <div class="seminar">
+    <h1 id="cme-group-cme-a-value-investing-seminar">CME Group (CME) — A Value-Investing Seminar</h1>
+<p><em>Co-taught by Benjamin Graham and Warren Buffett</em><br />
+<em>Teaching case dated July 4, 2026 — not a recommendation</em></p>
+<hr />
+<p>Welcome. Settle in. Today the two of us are going to walk through one business, slowly, out loud, the way we would if you were sitting across the desk from us. The company is <strong>CME Group</strong> — the Chicago-born derivatives exchange and clearing house. We picked it on purpose, because it teaches three lessons better than almost any company we know: what a <em>network-effect toll bridge</em> looks like, how <em>accounting can hide a wonderful business behind a mountain of goodwill</em>, and the eternal discipline that <strong>even a wonderful business is only a good investment at the right price.</strong></p>
+<p>We are not going to tell you whether to buy it. We are going to show you <em>how to think</em>, with real numbers, cited to the statement they came from, arithmetic shown as <code>figure ÷ figure = result</code>. When we finish a step, we will state the transferable principle so you can carry it to the next company you study.</p>
+<p>Let us begin.</p>
+<hr />
+<h2 id="opening-the-case-the-business">OPENING THE CASE — THE BUSINESS</h2>
+<h3 id="what-cme-actually-does">What CME actually does</h3>
+<p>CME Group operates the world's largest and most diversified <strong>derivatives marketplace</strong>, and one of the world's leading <strong>central counterparty clearing houses</strong> (10-K, Item 1). Strip away the jargon and the model is almost embarrassingly simple to describe:</p>
+<blockquote>
+<p>Buyers and sellers come to CME's electronic platform (CME Globex) to trade <strong>futures and options</strong> — contracts on interest rates, equity indexes, foreign exchange, energy, agricultural commodities, and metals. CME's <strong>clearing house</strong> then steps in the middle of every trade, becoming <em>the buyer to every seller and the seller to every buyer</em>, guaranteeing settlement. For providing the marketplace and the guarantee, CME collects a small fee on <strong>every contract traded and cleared.</strong></p>
+</blockquote>
+<p>That is a toll bridge. Traffic crosses; CME clips a fee. In 2025 the average daily volume was <strong>28.1 million contracts</strong> (10-K, Item 1). Revenue is built almost entirely on a per-contract charge (10-K, Note 3, Revenue Recognition).</p>
+<p>Here is the FY2025 revenue, disaggregated (10-K, Note 3, in $millions):</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interest rates</td>
+<td style="text-align: right;">1,719.6</td>
+<td style="text-align: right;">1,659.6</td>
+<td style="text-align: right;">1,558.4</td>
+</tr>
+<tr>
+<td>Equity indexes</td>
+<td style="text-align: right;">1,170.4</td>
+<td style="text-align: right;">1,095.3</td>
+<td style="text-align: right;">1,036.4</td>
+</tr>
+<tr>
+<td>Energy</td>
+<td style="text-align: right;">813.2</td>
+<td style="text-align: right;">800.5</td>
+<td style="text-align: right;">702.8</td>
+</tr>
+<tr>
+<td>Agricultural commodities</td>
+<td style="text-align: right;">658.1</td>
+<td style="text-align: right;">585.1</td>
+<td style="text-align: right;">508.5</td>
+</tr>
+<tr>
+<td>Metals</td>
+<td style="text-align: right;">354.7</td>
+<td style="text-align: right;">284.3</td>
+<td style="text-align: right;">224.7</td>
+</tr>
+<tr>
+<td>Foreign exchange</td>
+<td style="text-align: right;">197.0</td>
+<td style="text-align: right;">198.5</td>
+<td style="text-align: right;">190.0</td>
+</tr>
+<tr>
+<td>BrokerTec fixed income</td>
+<td style="text-align: right;">151.1</td>
+<td style="text-align: right;">145.1</td>
+<td style="text-align: right;">152.1</td>
+</tr>
+<tr>
+<td>EBS foreign exchange</td>
+<td style="text-align: right;">132.6</td>
+<td style="text-align: right;">131.6</td>
+<td style="text-align: right;">132.6</td>
+</tr>
+<tr>
+<td>Interest Rate Swap</td>
+<td style="text-align: right;">84.4</td>
+<td style="text-align: right;">88.2</td>
+<td style="text-align: right;">83.0</td>
+</tr>
+<tr>
+<td><strong>Total clearing &amp; transaction fees</strong></td>
+<td style="text-align: right;"><strong>5,281.1</strong></td>
+<td style="text-align: right;"><strong>4,988.2</strong></td>
+<td style="text-align: right;"><strong>4,588.5</strong></td>
+</tr>
+<tr>
+<td>Market data &amp; information services</td>
+<td style="text-align: right;">803.1</td>
+<td style="text-align: right;">710.2</td>
+<td style="text-align: right;">663.7</td>
+</tr>
+<tr>
+<td>Other</td>
+<td style="text-align: right;">436.4</td>
+<td style="text-align: right;">431.7</td>
+<td style="text-align: right;">326.7</td>
+</tr>
+<tr>
+<td><strong>Total Revenues</strong></td>
+<td style="text-align: right;"><strong>6,520.6</strong></td>
+<td style="text-align: right;"><strong>6,130.1</strong></td>
+<td style="text-align: right;"><strong>5,578.9</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Notice: <strong>clearing &amp; transaction fees are 5,281.1 ÷ 6,520.6 = 81.0%</strong> of revenue, and the <strong>interest-rate complex alone (1,719.6 ÷ 6,520.6 = 26.4%)</strong> is the single biggest product line. Market data — a high-margin annuity of subscription fees — is another <strong>803.1 ÷ 6,520.6 = 12.3%</strong>. Two revenue streams, both recurring, both fee-based.</p>
+<p>The customers are "professional traders, financial institutions, individual and institutional investors, major corporations, manufacturers, producers, governments and central banks" (10-K, Item 1). When the world is uncertain and volatile, these people <em>need</em> to hedge — and CME's volumes rise. As the MD&amp;A puts it plainly: "our contract volume, and consequently our revenues, tend to increase during periods of economic and geopolitical uncertainty" (Item 7).</p>
+<h3 id="the-circle-of-competence-gate">The circle-of-competence gate</h3>
+<p>Warren likes to say the first question is never "is it cheap?" — it is "<strong>can I understand and forecast this?</strong>" (Manual, Ch. 4). A derivatives exchange plus clearing house is a fee-per-transaction business with pricing set by CME, near-monopoly product franchises, and demand that grows structurally with the size of the financial system. An independent research service scores its <strong>Earnings Predictability 75</strong> and its <strong>Safety 1 (the top rank)</strong>, with <strong>Price Stability 100 (maximum)</strong>. We can forecast this business's economics within a sensible range. <strong>It is squarely inside the circle.</strong> We pass the gate.</p>
+<blockquote>
+<p><strong>PRINCIPLE.</strong> Before any arithmetic, ask whether you can forecast the business. A toll-booth economic model — a small fee on an enormous, recurring flow you did not have to create — is one of the most forecastable structures in all of business. When predictability is high, the rest of the valuation rests on solid ground.</p>
+</blockquote>
+<h3 id="the-one-question">THE ONE QUESTION</h3>
+<p>We frame every case around a single question. Here it is:</p>
+<blockquote>
+<p><strong>CME is, by almost any measure, a wonderful business — a wide-moat, capital-light, ~65%-operating-margin toll bridge. But wonderful businesses usually trade at premium prices. After a ~23% drop from the an independent research service report price, has Mr. Market finally created a margin of safety — or is $236.60 still fair-to-full for what you get?</strong></p>
+</blockquote>
+<p>Hold that question in your mind. Everything that follows is in service of answering it.</p>
+<hr />
+<h2 id="reading-the-statements-together">READING THE STATEMENTS TOGETHER</h2>
+<p>Now we sit with the three financial statements — income statement, balance sheet, cash flow — and treat them as <em>evidence in a trial</em>, cross-examining each figure. But before we can read CME's balance sheet at all, we must perform surgery on it.</p>
+<h3 id="the-clearing-collateral-gross-up-the-single-most-important-accounting-fact-about-cme">The clearing-collateral gross-up — the single most important accounting fact about CME</h3>
+<p>Look at the FY2025 balance sheet (10-K, Item 8). Total Assets are <strong>$198,424.2 million</strong> — nearly <strong>$200 billion</strong>. A newcomer sees that and thinks "enormous, leveraged financial institution." <strong>That reading is wrong, and it is the central trap in analyzing CME.</strong></p>
+<p>Of that $198.4B, the line <strong>"Performance bonds and guaranty fund contributions"</strong> is <strong>$159,656.1 million</strong> on the asset side — and, dollar for dollar, <strong>$159,656.1 million</strong> on the <em>liability</em> side (10-K, balance sheet). These are the cash margin and default-fund deposits that clearing firms park with CME's clearing house as collateral. The footnote is explicit (Note 4): this cash "cannot be used for the company's operations or to satisfy any operational liabilities"; it is <em>restricted</em>; and CME simply holds it as an intermediary. Indeed, <strong>$141.7 billion</strong> of it sits in a cash account at the <strong>Federal Reserve Bank of Chicago</strong> (Note 4). It is not CME's money. It is customers' collateral, matched exactly by a liability to return it.</p>
+<p>So we strip it out. The <strong>real, operating balance sheet</strong> of CME is:</p>
+<p><code>Total assets ex-collateral = 198,424.2 − 159,656.1 = $38,768.1M</code></p>
+<p><code>Total liabilities ex-collateral = 169,696.0 − 159,656.1 = $10,039.9M</code></p>
+<p><code>Shareholders' equity (unchanged) = $28,728.2M</code></p>
+<p>Now the balance sheet is legible. The real operating business carries roughly <strong>$38.8B of assets and $10.0B of liabilities</strong> — and even that $38.8B is dominated by <em>intangibles</em>, not hard assets, as we will see.</p>
+<blockquote>
+<p><strong>PRINCIPLE.</strong> Always understand what a balance sheet line <em>economically represents</em> before you compute a single ratio. A clearing house, an insurer's float, a bank's deposits, a broker's customer cash — these gross up the balance sheet with money that is not the owners'. Compute leverage or ROIC on the raw total and every ratio you produce is nonsense. <strong>Match the offsetting asset and liability, strike them both, and value what remains.</strong></p>
+</blockquote>
+<h3 id="the-income-statement-and-a-second-gross-up-to-see-through">The income statement, and a second gross-up to see through</h3>
+<p>Now the income statement (10-K, Item 8). Two ways to read it — and the <em>operating</em> line is the one that matters.</p>
+<p><strong>Core operations (the toll bridge):</strong></p>
+<p><code>Total Revenues = $6,520.6M</code><br />
+<code>Total Expenses = $2,291.1M</code><br />
+<code>Operating Income = 6,520.6 − 2,291.1 = $4,229.5M</code></p>
+<p><code>Operating margin = 4,229.5 ÷ 6,520.6 = 64.9%</code></p>
+<p>Sixty-five cents of every revenue dollar drops to operating profit. That is a franchise, not a business.</p>
+<p><strong>Then the non-operating section — where the collateral shows up again.</strong> Below the operating line you will see:<br />
+- Investment income of <strong>$5,736.5M</strong> — most of which (<strong>$5,253.6M</strong>, per Note 4) is <em>interest earned on the clearing collateral</em>.<br />
+- Other non-operating expense of <strong>−$4,833.8M</strong> — most of which (<strong>$4,842.5M</strong>, Note 4) is <em>that same interest paid back out to the clearing firms.</em></p>
+<p>These two giant, nearly-offsetting numbers are the collateral gross-up flowing through the P&amp;L. CME keeps a <em>spread</em> on the float, but you must not mistake the gross $5.7B "investment income" for operating earnings. Net income lands at:</p>
+<p><code>Net Income = $4,072.2M</code>, of which <code>Net Income to common = $4,021.0M</code><br />
+<code>Diluted EPS = $11.16</code> (10-K, Item 8)</p>
+<p><code>Net margin = 4,072.2 ÷ 6,520.6 = 62.5%</code></p>
+<blockquote>
+<p><strong>PRINCIPLE.</strong> Read <em>through</em> offsetting gross-ups on the income statement exactly as you do on the balance sheet. CME's true operating engine is the ~65%-margin fee business; the multi-billion "investment income" and its matching expense are the float passing through. Anchor to operating income and net income, not the gross investment line.</p>
+</blockquote>
+<h3 id="the-cash-flow-statement-the-earnings-are-real">The cash flow statement — the earnings are real</h3>
+<p>The proof that reported earnings are cash, not accounting fiction, is the cash flow statement (10-K, Item 8):</p>
+<p><code>Net Cash from Operating Activities = $4,277.1M</code><br />
+<code>vs. Net Income = $4,072.2M</code></p>
+<p>Operating cash flow <strong>exceeds</strong> net income (<code>4,277.1 ÷ 4,072.2 = 1.05×</code>). Against that, capital expenditure ("purchases of property, net") was just <strong>$83.5M</strong> — a rounding error on a $6.5B-revenue business (<code>83.5 ÷ 6,520.6 = 1.3% of revenue</code>). This is the signature of an <strong>asset-light, capital-light</strong> enterprise: it converts nearly every dollar of profit into distributable cash.</p>
+<p><em>(A caution on the cash-flow "financing" section: the +$60,760.6M "change in performance bond and guaranty fund contributions" is, once again, the collateral gross-up. Ignore it for owner-cash purposes.)</em></p>
+<h3 id="ratios-on-the-real-balance-sheet">Ratios on the <em>real</em> balance sheet</h3>
+<p>Now the ratios mean something. On the operating balance sheet:</p>
+<ul>
+<li><strong>Cash &amp; marketable securities:</strong> <code>4,416.9 + 125.0 = $4,541.9M</code></li>
+<li><strong>Total debt:</strong> <code>$3,422.3M</code> (all long-term; 10-K). CME is <em>net cash</em>: <code>4,541.9 − 3,422.3 = +$1,119.6M</code>.</li>
+<li><strong>Interest coverage:</strong> an independent research service reports "more than 25.0×." Check it: <code>Operating income 4,229.5 ÷ interest 173.4 = 24.4×</code>. Comfortable beyond argument.</li>
+<li><strong>Financial Strength:</strong> an independent research service rates it <strong>A+</strong>.</li>
+</ul>
+<p>This is a fortress. There is no leverage risk here — the $200B balance sheet is an accounting illusion; the real one holds more cash than debt.</p>
+<h3 id="earnings-quality-scan">Earnings-quality scan</h3>
+<p>Running our red-flag checklist (Manual, Ch. 7):<br />
+- <strong>EBITDA dressed as cash flow?</strong> No — capex is trivial, so EBITDA ≈ cash anyway, and management reports GAAP cash flow honestly.<br />
+- <strong>Recurring "one-time" charges?</strong> No pattern of them.<br />
+- <strong>Aggressive revenue recognition?</strong> No — fees are recognized on trade execution, an unambiguous, point-in-time event (Note 3). $5,170.8M of 2025 revenue is "at a point in time."<br />
+- <strong>The one genuine non-cash item to understand:</strong> <strong>Amortization of purchased intangibles = $223.4M</strong> (10-K), from the CBOT (2007), NYMEX/COMEX (2008), and NEX (2018) acquisitions. This is a <em>non-cash accounting charge</em> against long-ago cash purchases; it depresses reported EPS without consuming any current cash. We will add it back in owner earnings.</p>
+<h3 id="do-not-anchor-to-book-value">Do not anchor to book value</h3>
+<p>Shareholders' equity is <strong>$28,728.2M</strong>, or <code>28,728.2 ÷ 358.95M shares = $80.03</code> book value per share (matches an independent research service). But look what is <em>inside</em> that equity:</p>
+<p><code>Goodwill = $10,514.7M</code><br />
+<code>Intangible assets — trading products = $17,175.3M</code><br />
+<code>Intangible assets — other, net = $2,610.7M</code><br />
+<code>Total goodwill + intangibles = 10,514.7 + 17,175.3 + 2,610.7 = $30,300.7M</code></p>
+<p><code>Tangible book equity = 28,728.2 − 30,300.7 = −$1,572.5M</code></p>
+<p>CME's <strong>tangible book value is negative.</strong> The intangibles from three decades of mergers <em>exceed</em> the entire book equity. A naïve investor sees "negative tangible equity" and recoils. <strong>That reaction is exactly backwards.</strong> As our 1983 goodwill essay argues (Manual, Ch. 7): <em>economic</em> goodwill — the value of a franchise above its tangible capital — is precisely what a great business possesses. See's Candies runs on almost no tangible capital and is worth a fortune. CME is the same story at vast scale: the underlying exchange needs <em>almost no physical capital</em> to operate, so its economic value has nothing to do with, and vastly exceeds, its tangible book.</p>
+<blockquote>
+<p><strong>PRINCIPLE.</strong> Book value understates a great business and overstates a poor one. Never anchor the value of a franchise to its book equity — and never let negative <em>tangible</em> equity frighten you when it exists because the company paid, long ago, for durable franchises that throw off cash. The question is not "how much capital is on the books" but "<strong>how much cash does the business produce relative to the capital it actually needs.</strong>"</p>
+</blockquote>
+<hr />
+<h2 id="earnings-power-the-moat">EARNINGS POWER &amp; THE MOAT</h2>
+<p>This is the heart of the case — the section that separates CME from an ordinary company.</p>
+<h3 id="the-long-run-trend">The long-run trend</h3>
+<p>Using an independent research service's per-share history and the 10-K/XBRL for recent years, revenue and profit have compounded steadily for over a decade (per-share and $M):</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">2016</th>
+<th style="text-align: right;">2019</th>
+<th style="text-align: right;">2021</th>
+<th style="text-align: right;">2022</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue ($M)</td>
+<td style="text-align: right;">3,595</td>
+<td style="text-align: right;">4,868</td>
+<td style="text-align: right;">4,690</td>
+<td style="text-align: right;">5,019</td>
+<td style="text-align: right;">5,579</td>
+<td style="text-align: right;">6,130</td>
+<td style="text-align: right;">6,521</td>
+</tr>
+<tr>
+<td>Operating income ($M)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">2,645</td>
+<td style="text-align: right;">3,016</td>
+<td style="text-align: right;">3,436</td>
+<td style="text-align: right;">3,932</td>
+<td style="text-align: right;">4,230</td>
+</tr>
+<tr>
+<td>Net income ($M)</td>
+<td style="text-align: right;">1,534</td>
+<td style="text-align: right;">2,116</td>
+<td style="text-align: right;">2,637</td>
+<td style="text-align: right;">2,691</td>
+<td style="text-align: right;">3,226</td>
+<td style="text-align: right;">3,526</td>
+<td style="text-align: right;">4,072</td>
+</tr>
+<tr>
+<td>Op. cash flow ($M)</td>
+<td style="text-align: right;">1,732</td>
+<td style="text-align: right;">2,673</td>
+<td style="text-align: right;">2,402</td>
+<td style="text-align: right;">3,056</td>
+<td style="text-align: right;">3,454</td>
+<td style="text-align: right;">3,691</td>
+<td style="text-align: right;">4,277</td>
+</tr>
+</tbody>
+</table>
+<p>An independent research service's own long-run per-share rates: revenue grew ~<strong>6.0%/yr over 10 years</strong>, earnings ~<strong>11.5%/yr</strong>, dividends ~<strong>9.5%/yr</strong>. The 2025 result was a <strong>record</strong> — Q4 2025 EPS rose 35% year over year (an independent research service, 4/3/26). And the momentum has continued: <strong>Q1 2026 total revenue was $1,880.1M, up <code>(1,880.1 − 1,642.3) ÷ 1,642.3 = 14.5%</code> year over year</strong>, with operating income of $1,309.7M (<code>1,309.7 ÷ 1,880.1 = 69.7%</code> margin) and net income of $1,154.3M (10-Q). The trend is intact and, if anything, accelerating.</p>
+<h3 id="margins-that-prove-a-moat-exists">Margins that prove a moat exists</h3>
+<p>Operating margin has run in the <strong>~57%–73%</strong> band for a decade (an independent research service) and sat at <strong>64.9%</strong> in 2025. <em>Sustained</em> margins like these are impossible in a competitive business — capitalism guarantees that competitors assault any castle earning such returns (Manual, Ch. 5). That the margin <em>persists</em> is the empirical fingerprint of a moat. Now let us name the moat's sources.</p>
+<h3 id="anatomy-of-the-moat-a-network-effect-at-its-purest">Anatomy of the moat — a network effect at its purest</h3>
+<p>CME's moat is the <strong>liquidity / open-interest network effect</strong>, and it is one of the widest in public markets. Here is the mechanism, stated as the flywheel it is:</p>
+<ol>
+<li>Traders go where the <strong>liquidity</strong> is — where they can execute large size quickly at tight spreads (10-K, Item 1: "Market liquidity … is key to attracting and retaining customers").</li>
+<li>Liquidity attracts more traders, which <em>deepens</em> liquidity.</li>
+<li>Deeper liquidity makes it <em>even harder</em> for a rival venue to peel customers away — a competitor launching an identical contract starts with <strong>zero</strong> open interest, and no trader will move to an empty pool.</li>
+</ol>
+<p>This is why, when the newly-launched <strong>FMX Futures Exchange</strong> (10-K, Item 1, names it as a new entrant) or any rival tries to compete in, say, Treasury futures, they face a near-impossible cold-start problem. The incumbency compounds.</p>
+<p>Layered on top of the network effect are three reinforcing advantages:</p>
+<ul>
+<li><strong>Vertical integration of trading + clearing.</strong> CME clears what it trades. This lets it offer <strong>cross-margining</strong> and <strong>portfolio-margining</strong> — netting a customer's offsetting positions to slash the collateral they must post. The 10-K quantifies the prize: <strong>average daily margin savings of ~$72 billion</strong> in 2025. A customer enjoying those capital efficiencies at CME cannot replicate them by splitting business across venues. <em>That is a switching cost bolted onto a network effect.</em></li>
+<li><strong>Regulatory / scale barriers.</strong> CME is a CFTC-regulated designated contract market and a <strong>systemically important financial market utility</strong> (Note 4) — able to hold cash at the Federal Reserve. Standing up a competing, regulated, capitalized clearing house is a multi-year, capital-heavy ordeal.</li>
+<li><strong>Data and index franchises.</strong> Market data is a 12%-of-revenue, high-margin annuity (~53% earned outside the U.S.), and CME holds long-term, largely <strong>exclusive</strong> index licenses — S&amp;P 500 (via its S&amp;P Dow Jones Indices JV), Nasdaq (through 2039), Russell (through 2037) — for its equity-index futures (10-K, Item 1).</li>
+</ul>
+<h3 id="testing-the-moat-for-erosion-honestly">Testing the moat for erosion — honestly</h3>
+<p>We must argue durability, not assume it (Manual, Ch. 5). CME itself lists real competitors — ICE, Cboe, Euronext, HKEX, Deutsche Börse in trading; ICE, LCH, OCC, DTCC, Eurex in clearing (10-K, Item 1). The honest erosion risks:</p>
+<ul>
+<li><strong>Clearing-house reform.</strong> An FSB consultation proposes CCPs hold separate resolution resources; a financial-transaction tax has been floated in Congress, Illinois, and New Jersey (10-K, Item 1/1A). Either could raise costs or dampen volume. <em>Real, but slow-moving and much-discussed for years.</em></li>
+<li><strong>Crypto / alternative venues &amp; prediction markets.</strong> New digital-asset platforms and event-contract venues are emerging. CME is meeting them head-on (24/7 crypto in Q2 2026; FanDuel/DraftKings prediction JVs) rather than being disrupted by them.</li>
+<li><strong>Cash-markets price competition.</strong> In FX/fixed-income (BrokerTec/EBS), rivals compete on price — but this is CME's <em>smaller</em>, less-moated segment (~$284M of fees).</li>
+</ul>
+<p>Our verdict: the <strong>core futures + clearing franchise is one of the most durable moats we can find.</strong> The network effect in Treasury and equity-index futures has resisted every assault for decades and there is no visible mechanism to dislodge it. The moat is <em>wide and, in its core, durable.</em> We would watch clearing-reform politics and never assume permanence — but we would bet on this castle.</p>
+<blockquote>
+<p><strong>PRINCIPLE.</strong> The single most valuable moat is the one that <em>strengthens as the business grows</em>. A network effect — traders drawn to liquidity, which deepens liquidity, which draws more traders — is self-reinforcing incumbency. Test it by asking: "If a well-funded rival launched an identical product tomorrow, could it win?" For CME's core complexes, the honest answer is <em>no</em> — and that is worth more than any patent.</p>
+</blockquote>
+<h3 id="owner-earnings-maintenance-vs-growth-capex">Owner earnings — maintenance vs. growth capex</h3>
+<p>Owner earnings are the cash an owner can actually withdraw (Manual, Ch. 7):</p>
+<p><code>Owner Earnings = Reported earnings + non-cash charges − maintenance capex − ΔWorking capital</code></p>
+<p>For CME:<br />
+- Reported net income: <strong>$4,072.2M</strong><br />
+- Add back amortization of purchased intangibles (non-cash, from old mergers): <strong>+$223.4M</strong><br />
+- Add back depreciation &amp; other amortization: <strong>+$107.5M</strong><br />
+- Subtract capex: <strong>−$83.5M</strong>. Here is the key judgment: total capex is <em>already trivially small</em>, and for a business whose "plant" is software and matching engines, the vast majority of even this is <strong>growth/maintenance-blended and modest</strong>. Essentially <strong>all $83.5M can be treated as maintenance</strong> and it barely dents the total.<br />
+- Working-capital change: small and roughly neutral (see cash flow).</p>
+<p><code>Owner Earnings ≈ 4,072.2 + 223.4 + 107.5 − 83.5 = $4,319.6M</code></p>
+<p>Per share: <code>4,319.6 ÷ 360.31M = $11.99</code></p>
+<p>A more conservative version (add back only the merger-intangible amortization, the clearest non-cash item, and subtract capex):<br />
+<code>4,072.2 + 223.4 − 83.5 = $4,212.1M</code>, or <code>÷ 360.31 = $11.69/share</code>.</p>
+<p>So <strong>owner earnings ≈ $11.70–$12.00 per share</strong>, essentially <em>equal to or slightly above</em> reported diluted EPS of $11.16. The reason they exceed reported EPS: the $223.4M non-cash merger-amortization charge is a real drag on GAAP profit but not on cash. <strong>For our forward valuation we will use a normalized owner-earnings figure of ~$12.20/share</strong> — reflecting continued modest growth into the year ahead (an independent research service's FY2026 EPS estimate is $12.00, and Q1 2026 already grew 14.5%).</p>
+<blockquote>
+<p><strong>PRINCIPLE.</strong> For a capital-light franchise, owner earnings ≈ net income + non-cash merger amortization − tiny maintenance capex — which lands <em>at or above</em> reported earnings. Contrast that with a capital-hungry business, whose maintenance capex chronically <em>exceeds</em> depreciation, so its true owner earnings sit <em>below</em> reported profit. The gap between reported and owner earnings — up or down — is where capital-light franchises and capital-traps reveal themselves.</p>
+</blockquote>
+<h3 id="roic-the-star-calculation-and-why-the-headline-roe-misleads">ROIC — the star calculation, and why the headline ROE misleads</h3>
+<p>An independent research service reports <strong>Return on Shareholders' Equity of 14.2%</strong> for 2025 (and projects it drifting toward ~11.5% by 2029-31 as book equity grows — that ~11.5% is the figure in the atlas). Check the 2025 number:</p>
+<p><code>ROE = Net income to common 4,021.0 ÷ Equity 28,728.2 = 14.0%</code></p>
+<p>For a business with 65% operating margins, a 14% ROE looks <em>strangely mediocre.</em> Why? <strong>Because the denominator is stuffed with $30.3B of merger goodwill and intangibles.</strong> That equity reflects the <em>prices CME paid decades ago for CBOT, NYMEX, and NEX</em> — not the capital the operating exchange actually needs today. The goodwill is <em>masking</em> a spectacular underlying business.</p>
+<p>To see the real economics, compute the return on the <strong>tangible operating capital</strong> the exchange genuinely employs. Strip goodwill, strip the merger intangibles, strip the clearing gross-up. What is left that the business actually runs on? Essentially <strong>property of $362.7M</strong> plus modest working capital. Against that:</p>
+<p><code>NOPAT = Operating income 4,229.5 × (1 − tax rate 0.236) = $3,231.3M</code></p>
+<p><code>Return on tangible operating capital = 3,231.3 ÷ ~few hundred $M = effectively unbounded</code></p>
+<p>Even charging the full $362.7M of net property as the capital base: <code>3,231.3 ÷ 362.7 = 891%</code>. The point is not the precise percentage — it is that <strong>the underlying exchange earns cash returns so far above any conceivable cost of capital that it is, in economic terms, a near-perfect capital-light compounder.</strong> The 14% headline ROE is an artifact of accounting for old acquisitions; the <em>economic</em> return on the capital the business consumes is extraordinary.</p>
+<p>Compare to cost of capital: our discount rate below is <strong>8.5%</strong>. The underlying ROIC dwarfs it many times over. When ROIC ≫ r, <strong>growth creates enormous value</strong> (Manual, Ch. 10) — every incremental dollar of volume flows to the bottom line at franchise margins with almost no reinvestment required.</p>
+<blockquote>
+<p><strong>PRINCIPLE.</strong> When a company's ROE looks mediocre <em>despite</em> fat margins, suspect goodwill in the denominator. Recompute the return on the <em>tangible capital the operating business actually uses.</em> Goodwill from past acquisitions can hide a wonderful business behind an unremarkable ROE — and seeing through it is one of the most valuable things an analyst can do.</p>
+</blockquote>
+<hr />
+<h2 id="management-as-partners">MANAGEMENT AS PARTNERS</h2>
+<p>We judge management on the one decision that compounds over time: <strong>capital allocation</strong> (Manual, Ch. 8). CME throws off far more cash than the business can reinvest, so the question is what management does with the surplus.</p>
+<h3 id="the-five-uses-of-cash-applied-to-cme">The five uses of cash, applied to CME</h3>
+<ol>
+<li><strong>Reinvest in the business</strong> — CME needs almost none. Capex is $83.5M on $4.3B of operating cash flow. Reinvestment opportunities (new products, Google Cloud migration, CMESC securities clearing launching in 2026) are real but <em>cheap</em> — they do not absorb much capital.</li>
+<li><strong>Acquisitions</strong> — CME grew by acquiring CBOT, NYMEX, NEX. Those built the moat, but acquisitions are where managers most often overpay (Manual, Ch. 8). Recent behavior has been disciplined; the current strategy is organic (micro contracts, crypto, prediction markets, FX Spot+).</li>
+<li><strong>Pay down debt</strong> — not needed; the company is net-cash with 24× interest coverage.</li>
+<li><strong>Dividends</strong> — the signature. See below.</li>
+<li><strong>Buybacks</strong> — modest. In 2025 CME repurchased just <strong>$266.1M</strong> of stock (963k shares; 10-K, Statement of Equity) — trivial against dividends. This is <em>rational restraint</em>: at premium prices, aggressive buybacks would violate the "price is everything" rule (Manual, Ch. 8). CME wisely does not overpay for its own shares.</li>
+</ol>
+<h3 id="the-variable-dividend-philosophy-the-standout">The variable-dividend philosophy — the standout</h3>
+<p>CME's defining capital-return policy is a <strong>regular quarterly dividend plus a large annual variable (special) dividend every December/January.</strong> The pattern (an independent research service + 10-K):</p>
+<ul>
+<li>Regular dividend: <code>$5.00/share</code> in 2025 (<code>$1.25 × 4</code>), raised ~4% for 2026.</li>
+<li><strong>Special/variable dividends</strong>, paid nearly every year since 2012: <code>$4.50</code> (Jan-2023), <code>$5.25</code> (Jan-2024), <code>$5.80</code> (Jan-2025), and <strong>$6.15</strong> (paid March 2026).</li>
+</ul>
+<p>Total cash dividends paid in 2025 were <strong>$3,933.0M</strong> (cash flow statement). Add the variable and the <em>total</em> cash returned per share is far larger than the regular yield implies:</p>
+<p><code>Regular yield on live price = 5.00 ÷ 236.60 = 2.1%</code><br />
+<code>Total (regular $5.00 + special $6.15) ÷ 236.60 = 11.15 ÷ 236.60 = 4.7%</code></p>
+<p><strong>The headline ~2% yield badly understates the ~4.7% of cash CME actually returns.</strong> That is a critical fact an income-oriented owner must not miss.</p>
+<h3 id="the-one-dollar-test-and-why-returning-cash-is-right-here">The one-dollar test — and why returning cash is <em>right</em> here</h3>
+<p>Our test (Manual, Ch. 8): retain a dollar only if it produces at least a dollar of value — i.e., only if incremental ROIC ≥ r. CME's reinvestment needs are tiny and its incremental ROIC on those needs is astronomically high — so it reinvests the little it can at superb returns, <strong>and returns the rest.</strong> Because the business genuinely <em>cannot productively absorb</em> its cash flow, distributing it is not a failure of imagination — it is <strong>exactly the correct allocation.</strong> The variable dividend is an elegant mechanism: it flexes with each year's earnings, returning the true surplus without committing to an unsustainable fixed payout.</p>
+<blockquote>
+<p><strong>PRINCIPLE.</strong> Returning cash can be <em>superior</em> capital allocation. The one-dollar test cuts both ways: a great business that cannot reinvest at high returns should <em>distribute</em>, not hoard or make empire-building acquisitions. Judge management not on how much it retains, but on whether each retained dollar clears the hurdle — and applaud the discipline to return what cannot. CME's variable dividend is a model of it.</p>
+</blockquote>
+<p>On <strong>candor</strong>: management reports plainly, runs a single reporting segment (consolidated net income is the measure the CODM uses, per the 10-Q segment note), and the disclosure is clear rather than boastful. We are comfortable with these partners.</p>
+<hr />
+<h2 id="what-is-it-worth-intrinsic-value">WHAT IS IT WORTH? — INTRINSIC VALUE</h2>
+<p>Now the arithmetic of Part III. For a stable, highly-predictable franchise, our primary tool is a <strong>normalized-earnings multiple</strong>, cross-checked with a <strong>two-stage DCF on owner earnings</strong> and a <strong>total-dividend-yield</strong> sanity check. Intrinsic value is a <em>range</em>, not a point (Manual, Ch. 9 &amp; 12).</p>
+<p>Our normalized owner-earnings base: <strong>~$12.20 per share</strong> (2025 owner earnings ~$12.00, growing modestly; an independent research service FY2026 EPS estimate $12.00; Q1 2026 +14.5%).</p>
+<h3 id="tool-1-the-justified-multiple-triangulated-from-three-anchors">Tool 1 — The justified multiple, triangulated from three anchors</h3>
+<p><strong>(a) CME's own history.</strong> an independent research service reports a <strong>10-year median P/E of 26.0</strong> and a current P/E of 26.0 at the report price. Over 2010–2025 CME's average annual P/E ranged widely but centered in the low-to-mid 20s. A ~6% grower with a monopoly moat has <em>historically</em> commanded ~24–26×.</p>
+<p><strong>(b) Exchange peers.</strong> Exchanges trade at premium multiples because of exactly the moat we described — recurring, high-margin, wide-moat toll economics. The an independent research service Brokers &amp; Exchanges industry group names ICE, Cboe, Nasdaq-type venues as CME's peer set; quality exchange operators in this environment trade broadly in the low-to-mid-20s P/E. <strong>CME sits at the high end of, or a premium to, its peer group</strong> — justified by the widest moat, the highest margins, and top-tier predictability (Safety 1, Earnings Predictability 75). We would grant CME a peer-relative multiple of ~<strong>23–26×</strong>.</p>
+<p><strong>(c) Quality-and-growth justified multiple.</strong> From discounted-owner-earnings logic: a business growing owner earnings ~6%, at ~65% margins, with near-100% cash conversion and ROIC ≫ r, discounted at a <em>low</em> rate (see below), supports a multiple in the mid-20s. Our DCF (Tool 2) implies a fair multiple of roughly <strong>21–26× owner earnings</strong>.</p>
+<p><strong>Reconciling the three:</strong> history says ~26×, peers say ~23–26×, quality-DCF says ~21–26×. We adopt a <strong>justified multiple band of 21× (low) / 23× (base) / 26× (high)</strong> — a touch below the historical median at the base, to stay conservative and not spend our margin of safety on optimism.</p>
+<table>
+<thead>
+<tr>
+<th>Multiple</th>
+<th style="text-align: right;">× Owner earnings $12.20</th>
+<th style="text-align: right;">Value/share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21× (low)</td>
+<td style="text-align: right;">21 × 12.20</td>
+<td style="text-align: right;"><strong>$256</strong></td>
+</tr>
+<tr>
+<td>23× (base)</td>
+<td style="text-align: right;">23 × 12.20</td>
+<td style="text-align: right;"><strong>$281</strong></td>
+</tr>
+<tr>
+<td>26× (high)</td>
+<td style="text-align: right;">26 × 12.20</td>
+<td style="text-align: right;"><strong>$317</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tool-2-two-stage-dcf-on-owner-earnings">Tool 2 — Two-stage DCF on owner earnings</h3>
+<p><strong>The discount rate, as gravity (Manual, Ch. 11).</strong> Interest rates pull on all asset values. Current readings (Selection &amp; Opinion, 6/26/26): Fed funds 3.50–3.75%, <strong>10-yr Treasury 4.47%</strong>, 30-yr 4.97%. A low-risk, wide-moat, top-Safety business deserves a <em>low</em> equity discount rate. We use <strong>r = 8.5%</strong> as our base (≈ 4.5% long Treasury + ~4% equity/uncertainty premium), and show sensitivity from 8.0% to 9.0%. CME's beta of 0.70 (below-market volatility) <em>supports</em> a lower rate, though we do not let beta drive it — the low rate reflects the <em>durability of the cash flows</em>, not the wiggle of the quote.</p>
+<p>Model: owner earnings $12.20/share, grow <strong>6%/yr for 10 years</strong>, then terminal growth <strong>2.5%–3.0%</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>r ↓ / terminal g →</th>
+<th style="text-align: right;">g = 2.5%</th>
+<th style="text-align: right;">g = 3.0%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>r = 8.0%</strong></td>
+<td style="text-align: right;">$299</td>
+<td style="text-align: right;">$319</td>
+</tr>
+<tr>
+<td><strong>r = 8.5% (base)</strong></td>
+<td style="text-align: right;"><strong>$273</strong></td>
+<td style="text-align: right;">$289</td>
+</tr>
+<tr>
+<td><strong>r = 9.0%</strong></td>
+<td style="text-align: right;">$251</td>
+<td style="text-align: right;">$263</td>
+</tr>
+</tbody>
+</table>
+<p>The DCF spans roughly <strong>$251–$319</strong>, centering near <strong>$273–$289</strong> at our base r. Note how sensitive the output is to r and g — a full swing of assumptions that are <em>each</em> individually reasonable moves value by ~$70/share. <strong>That spread is not a defect; it is the reason we demand a margin of safety</strong> (Manual, Ch. 12).</p>
+<h3 id="tool-3-total-dividend-yield-cross-check">Tool 3 — Total-dividend-yield cross-check</h3>
+<p>At $236.60, the <em>total</em> cash yield (regular + variable) is <strong>4.7%</strong>. For a business growing ~6% with A+ finances, a ~4.7% total cash yield implies a total expected return of roughly <code>4.7% + 6% ≈ 10.7%</code> before any re-rating — comfortably above our 8.5% required return. That is consistent with the stock being <em>at or below</em> fair value, corroborating the multiple and DCF.</p>
+<h3 id="value-creating-vs-value-consuming-growth">Value-creating vs. value-consuming growth</h3>
+<p>CME's growth is emphatically <strong>value-creating</strong>: it grows owner earnings ~6% while reinvesting almost nothing, at an ROIC many multiples of r. Each incremental contract of volume is nearly pure profit. This is the opposite of the value trap that grows by pouring capital into sub-cost-of-capital projects (Manual, Ch. 10). Growth <em>multiplies</em> CME's value.</p>
+<h3 id="triangulating-the-range">Triangulating the range</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Low</th>
+<th style="text-align: right;">Base</th>
+<th style="text-align: right;">High</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Justified multiple (21/23/26×)</td>
+<td style="text-align: right;">$256</td>
+<td style="text-align: right;">$281</td>
+<td style="text-align: right;">$317</td>
+</tr>
+<tr>
+<td>Two-stage DCF (r 8–9%, g 2.5–3%)</td>
+<td style="text-align: right;">$251</td>
+<td style="text-align: right;">$281</td>
+<td style="text-align: right;">$319</td>
+</tr>
+<tr>
+<td><strong>Reconciled intrinsic value</strong></td>
+<td style="text-align: right;"><strong>~$255</strong></td>
+<td style="text-align: right;"><strong>~$285</strong></td>
+<td style="text-align: right;"><strong>~$315</strong></td>
+</tr>
+</tbody>
+</table>
+<p>We adopt <strong>IV ≈ $255 (low) / $285 (base) / $315 (high).</strong></p>
+<h3 id="reconciling-against-an-independent-research-services-target">Reconciling against an independent research service's target</h3>
+<p>An independent research service's 18-month target midpoint is <strong>$325</strong> (range $264–$386), and its 2029–31 target is <strong>$350</strong>. Our base of <strong>$285</strong> is <em>more conservative</em> than an independent research service's. The gap is mostly a <em>multiple</em> judgment: An independent research service implicitly holds CME near its ~26× historical median and adds several years of growth; we deliberately trimmed the base multiple to 23× to avoid paying full historical price for the franchise, and we anchored to <em>today's</em> owner earnings rather than a 3-year-forward estimate. Both can be "right" — the difference is precisely the margin of safety we insist on and an independent research service, as a target-price service, does not.</p>
+<blockquote>
+<p><strong>PRINCIPLE.</strong> Triangulate — never trust a single method. A justified multiple, a DCF, and a yield check that <em>converge</em> give you confidence; when they diverge, the disagreement teaches you which assumption is load-bearing. And produce a <em>range</em>, not a false-precision point. The width of the range is honest information about how much you could be wrong.</p>
+</blockquote>
+<hr />
+<h2 id="margin-of-safety-mr-market">MARGIN OF SAFETY &amp; MR. MARKET</h2>
+<p>Now we finally consult Mr. Market — <em>after</em> forming our own view of value, never before (Manual, Ch. 2).</p>
+<p><strong>Live price: $236.60.</strong> <strong>Our intrinsic value: ~$255 / $285 / $315.</strong></p>
+<p>Margin of safety against each point of our range (Manual, Ch. 12: <code>MoS = (IV − Price) ÷ IV</code>):</p>
+<p><code>Against low $255: (255 − 236.60) ÷ 255 = 7%</code><br />
+<code>Against base $285: (285 − 236.60) ÷ 285 = 17%</code><br />
+<code>Against high $315: (315 − 236.60) ÷ 315 = 25%</code></p>
+<p>So at $236.60 the stock trades <strong>below even the low end</strong> of our conservative range, with a <strong>~17% cushion to our base case</strong> and ~25% to the high case. It is <em>not</em> the 30–50% giveaway margin we dream of, but it is a <strong>positive, real margin of safety in a top-quality business</strong> — a rare combination.</p>
+<p><strong>The Mr. Market lesson.</strong> Recall the setup: An independent research service struck its report at <strong>$306.56</strong> on April 3; the live quote is <strong>$236.60</strong> — a <code>(306.56 − 236.60) ÷ 306.56 = 22.8%</code> decline in about three months, dropping the stock <em>below</em> its own 52-week range. Nothing in the FY2025 10-K or the strong Q1 2026 (+14.5% revenue) explains a 23% deterioration in the <em>business</em>. The multiple has compressed from ~26× to:</p>
+<p><code>Live P/E = 236.60 ÷ 11.16 = 21.2×</code></p>
+<p><strong>A ~21× multiple on a wide-moat, A+, Safety-1, ~6%-growing monopoly is below its own 10-year median of 26×.</strong> If the quote is accurate, this is Mr. Market in one of his gloomier moods — offering a wonderful business at a fair-to-attractive price. Volatility here is <em>opportunity, not risk</em> (Manual, Ch. 3): the business strengthened while the price fell.</p>
+<p><strong>Cushion price.</strong> To buy CME with a full ~30% margin of safety against our $285 base, an owner would want a price around <code>285 × (1 − 0.30) = $200</code>. At $236.60 the margin is thinner (~17%) but genuinely positive — a "for once, possibly at a fair-to-attractive price" situation rather than a screaming bargain.</p>
+<p><strong>But discipline first: re-confirm the quote.</strong> Because $236.60 sits below CME's recent trading band and diverges so sharply from the report, a careful analyst <em>verifies the live price</em> before acting. If the true price is nearer $290–$306, the margin of safety largely evaporates and the verdict shifts to "wonderful business, fully priced — wait."</p>
+<blockquote>
+<p><strong>PRINCIPLE.</strong> Form your estimate of value first; consult the quote last. A 23% price drop with an <em>unchanged or improving</em> business does not add risk — it subtracts price, which <em>reduces</em> risk and adds margin of safety. But two disciplines never lapse: (1) verify that a surprising price is real, and (2) even for a wonderful business, act only when the price is conspicuously below your conservative value. Quality does not excuse overpaying.</p>
+</blockquote>
+<hr />
+<h2 id="the-verdict-the-lesson">THE VERDICT &amp; THE LESSON</h2>
+<h3 id="verdict-wonderful-business-and-at-23660-if-the-quote-holds-for-once-at-a-fair-to-attractive-price">Verdict: <strong>Wonderful business — and, at $236.60 (if the quote holds), for once at a fair-to-attractive price.</strong></h3>
+<p>CME is a wonderful business by every test we apply: inside the circle of competence (a forecastable toll bridge), protected by one of the widest and most durable moats in public markets (a self-reinforcing liquidity network effect plus vertical clearing integration and regulatory scale), earning ~65% operating margins on near-zero tangible capital, converting nearly all profit to cash, and run by managers who rationally return the surplus through a smart variable dividend. The headline 14% ROE <em>understates</em> its quality — the true return on the tangible capital the business actually uses is extraordinary; the merger goodwill merely masks it.</p>
+<p><strong>Answering THE ONE QUESTION:</strong> Yes — the ~23% drop has, for the moment, opened a real (if moderate) margin of safety. At $236.60 the stock trades at ~21× earnings versus its 26× historical median, roughly 17% below our $285 base intrinsic value, while returning ~4.7% in total cash. This is the uncommon case of <em>a wonderful business at a fair-to-attractive price</em> — provided the quote is genuine. It is not the 40%-off, back-up-the-truck bargain; it is a disciplined "attractive, verify the price, don't overpay from here" conclusion.</p>
+<h3 id="two-or-three-open-questions-we-would-keep-on-the-desk">Two or three open questions we would keep on the desk</h3>
+<ol>
+<li><strong>Is $236.60 real?</strong> The single most important thing to confirm before acting — the divergence from the report price and the 52-week band demands verification on a live terminal.</li>
+<li><strong>Clearing-house reform and transaction taxes.</strong> The FSB resolution-resource proposal and periodic financial-transaction-tax proposals (federal, Illinois, New Jersey) are the moat's most credible long-run threats. Slow-moving, but worth monitoring.</li>
+<li><strong>The rate cycle.</strong> A large share of CME's volume is the interest-rate complex; with the Fed on hold at 3.50–3.75% and inflation warm, rate <em>volatility</em> (good for CME volumes) could stay elevated — but a placid, low-rate world would soften the tailwind. Structurally growing, cyclically variable.</li>
+</ol>
+<h3 id="two-or-three-universal-lessons-to-carry-away">Two or three universal lessons to carry away</h3>
+<ul>
+<li><strong>Toll-bridge / network-effect moats are the aristocracy of business models.</strong> A small fee on an enormous, recurring flow you did not have to build, protected by an advantage that <em>strengthens as you grow</em> — that is as good as economics gets. Learn to recognize the flywheel.</li>
+<li><strong>Goodwill can mask a great business.</strong> When fat margins sit atop a mediocre-looking ROE, look for acquisition goodwill in the denominator and recompute the return on the <em>tangible capital actually employed.</em> Negative tangible equity is not a red flag when it exists because the company owns durable, cash-gushing franchises.</li>
+<li><strong>Do not overpay, even for quality — but do not let quality's premium scare you off when the price is finally fair.</strong> The whole art is holding both truths at once: a wonderful business is worth a premium multiple, <em>and</em> there is still a price above which even it is a poor investment. Buy the franchise when Mr. Market is gloomy; wait patiently when he is euphoric.</li>
+</ul>
+<h3 id="disclaimer">Disclaimer</h3>
+<p><strong>This is a teaching case, not personalized investment advice, and not a recommendation to buy or sell any security.</strong> We have used CME Group solely to demonstrate a repeatable <em>way of thinking</em> — from understanding a business, through reading its statements and moat, to estimating a range of intrinsic value and insisting on a margin of safety. Every figure should be independently verified (starting with that live price), and any real decision must rest on your own analysis, your own circle of competence, and your own circumstances.</p>
+<hr />
+<h2 id="the-valuation-checklist-manual-ch-14">THE VALUATION CHECKLIST (Manual, Ch. 14)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Gate</th>
+<th>Verdict</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Competence</strong> — can I forecast it?</td>
+<td><strong>PASS</strong></td>
+<td>Fee-per-contract toll bridge; Earnings Predictability 75, Safety 1. Squarely inside the circle.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Moat</strong> — durable? Pricing power?</td>
+<td><strong>PASS</strong></td>
+<td>Liquidity network effect + vertical clearing + regulatory scale + exclusive index licenses. ~65% margins sustained for a decade prove it. Core moat wide and durable.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Returns</strong> — ROIC vs. r? Capital-light?</td>
+<td><strong>PASS</strong></td>
+<td>Return on <em>tangible</em> operating capital is extraordinary (NOPAT $3,231M on a few hundred $M of real capital). Capex 1.3% of revenue. ROIC ≫ 8.5% cost of capital. Headline 14% ROE is goodwill-masked.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Owner earnings</strong> — real cash? Accounts clean?</td>
+<td><strong>PASS</strong></td>
+<td>OCF $4,277M &gt; NI $4,072M; owner earnings ~$11.70–$12.00/share. Clean revenue recognition. <em>One-time</em> care needed only to strip the clearing gross-up — which we did.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Capital allocation</strong> — one-dollar test, candor?</td>
+<td><strong>PASS</strong></td>
+<td>Returns surplus it cannot reinvest via regular + variable dividend (~4.7% total cash yield); disciplined buybacks; candid, single-segment reporting.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Intrinsic value</strong> — conservative range?</td>
+<td><strong>DONE</strong></td>
+<td>~$255 / $285 / $315 via triangulated multiple + DCF + yield check.</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Growth check</strong> — value-creating?</td>
+<td><strong>PASS</strong></td>
+<td>~6% owner-earnings growth at ROIC ≫ r, near-zero reinvestment → growth multiplies value.</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Margin of safety</strong> — price ≪ conservative value?</td>
+<td><strong>UNSURE / QUALIFIED PASS</strong></td>
+<td>At $236.60: ~17% below base, ~7% below low end — a positive but moderate margin. <strong>Contingent on verifying the quote.</strong> Not a deep bargain; a fair-to-attractive one.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Net:</strong> All quality gates pass; the business is <em>wonderful.</em> The only reservation is on gate 8 — the margin of safety is real but moderate, and hinges on the live price being genuine.</p>
+<hr />
+<h2 id="glossary-terms-formulas-in-order-of-appearance">GLOSSARY — TERMS &amp; FORMULAS (in order of appearance)</h2>
+<p><strong>Toll-booth economics.</strong> A model earning a small fee on each unit of a large, recurring flow the operator did not create. <em>CME:</em> a per-contract fee on 28.1M contracts/day → $5,281.1M of clearing &amp; transaction fees (81% of revenue) in 2025.</p>
+<p><strong>Circle of competence.</strong> The set of businesses you can forecast well enough to value; the boundary matters more than the size (Manual, Ch. 4). <em>CME:</em> a forecastable fee business — inside the circle (Safety 1, Earnings Predictability 75).</p>
+<p><strong>Clearing-collateral gross-up.</strong> Customer margin/default-fund cash a clearing house holds as intermediary, booked as an equal asset <em>and</em> liability, not the owners' capital. <em>CME:</em> "Performance bonds and guaranty fund contributions" = <strong>$159,656.1M</strong> on both sides of the balance sheet; strip it → real operating assets ~$38.8B. Formula: <code>Real assets = Total assets − collateral = 198,424.2 − 159,656.1 = 38,768.1</code>.</p>
+<p><strong>Operating margin.</strong> <code>Operating income ÷ revenue</code>. <em>CME:</em> <code>4,229.5 ÷ 6,520.6 = 64.9%</code>.</p>
+<p><strong>Net margin.</strong> <code>Net income ÷ revenue</code>. <em>CME:</em> <code>4,072.2 ÷ 6,520.6 = 62.5%</code>.</p>
+<p><strong>Interest coverage.</strong> <code>Operating income ÷ interest expense</code>. <em>CME:</em> <code>4,229.5 ÷ 173.4 = 24.4×</code>.</p>
+<p><strong>Economic vs. accounting goodwill.</strong> Economic goodwill = a franchise's value above its tangible capital; accounting goodwill = a balance-sheet residue from acquisitions. Book value understates great businesses (Manual, Ch. 7). <em>CME:</em> goodwill + intangibles = $30,300.7M → tangible book equity = <code>28,728.2 − 30,300.7 = −$1,572.5M</code> (negative — yet the franchise is immensely valuable).</p>
+<p><strong>Moat / network effect.</strong> A durable advantage protecting high returns; a network effect <em>strengthens with scale</em> (Manual, Ch. 5). <em>CME:</em> traders → liquidity → more traders; a rival launches with zero open interest.</p>
+<p><strong>Owner earnings.</strong> <code>Reported earnings + non-cash charges − maintenance capex − ΔWorking capital</code> (Manual, Ch. 7). <em>CME:</em> <code>4,072.2 + 223.4 + 107.5 − 83.5 = $4,319.6M</code> → ~$12.00/share; conservative ~$11.70/share.</p>
+<p><strong>NOPAT.</strong> After-tax operating profit = <code>Operating income × (1 − tax rate)</code>. <em>CME:</em> <code>4,229.5 × (1 − 0.236) = $3,231.3M</code>.</p>
+<p><strong>ROIC.</strong> <code>NOPAT ÷ invested capital</code>; the central measure of quality; value is created only when ROIC &gt; r (Manual, Ch. 6). <em>CME:</em> on <em>tangible</em> operating capital, extraordinary (<code>3,231.3 ÷ 362.7 = 891%</code> even charging all net property); the headline <strong>ROE 14.0%</strong> (<code>4,021.0 ÷ 28,728.2</code>) is goodwill-depressed.</p>
+<p><strong>One-dollar test.</strong> Retain a dollar only if it creates ≥ $1 of value, i.e. incremental ROIC ≥ r (Manual, Ch. 8). <em>CME:</em> tiny reinvestment need → correctly <em>returns</em> surplus via the variable dividend.</p>
+<p><strong>Variable (special) dividend.</strong> A flexible annual payout of the year's surplus on top of the regular dividend. <em>CME:</em> special dividends most years since 2012 ($6.15 paid Mar-2026); total cash yield <code>(5.00 + 6.15) ÷ 236.60 = 4.7%</code> vs. regular-only <code>5.00 ÷ 236.60 = 2.1%</code>.</p>
+<p><strong>Discount rate (r) — "gravity."</strong> The owner's opportunity cost, anchored to long rates plus an uncertainty premium; lower for durable cash flows (Manual, Ch. 11). <em>CME:</em> base <strong>r = 8.5%</strong> (≈ 4.5% 10-yr Treasury + ~4% premium); sensitivity 8.0%–9.0%.</p>
+<p><strong>Two-stage DCF / intrinsic value.</strong> <code>IV = Σₜ₌₁ⁿ OEₜ/(1+r)ᵗ + [OEₙ₊₁/(r−g)]/(1+r)ⁿ</code> (Manual, Ch. 9). <em>CME:</em> OE $12.20, g₁ 6% for 10 yrs, terminal g 2.5–3.0%, r 8–9% → <strong>$251–$319</strong>.</p>
+<p><strong>Justified multiple.</strong> The P/E (or ×owner-earnings) a business's growth, moat, and cash conversion warrant. <em>CME:</em> 21× / 23× / 26× × $12.20 = <strong>$256 / $281 / $317</strong>; historical median P/E 26.</p>
+<p><strong>Value-creating vs. value-consuming growth.</strong> Growth adds value only when ROIC &gt; r (Manual, Ch. 10). <em>CME:</em> ROIC ≫ r with near-zero reinvestment → growth multiplies value.</p>
+<p><strong>Margin of safety.</strong> <code>(Intrinsic value − Price) ÷ Intrinsic value</code>; the cornerstone (Manual, Ch. 12). <em>CME:</em> at $236.60 vs. base $285 → <code>(285 − 236.60) ÷ 285 = 17%</code> (7% to low $255; 25% to high $315).</p>
+<p><strong>Mr. Market.</strong> The manic-depressive partner quoting prices driven by mood, not value; serve yourself from his pocketbook, not his wisdom (Manual, Ch. 2). <em>CME:</em> ~23% drop (<code>(306.56 − 236.60) ÷ 306.56 = 22.8%</code>) with an improving business — opportunity, not risk.</p>
+<p><strong>Risk.</strong> The probability of permanent loss of capital — not volatility (Manual, Ch. 3). <em>CME:</em> low business risk (A+, net cash, 24× coverage, wide moat); the real risks are overpaying and slow-moving clearing/tax reform.</p>
+<hr />
+<p><em>End of teaching case. CME Group (CME) — prepared July 4, 2026. A method for thinking, not a recommendation.</em></p>
+    </div>
+  </article>
+</main>
+<footer class="site-foot">
+  <p><strong>Educational only — not investment advice.</strong> These are my own study
+  notes and intrinsic-value estimates, published to learn in public. I am not a licensed
+  financial advisor. Do your own work; verify every figure against primary filings.</p>
+  <p class="muted">Built 2026-07-12 · figures from public SEC EDGAR filings and my own arithmetic.</p>
+</footer>
+</body>
+</html>

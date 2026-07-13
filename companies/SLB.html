@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SLB (Schlumberger) (SLB) — intrinsic value</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">§</span>
+    <span class="brand-text">A Value-Investing Learning Journey</span>
+  </a>
+  <nav class="site-nav"><a href="../index.html" class="active">Home</a><a href="../methodology.html" class="">Methodology</a><a href="../journal/index.html" class="">Journal</a></nav>
+</header>
+<main>
+
+  <article class="company-page">
+    <div class="crumbs"><a href="../index.html">← All businesses</a></div>
+    <header class="company-head">
+      <h1>SLB (Schlumberger) <span class="tk">(SLB)</span></h1>
+      <p class="sub">Oilfield Svcs/Equip. · analysis dated 2026-07-04</p>
+    </header>
+    
+  <div class="iv-widget">
+    <div class="iv-cell"><span class="iv-lbl">IV low</span><span class="iv-val">$28</span></div>
+    <div class="iv-cell iv-base"><span class="iv-lbl">IV base</span><span class="iv-val">$34</span></div>
+    <div class="iv-cell"><span class="iv-lbl">IV high</span><span class="iv-val">$44</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Price</span><span class="iv-val">$47.76</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Margin of safety</span><span class="iv-val mos-rich">-40%</span></div>
+  </div>
+    <p class="method"><strong>Method:</strong> Normalized mid-cycle owner earnings (~$4.1B, ~$2.74/share) at ~13x, cross-checked with EV/EBIT (10-11x mid-cycle EBIT), a no-growth floor (OE/r), and owner-earnings yield vs the long bond; range set wide for cyclicality.</p>
+    <div class="verdict"><span class="vlbl">Verdict</span><p>No margin of safety — a fortress-for-a-cyclical balance sheet but a no-moat, demand-cyclical business with mixed capital allocation. At $45.13 (~16.5x normalized) the price sits ABOVE the top of the range; demand a wide discount, wait for a trough.</p></div>
+    <div class="seminar">
+    <h1 id="a-value-investing-seminar-slb-schlumberger">A Value-Investing Seminar: SLB (Schlumberger)</h1>
+<p><em>Co-taught by Benjamin Graham and Warren Buffett</em><br />
+<em>Prepared 2026-07-04 — for teaching, not for advice</em></p>
+<hr />
+<p>Good morning. Take your seats. Today we are going to work through a real company together, from the top of the pipeline to the bottom, the way we would if you and I owned the whole business and were deciding whether to buy more of it, hold it, or walk away. The company is <strong>SLB</strong> — the firm you and your parents knew as <strong>Schlumberger</strong> — the largest oilfield-services company in the world.</p>
+<p>I want to say something at the outset, because it will shape everything that follows. SLB is a <strong>cyclical</strong> business. Its fortunes rise and fall with the price of oil and with how much the world's oil companies are willing to spend drilling for it. That single fact changes how we must do the arithmetic. A cyclical business will tempt you, at the top of its cycle, to look cheap when it is dear, and at the bottom, to look dear when it is cheap. The whole discipline of this session is learning not to be fooled by that. As our manual puts it (Chapter 7): <em>capitalizing a peak year into a perpetuity is how careful arithmetic manufactures a large, precise, and wrong intrinsic value.</em> We will spend real effort <strong>normalizing</strong> — averaging through the cycle — before we let ourselves value a single share.</p>
+<p>Let us begin.</p>
+<hr />
+<h2 id="1-sources">1. SOURCES</h2>
+<p>Everything below is grounded in primary documents. I want you to see them named, because a valuation is only as trustworthy as the evidence under it.</p>
+<p><strong>an independent research service reports (the full-page sheets):</strong><br />
+- SLB_ValueLine_2025-07-25.pdf<br />
+- SLB_ValueLine_2025-10-24.pdf<br />
+- SLB_ValueLine_2026-01-23.pdf<br />
+- SLB_ValueLine_2026-04-24.pdf <em>(most recent; primary; price at report $51.92, Financial Strength A+, Timeliness 3, Safety 3)</em></p>
+<p><strong>SEC filings (parsed text, not raw HTML):</strong><br />
+- 10-K filed <strong>2026-01-23</strong> (fiscal year 2025): <code>item1_business.txt</code>, <code>item7_mda_part1.txt</code>, <code>item7_mda_part2.txt</code>, <code>item8_financial_statements_part1.txt</code> (income statement, balance sheet, cash flow, charges &amp; credits) and parts 2–4.<br />
+- Prior 10-Ks filed 2025-01-22 (FY2024) and 2024-01-24 (FY2023) for cross-checking.<br />
+- 10-Q filed <strong>2026-04-29</strong> (quarter ended 3/31/2026) — <code>full_text.txt</code>, used for currency.</p>
+<p><strong>History and verification:</strong><br />
+- <code>SLB_xbrl_facts.json</code> — a 10-to-18-year run of revenue, net income, EPS, operating income, cash flows, balance-sheet items, share count, and dividends. This is our instrument for seeing the <em>whole cycle</em>, including the 2014 peak and the 2016 and 2020 troughs. Older years were checked against the filings.</p>
+<p><strong>Context:</strong><br />
+- An independent research service Industry report: <strong>Oilfield Services/Equipment</strong>, 2026-04-24 (Industry Timeliness 3 of 94).<br />
+- An independent research service <em>Selection &amp; Opinion</em>, 2026-07-10 — "The an independent research service View," the 2026 Midyear Market Review, Selected Yields, and the Market Monitor / Industry Price Performance table.<br />
+- <code>equity_atlas.xlsx</code>, sheet "Equity Atlas," SLB row — <strong>live price $45.13 (July 4, 2026)</strong>, live P/E 19.9, live yield 2.65%, VL median P/E 24, 18-month target $66, 2029–31 target $90, projected EPS growth 8%, ROE 19.5%.</p>
+<p>A note on prices. The an independent research service sheet was struck at $51.92 in April. The market has moved since. As of July 4, 2026 the live quote is <strong>$45.13</strong> — the number I will hold my valuation against, because Mr. Market is quoting me <em>today's</em> price, and today is when I must decide.</p>
+<p><strong>PRINCIPLE.</strong> Value the business from the evidence, then consult the price. Never the other way around.</p>
+<hr />
+<h2 id="2-opening-the-case-the-business">2. OPENING THE CASE — THE BUSINESS</h2>
+<h3 id="what-slb-does">What SLB does</h3>
+<p>SLB sells the picks and shovels of the oil age. It does not own the oil; it helps its customers find it, drill for it, and pull it out of the ground, on more than a hundred countries' worth of land and seabed. Founded in 1926 — this is its centenary year — it employs about 109,000 people. It reports in four operating Divisions plus an "All Other" bucket (from the 10-K, Item 1):</p>
+<ul>
+<li><strong>Digital</strong> — cloud platforms (Delfi, Lumi), subsurface software (Petrel, Techlog), exploration-data libraries, and AI-driven "Performance Live" remote operations. Small in revenue (~7% of 2025 sales), but the highest-margin engine (28% pretax operating margin for the year, 34% in Q4).</li>
+<li><strong>Reservoir Performance</strong> — evaluation, stimulation (hydraulic fracturing), and intervention services that measure and coax more oil out of a reservoir. ~19% of revenue.</li>
+<li><strong>Well Construction</strong> — the drilling franchise: measurement-while-drilling, drilling fluids, bits, rigs, integrated well construction. ~32% of revenue and historically the profit engine.</li>
+<li><strong>Production Systems</strong> — the equipment layer: subsea trees and systems (through the OneSubsea JV, 70% SLB-owned), artificial lift, completions, surface systems, and — new since 2025 — <strong>production chemicals</strong> from the ChampionX acquisition. Now the largest Division, ~36% of revenue.</li>
+<li><strong>All Other</strong> — Asset Performance Solutions (fee-per-barrel field projects, mostly Ecuador), the fast-growing <strong>Data Center Solutions</strong> business (modular data-center enclosures and cooling for hyperscalers — up 121% in 2025), and SLB Capturi (carbon capture, 80%-owned).</li>
+</ul>
+<h3 id="who-buys-from-it">Who buys from it</h3>
+<p>Three kinds of customer, all of them producers of oil and gas: <strong>national oil companies</strong> (Saudi Aramco, Pemex, and their peers), <strong>integrated majors</strong> (the ExxonMobils and Shells), and <strong>independent operators</strong>. No single customer was more than 10% of revenue in 2025. In 2025, <strong>79% of revenue came from outside North America</strong> — SLB is, above all, an <em>international</em> services company, and that geographic breadth is central to both its moat and its cyclicality.</p>
+<h3 id="the-one-question-that-decides-this-case">The one question that decides this case</h3>
+<p>Strip away the segments and the acronyms, and the case reduces to a single question:</p>
+<blockquote>
+<p><strong>Through a full cycle — not at the top, not at the bottom — what is SLB's normalized owner earnings, and am I being offered the stock at a wide enough discount to that normalized power to be protected when the cycle turns down, as it always eventually does?</strong></p>
+</blockquote>
+<p>Everything else is in service of answering that.</p>
+<h3 id="circle-of-competence-gate-can-you-forecast-this-a-decade-out">CIRCLE OF COMPETENCE gate — can you forecast this a decade out?</h3>
+<p>Here is where a great many analysts should stop, and won't. Our manual (Chapter 4) is blunt: <em>"Too hard — I cannot forecast this" is a complete and respectable answer, and using it often is a competitive advantage.</em></p>
+<p>Can you forecast SLB ten years out? Let me be honest with you about what that requires. You would have to forecast:<br />
+1. The <strong>price of oil</strong> a decade hence — which nobody, including me, can do.<br />
+2. How much the world's oil companies will <strong>spend on exploration and production</strong> at that oil price.<br />
+3. How the <strong>energy transition</strong> — electrification, renewables, efficiency — will erode the demand for new oil over that decade.<br />
+4. SLB's <strong>share</strong> of that spend, against Halliburton, Baker Hughes, and increasingly the national oil companies bringing services in-house.</p>
+<p>That is a demanding chain, and the first link — the oil price — is genuinely unforecastable. So does SLB fall outside the circle?</p>
+<p>My answer is a careful <em>"partly."</em> I cannot forecast oil prices, and I refuse to pretend I can. But I <em>can</em> observe something the manual permits me to lean on: over a <strong>full cycle</strong>, oilfield activity has a floor and a ceiling. The world consumed roughly 100 million barrels a day at the start of this decade and will consume oil for decades yet; existing wells deplete and must be replaced; someone must do that work, and SLB is the largest and most technologically capable someone. What I cannot forecast is <em>which year</em> is good and <em>which year</em> is bad. What I <em>can</em> estimate, within a range, is the <strong>mid-cycle</strong> level of earning power. That is exactly the discipline a cyclical demands — and it is why this case is <em>inside</em> the circle for the patient, and <em>outside</em> it for anyone who tries to forecast next year's oil price.</p>
+<p><strong>PRINCIPLE.</strong> For a cyclical, competence does not mean predicting the next year — it means bounding the <em>average</em> year across the cycle and refusing to be seduced into forecasting the individual ones. If you cannot do even the averaging with confidence, the honest answer is "too hard," and you set the company down.</p>
+<hr />
+<h2 id="3-reading-the-statements-together">3. READING THE STATEMENTS TOGETHER</h2>
+<p>Now we open the books. We read the three statements <em>together</em>, because each one checks the others (the manual calls this articulation), and because for a capital-heavy cyclical, no single statement tells the truth alone.</p>
+<h3 id="the-balance-sheet-december-31-2025">The balance sheet (December 31, 2025)</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>2025</th>
+<th>2024</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cash + short-term investments</td>
+<td>$4,212M</td>
+<td>$4,669M</td>
+</tr>
+<tr>
+<td>Receivables</td>
+<td>$8,689M</td>
+<td>$8,011M</td>
+</tr>
+<tr>
+<td>Inventories</td>
+<td>$5,032M</td>
+<td>$4,375M</td>
+</tr>
+<tr>
+<td><strong>Current assets</strong></td>
+<td><strong>$19,513M</strong></td>
+<td><strong>$18,570M</strong></td>
+</tr>
+<tr>
+<td>Goodwill</td>
+<td>$16,794M</td>
+<td>$14,593M</td>
+</tr>
+<tr>
+<td>Intangible assets</td>
+<td>$4,988M</td>
+<td>$3,012M</td>
+</tr>
+<tr>
+<td>Fixed assets (net)</td>
+<td>$7,894M</td>
+<td>$7,359M</td>
+</tr>
+<tr>
+<td><strong>Total assets</strong></td>
+<td><strong>$54,868M</strong></td>
+<td><strong>$48,935M</strong></td>
+</tr>
+<tr>
+<td>Current liabilities</td>
+<td>$14,721M</td>
+<td>$12,811M</td>
+</tr>
+<tr>
+<td>Long-term debt</td>
+<td>$9,742M</td>
+<td>$11,023M</td>
+</tr>
+<tr>
+<td><strong>Total liabilities</strong></td>
+<td><strong>$27,577M</strong></td>
+<td><strong>$26,585M</strong></td>
+</tr>
+<tr>
+<td><strong>SLB stockholders' equity</strong></td>
+<td><strong>$26,109M</strong></td>
+<td><strong>$21,130M</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Two things leap off this page. First, <strong>goodwill and intangibles together are $21.8 billion</strong> — that is <em>83% of shareholders' equity</em>. This is a business assembled partly by acquisition (Cameron in 2016, Aker subsea in 2023, ChampionX in 2025), and the premium paid for those deals sits on the balance sheet as goodwill. When you see a "book value" of $26.1 billion here, understand that the great majority of it is not tangible plant — it is the accounting residue of past purchases. Our manual warns (Chapter 7): <em>never anchor value to book.</em> For a capital-heavy cyclical, tangible book matters more than for a brand franchise, but here even the book is mostly intangible.</p>
+<p>Second, equity <strong>jumped $5 billion in 2025</strong> — but not because the business earned it. It rose because SLB <em>issued 141 million new shares</em> worth ~$4.9 billion to buy ChampionX. That is a real cost to you as an owner, and we will return to it in Section 6.</p>
+<h3 id="the-income-statement-margins-layer-by-layer">The income statement — margins layer by layer</h3>
+<p>Let me read 2025 down through the layers (from <code>item8</code> part 1), and show you where the money leaks:</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>2025</th>
+<th>Margin</th>
+<th>2024</th>
+<th>2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total revenue</td>
+<td>$35,708M</td>
+<td>—</td>
+<td>$36,289M</td>
+<td>$33,135M</td>
+</tr>
+<tr>
+<td>Gross (rev − cost of services − cost of sales)</td>
+<td>$6,507M</td>
+<td>18.2%</td>
+<td>$7,460M</td>
+<td>$6,563M</td>
+</tr>
+<tr>
+<td>Operating-ish (segment) EBIT</td>
+<td>~$5,400M*</td>
+<td>~15%</td>
+<td>~$6,200M*</td>
+<td>~$5,400M*</td>
+</tr>
+<tr>
+<td>Income before taxes</td>
+<td>$4,291M</td>
+<td>12.0%</td>
+<td>$5,672M</td>
+<td>$5,282M</td>
+</tr>
+<tr>
+<td>Net income attributable to SLB</td>
+<td>$3,374M</td>
+<td>9.4%</td>
+<td>$4,461M</td>
+<td>$4,203M</td>
+</tr>
+<tr>
+<td>Diluted EPS</td>
+<td>$2.35</td>
+<td>—</td>
+<td>$3.11</td>
+<td>$2.91</td>
+</tr>
+</tbody>
+</table>
+<p><em>*Segment operating income before corporate, charges, and interest; reconstructed from MD&amp;A. In 2025 the sum of the five reporting segments' pretax income was $6,925M, less $759M corporate.</em></p>
+<p>Notice the story the trend tells: revenue <em>dipped 2%</em> in 2025 and EPS <em>fell 24%</em> (from $3.11 to $2.35). That operating leverage — small revenue moves, large profit moves — <strong>is the signature of a cyclical.</strong> It cuts both ways: on the way up, earnings explode; on the way down, they collapse. You must never capitalize either extreme.</p>
+<h3 id="the-long-view-this-is-why-we-normalize">The long view — this is why we normalize</h3>
+<p>Now let me show you the <em>whole cycle</em> from the XBRL history, so you feel in your bones why a single year is a lie:</p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Revenue</th>
+<th>Net income to SLB</th>
+<th>Diluted EPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2014 (peak)</td>
+<td>$48,580M</td>
+<td>~$5,600M</td>
+<td>$4.31*</td>
+</tr>
+<tr>
+<td>2015</td>
+<td>$35,475M</td>
+<td>—</td>
+<td>$1.63*</td>
+</tr>
+<tr>
+<td>2016 (trough)</td>
+<td>$27,810M</td>
+<td><strong>−$1,687M</strong></td>
+<td>−$1.24</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>$30,440M</td>
+<td>−$1,505M</td>
+<td>−$1.08</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>$32,815M</td>
+<td>$2,138M</td>
+<td>$1.53</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>$32,917M</td>
+<td><strong>−$10,137M</strong></td>
+<td>−$7.32</td>
+</tr>
+<tr>
+<td>2020 (trough)</td>
+<td>$23,601M</td>
+<td><strong>−$10,518M</strong></td>
+<td>−$7.57</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>$22,929M</td>
+<td>$1,881M</td>
+<td>$1.32</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>$28,091M</td>
+<td>$3,441M</td>
+<td>$2.39</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>$33,135M</td>
+<td>$4,203M</td>
+<td>$2.91</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>$36,289M</td>
+<td>$4,461M</td>
+<td>$3.11</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>$35,708M</td>
+<td>$3,374M</td>
+<td>$2.35</td>
+</tr>
+</tbody>
+</table>
+<p><em>(*2014–15 EPS on a an independent research service adjusted basis; the huge 2019 and 2020 losses are dominated by non-cash goodwill and asset impairments — SLB wrote down billions when oil collapsed.)</em></p>
+<p>Look at that column. <strong>Two enormous loss years (2019, 2020) of roughly −$10 billion each</strong>, driven by writedowns, sitting a few lines above four solid profit years. If you had valued SLB on 2014's peak, you would have overpaid catastrophically into the 2016 collapse. If you had valued it on 2020's trough loss, you would have called a wonderful business worthless right before it tripled. <em>This</em> is the cyclical P/E trap, and this table is the reason we do not trust any one year.</p>
+<h3 id="cash-flow-the-truth-teller">Cash flow — the truth-teller</h3>
+<p>Earnings can be distorted by impairments and accruals; cash is harder to fake. From the cash-flow statement:</p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Operating cash flow</th>
+<th>Capex + APS + expl. data</th>
+<th>SLB "free cash flow"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td>$6,637M</td>
+<td>$2,599M</td>
+<td>$4,038M</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>$6,602M</td>
+<td>$2,612M</td>
+<td>$3,990M</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>$6,489M</td>
+<td>$2,374M</td>
+<td>$4,115M</td>
+</tr>
+</tbody>
+</table>
+<p>Here is the reassuring part of the SLB story. <strong>Even in the two catastrophic accounting-loss years of 2019–2020, operating cash flow stayed positive</strong> ($5.4B and $2.9B). The −$10B losses were mostly <em>non-cash impairments</em> — accounting recognizing that past acquisitions were worth less than paid. That is a genuine, permanent destruction of capital (the money was spent), but it is a <em>historical</em> loss, not an ongoing cash drain. The business kept generating cash throughout. This is why we read the cash flow <em>alongside</em> the income statement — the income statement screamed catastrophe; the cash flow said "wounded but alive."</p>
+<p>Note also the reconciliation: 2025 net income $3,451M + D&amp;A $2,643M + impairments $331M + inventory purchase-accounting amortization $166M + stock comp $332M, less working-capital build and other, gives OCF of $6,489M. The articulation holds.</p>
+<h3 id="earnings-quality-scan-chapter-7">EARNINGS-QUALITY scan (Chapter 7)</h3>
+<p>Now I put on my most suspicious hat. Our manual gives a checklist of accounting red flags. Let us run SLB against it:</p>
+<ul>
+<li><strong>Recurring "restructuring," "impairment," and "merger &amp; integration" charges.</strong> This is the one that concerns me. Look at the "Charges and Credits" note: <strong>2023: $110M pretax; 2024: $541M; 2025: $1,107M.</strong> In 2025 alone: $407M of workforce reductions, $331M of impairments (including a $210M goodwill writedown on SLB Capturi and $121M on an equity investment), $367M of ChampionX merger costs. SLB <em>labels</em> these "one-time." But when a company takes restructuring and integration charges <em>every single year</em>, a careful owner must ask whether they are truly one-time or simply the <strong>recurring cost of running an acquisitive, cyclical business</strong> that must repeatedly resize its workforce to activity and repeatedly digest deals. My verdict: I will add these back cautiously (they inflate reported losses), but I will <em>not</em> pretend normalized earnings are free of <em>some</em> ongoing restructuring — a cyclical <em>always</em> has to right-size. I discount the "one-time" framing by roughly half.</li>
+<li><strong>EBITDA presented as cash flow.</strong> SLB is relatively disciplined here — its headline non-GAAP metric is <em>free cash flow</em> (OCF less all capital investment), which is the <em>right</em> metric and does not delete the cost of maintaining the asset base. Good. But watch: the an independent research service sheet quotes a 10.7× "interest coverage" and A+ Financial Strength off EBIT-like figures; verify against the actual interest bill (we will).</li>
+<li><strong>Goodwill as a share of equity.</strong> As flagged: 83%. Not a fraud flag, but a reminder that a large impairment can vanish "book value" overnight — as 2019–20 proved.</li>
+<li><strong>Revenue recognition.</strong> ~11% of 2025 revenue was recognized <em>over time</em> on long-term construction contracts (subsea, production systems), using cost-to-cost percentage-of-completion. This requires management estimates of total project cost, and SLB itself flags it as a "critical accounting estimate." Not aggressive, but a place where judgment lives.</li>
+</ul>
+<p>Overall earnings quality: <strong>acceptable, but with a persistent "charges" habit that flatters the adjusted numbers.</strong> The cash flow is clean and the truth-teller; I trust it more than the GAAP net income.</p>
+<p><strong>PRINCIPLE.</strong> Read the three statements together, and let cash be the arbiter. When a company takes "one-time" charges every year, treat them as partly recurring — the label is management's opinion, not a fact.</p>
+<hr />
+<h2 id="4-earnings-power-the-moat">4. EARNINGS POWER &amp; THE MOAT</h2>
+<h3 id="earning-power-across-the-cycle">Earning power across the cycle</h3>
+<p>We have the long table above. Let me distill it into the number that matters — <strong>normalized owner earnings</strong> — and I will do it three independent ways, because a cyclical estimate you reach by only one road is a guess.</p>
+<p>The manual's definition (Chapter 7): <strong>Owner Earnings = Reported earnings + non-cash charges − maintenance capex − incremental working capital.</strong></p>
+<p><strong>Road 1 — Adjusted net income (add back after-tax "charges").</strong></p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Reported NI to SLB</th>
+<th>+ net charges</th>
+<th>Adjusted NI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td>$4,203M</td>
+<td>$102M</td>
+<td>$4,305M</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>$4,461M</td>
+<td>$427M</td>
+<td>$4,888M</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>$3,374M</td>
+<td>$836M</td>
+<td>$4,210M</td>
+</tr>
+</tbody>
+</table>
+<p>Three-year average adjusted net income ≈ <strong>$4,470M</strong>. But I distrust adding back <em>all</em> the charges (see Section 3), so I haircut this toward ~$4.1–4.3B.</p>
+<p><strong>Road 2 — SLB-defined free cash flow.</strong> 2023 $4,038M, 2024 $3,990M, 2025 $4,115M. Three-year average ≈ <strong>$4,048M</strong>. This already subtracts <em>all</em> capital investment — capex, APS, and exploration data — so it is a conservative owner-earnings proxy (it treats growth capex as if it were maintenance).</p>
+<p><strong>Road 3 — Operating cash flow less maintenance capex.</strong> Average OCF (2023–25) ≈ $6,576M. Average D&amp;A ≈ $2,491M. If maintenance capex roughly equals D&amp;A for a business running near steady-state (a fair assumption for a cyclical not currently expanding its fleet), owner earnings ≈ 6,576 − 2,491 ≈ <strong>$4,085M</strong>.</p>
+<p>All three roads land within a whisker of each other: <strong>~$4.0–4.3 billion of normalized owner earnings</strong>, or roughly <strong>$2.70–2.85 per share</strong> on 1,495M shares. I will carry <strong>$4.1 billion (≈ $2.74/share)</strong> as my base, with a range of $3.8–4.4 billion to respect the cyclicality.</p>
+<p>Note carefully: this is <em>below</em> the 2024 adjusted figure and <em>above</em> a trough year. That is exactly what "mid-cycle" should look like — and it is <em>not</em> the current-year GAAP number ($3,374M / $2.35). <strong>Anchoring on a normalized figure is the single most important thing we do for a cyclical.</strong></p>
+<p><strong>Maintenance vs. growth capex.</strong> SLB's total capital investment (~$2.4B in 2025) breaks into capex ($1,694M), APS investments ($428M), and exploration-data ($252M). D&amp;A ran $2,643M — <em>higher</em> than capex, which tells me SLB is currently under-investing relative to its depreciation, i.e., harvesting rather than expanding. In a <em>cyclical trough</em>, this is normal and even prudent, but it means a genuine mid-cycle maintenance figure is probably closer to the full D&amp;A. My owner-earnings estimate above already accounts for this by using the conservative (higher) maintenance assumption.</p>
+<h3 id="the-moat-what-protects-the-returns">The moat — what protects the returns?</h3>
+<p>SLB has a <em>real but cyclical</em> moat. Let me name its sources honestly, then name what erodes it.</p>
+<p><strong>Sources of the moat:</strong><br />
+- <strong>Technology and R&amp;D scale.</strong> SLB spends ~$700M/year on research (2.0% of revenue) and holds one of the industry's leading patent portfolios. It achieved the first fully autonomous drilling operations; its Digital platforms (Delfi, Lumi) are becoming industry infrastructure. This is genuine, durable technical leadership.<br />
+- <strong>Global footprint and integration.</strong> Operations in 100+ countries, organized into five Basins, with the ability to deploy "fit-for-basin" solutions. A national oil company in the Middle East or Latin America can hand SLB an entire integrated project — well construction <em>through</em> production — in a way few competitors can match. That breadth is very hard and very expensive to replicate.<br />
+- <strong>Switching costs and data.</strong> The exploration-data library and the customer's accumulated subsurface data inside SLB's platforms create real stickiness. Petrel and Techlog are embedded in customers' workflows.</p>
+<p><strong>The diagnostic test our manual insists on is pricing power.</strong> Does SLB have it? <em>Partially and cyclically.</em> At the top of a cycle, when rigs are scarce and E&amp;Ps are desperate, SLB commands premium pricing — you can see margins expand. At the bottom (2016, 2020, and to a degree 2025 in Saudi Arabia and Mexico), customers cut spending and SLB's pricing power evaporates. This is the crucial difference from a Coca-Cola: <strong>Coke can raise prices in a recession; SLB cannot raise prices when its customers stop drilling.</strong> The moat protects <em>market share and returns relative to peers</em>, but it does <em>not</em> protect <em>absolute</em> earnings from the cycle. That is a narrower, demand-dependent moat — a real advantage over Halliburton or Baker Hughes, but no shield against the oil price.</p>
+<p><strong>What erodes it:</strong><br />
+- <strong>E&amp;P consolidation.</strong> As oil producers merge (ExxonMobil–Pioneer, Chevron–Hess, and their like), they gain bargaining power over their suppliers, including SLB.<br />
+- <strong>In-house capabilities.</strong> National oil companies increasingly build their own services arms, capturing work SLB used to do.<br />
+- <strong>The energy transition.</strong> Electrification and renewables slowly reduce the long-run demand for new oil, which is the ultimate driver of SLB's business. SLB is hedging into Digital, Data Center Solutions, and carbon capture — sensible, but these are small today and unproven at scale.</p>
+<h3 id="roic-through-the-cycle-vs-cost-of-capital">ROIC through the cycle vs. cost of capital</h3>
+<p>The manual's central quality measure (Chapter 6): <strong>ROIC = NOPAT / Invested Capital</strong>, judged against the discount rate <em>r</em>.</p>
+<p>For 2025, on an <em>adjusted</em> basis: EBIT ≈ $5,820M (pretax income $4,291M + charges $1,107M + interest expense $558M − interest income $136M). At a ~19% tax rate, NOPAT ≈ $4,714M. Invested capital = total debt $11,636M + equity $26,109M + noncontrolling interests $1,182M − cash &amp; ST investments $4,212M = <strong>$34,715M</strong>.</p>
+<blockquote>
+<p><strong>ROIC (2025, adjusted) ≈ $4,714M / $34,715M ≈ 13.6%</strong></p>
+</blockquote>
+<p>Now here is the subtlety. That $34.7B of invested capital <em>includes $21.8B of goodwill and intangibles</em> from acquisitions. If you measure return on <em>tangible</em> invested capital (~$12.9B), ROIC leaps to ~36%. Both numbers are true and both teach something:<br />
+- On <strong>tangible capital</strong>, SLB's operations are genuinely excellent — a real franchise.<br />
+- On <strong>total capital including goodwill</strong>, returns are merely <em>good</em> (~13–14%), because SLB has <em>paid full price</em> for its acquisitions. The goodwill on the balance sheet is the price of the empire.</p>
+<p>Through the cycle, SLB's total-capital ROIC has swung from <em>negative</em> (2016, 2019, 2020) to the low-to-mid teens in good years. A fair <strong>mid-cycle ROIC is around 12–14%.</strong> Against a discount rate of ~9.5–10% (Section 7), that means SLB clears its cost of capital <em>in normal-to-good years but not in bad ones</em> — value is created across a full cycle, but only modestly, and the buffer is thin.</p>
+<p><strong>ROE — watch the leverage.</strong> an independent research service reports ROE of ~16% (2025) to ~19.5%. ROE runs above ROIC because of the debt in the capital structure. Do not be seduced by the higher ROE number — it is partly borrowed. The honest quality measure is the ~13% total-capital ROIC.</p>
+<p><strong>PRINCIPLE.</strong> For an acquisitive company, measure ROIC on <em>total</em> invested capital, including the goodwill you paid. High returns on tangible capital are the sign of a good operating business; mediocre returns on <em>total</em> capital are the sign that you <em>paid up</em> for it. Both are true; the second is what the <em>buyer</em> earns.</p>
+<hr />
+<h2 id="5-financial-strength-solvency">5. FINANCIAL STRENGTH &amp; SOLVENCY</h2>
+<p>For a cyclical, this section is not a formality — it is close to decisive. The manual (Chapter 8): <em>a utility's steady stream safely carries debt that would sink a cyclical.</em> A cyclical needs a <em>stronger</em> balance sheet than a stable business, because it must survive the trough without becoming a forced seller (Chapter 3).</p>
+<p>Let me test SLB against the five questions, with its own numbers.</p>
+<p><strong>1. Leverage.</strong> From the MD&amp;A liquidity table: gross debt = $1,894M short-term + $9,742M long-term = <strong>$11,636M</strong>. Cash + short-term investments = $4,212M. <strong>Net debt = $7,424M.</strong></p>
+<blockquote>
+<p><strong>Net debt / normalized owner earnings = $7,424M / ~$4,100M ≈ 1.8 years.</strong></p>
+</blockquote>
+<p>SLB could clear its net debt from under two years of <em>mid-cycle</em> owner earnings. That is conservative. Even in a <em>trough</em> year (say owner earnings fall to $2–2.5B), it would be ~3 years — still manageable. Net debt has also been steady-to-falling: $9,332M (2023 start) → $7,976M → $7,405M → $7,424M.</p>
+<p><strong>2. Coverage.</strong> Interest expense 2025 = $558M. Adjusted EBIT ≈ $5,820M.</p>
+<blockquote>
+<p><strong>Interest coverage = $5,820M / $558M ≈ 10.4×</strong> (an independent research service reports 10.7×).</p>
+</blockquote>
+<p>Now stress it — the discipline the manual demands. In a <em>trough</em> year, suppose EBIT falls to ~$2.5B. Coverage would still be ~4.5×. Even in the disastrous 2020, operating cash flow covered the interest bill several times over. <strong>Coverage survives the trough.</strong> This is a genuine strength.</p>
+<p><strong>3. Liquidity.</strong> Current ratio = $19,513M / $14,721M = <strong>1.33×</strong>. Adequate, though not lavish. (Note: the 2025 accounts payable line jumped, partly from ChampionX consolidation.) Plus $5.0 billion of <em>undrawn</em> committed credit facilities. Graham's precondition — adequate working capital — is met.</p>
+<p><strong>4. Refinancing wall.</strong> The debt is <em>well laddered</em> (from the maturity table): roughly $1.9B due 2026, $1.6B in 2027, $2.0B in 2028, then $1.3B, $1.2B, $1.1B in the following years, trailing to ~$0.9B after 2033. No single year forces a crisis, and SLB generates ~$4B of free cash flow annually — it can <em>self-fund</em> most maturities without touching the credit markets. Interest is overwhelmingly <em>fixed-rate</em> (only $10M variable), so a rising-rate environment does not spring a trap. Excellent structure.</p>
+<p><strong>5. Hidden obligations.</strong> Uncapitalized operating leases ~$242M/year — small. Pension: assets $11.3B against obligations $11.4B — essentially fully funded, a $0.1B gap. This is <em>not</em> a company with a hidden pension hole. There is a put option from the SLB Capturi JV (Aker can put its 20% for NOK 1.0–2.1B) — modest. Nothing alarming off the balance sheet.</p>
+<p><strong>Verdict: FORTRESS-ADEQUATE, tilting to fortress.</strong> an independent research service rates Financial Strength <strong>A+</strong>. I agree the balance sheet is strong <em>for a cyclical</em> — low leverage, thick coverage that survives the trough, laddered fixed-rate debt, funded pension. This is the balance sheet that let SLB absorb −$10B loss years in 2019–20 without a solvency crisis. That history is the proof.</p>
+<p>Does this let me <em>relax</em> the margin of safety? <strong>No.</strong> A strong balance sheet buys <em>survival</em>, not <em>value</em>. It means the business will live to see the next up-cycle — but it does nothing to make the <em>stock</em> cheap. For a cyclical, I still demand my safety from the purchase price. The balance sheet simply lets me <em>hold</em> through a trough without being forced out.</p>
+<p><strong>PRINCIPLE.</strong> A fortress balance sheet is the price of admission for owning a cyclical — it guarantees you are never the forced seller of Chapter 3. But it is a survival asset, not a value asset. Do not let a strong balance sheet talk you into a weak purchase price.</p>
+<hr />
+<h2 id="6-management-as-partners">6. MANAGEMENT AS PARTNERS</h2>
+<p>Now we judge the stewards — how they allocate the cash the business throws off. The manual gives us six uses of a dollar (Chapter 9) and the one-dollar test.</p>
+<h3 id="the-2020-dividend-cut-teach-this">The 2020 dividend cut — teach this</h3>
+<p>Here is the episode I most want you to remember. Look at the dividend history:</p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Dividend/share</th>
+<th>Total dividends paid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016–2019</td>
+<td>$2.00/year</td>
+<td>~$2.77B/year</td>
+</tr>
+<tr>
+<td><strong>2020</strong></td>
+<td><strong>$0.88</strong> (cut mid-year)</td>
+<td>$1,734M</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>$0.50</td>
+<td>$699M</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>$0.65</td>
+<td>$848M</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>$1.00</td>
+<td>$1,317M</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>$1.10</td>
+<td>$1,533M</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>$1.14</td>
+<td>$1,602M</td>
+</tr>
+<tr>
+<td>2026</td>
+<td>$1.18 (declared)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>In 2020, as oil collapsed to negative prices and cash flow fell, SLB <strong>cut its dividend by roughly 75%</strong> — from $2.00 to eventually $0.50. For decades SLB had been a proud dividend payer, and income investors were furious. Was this a betrayal, or good stewardship?</p>
+<p><strong>It was good stewardship, and it teaches two lessons at once.</strong> First, it teaches you what a cyclical <em>is</em>: a business whose cash flow cannot support a fixed dividend through the trough. A management that had <em>refused</em> to cut, borrowing to pay owners money the business was not earning, would have been the reckless one — that is how a single zero gets multiplied through a line of good years (Chapter 8). Second, it teaches <strong>candor and cyclical reality.</strong> Le Peuch's team cut hard and fast, protected the balance sheet, and then rebuilt the dividend <em>slowly and sustainably</em> as the cycle recovered — from $0.50 back to $1.18, but still <em>well below</em> the old $2.00, and now at a conservative ~40% payout of normalized earnings. That is exactly the behavior you want. Do not own a cyclical and expect a bond-like dividend; own it and expect the dividend to breathe with the cycle. A management honest enough to cut is more trustworthy than one that clings.</p>
+<h3 id="capital-allocation-across-the-six-uses">Capital allocation across the six uses</h3>
+<ul>
+<li><strong>Reinvest in the business.</strong> Modest and disciplined — capex <em>below</em> D&amp;A, appropriate for the current point in the cycle. No empire-building on organic capex.</li>
+<li><strong>Acquisitions.</strong> This is where I have my sharpest reservation. SLB has been <em>aggressively</em> acquisitive: Cameron (2016), the Aker subsea business (2023, funded partly with stock), and <strong>ChampionX (2025, an all-stock deal, 141 million shares, ~$4.9B)</strong>. The an independent research service note is candid that near-term revenue "growth" for 2026–27 is <em>entirely</em> the ChampionX acquisition — the underlying assets may shrink. And the goodwill on the balance sheet ($16.8B) is the accumulated price of these deals. Some, like the SLB Capturi carbon-capture venture, have <em>already</em> required a $210M goodwill impairment in 2025 — a fresh admission that the price paid exceeded the value received. The pattern echoes the manual's Dexter Shoe warning: acquisitions are <em>frequently value-destroying</em>, and paying in <em>undervalued stock</em> compounds the error.</li>
+<li><strong>Pay down debt.</strong> Steady — net debt flat-to-down, maturities repaid on schedule. Good.</li>
+<li><strong>Dividends.</strong> Rebuilt sustainably (above).</li>
+<li><strong>Buybacks.</strong> Here is the arithmetic I want you to check. SLB has a $10B repurchase program, $5.9B done by end-2025. Prices paid: <strong>2023 avg $52.05, 2024 avg $45.29, 2025 avg $40.23.</strong> Now compare to my normalized intrinsic-value range (Section 7) of roughly $30–36. <strong>SLB bought back stock in 2023 and 2024 at prices at or above my central estimate of intrinsic value</strong> — value-neutral at best, value-<em>destroying</em> at the 2023 price. Only the 2025 buybacks (~$40) begin to look reasonable, and even those are near the top of my range. The manual is unambiguous: <em>buybacks are value-creating only when the stock is bought below intrinsic value.</em> SLB's buyback timing has not been disciplined on price.</li>
+<li><strong>Share issuance — the mirror image.</strong> And here is the real cost. Look at the share count: 1,391M (2016) drifting to 1,427M (2023), 1,401M (2024) after buybacks — and then <strong>jumping to 1,495M in 2025</strong> because of the ChampionX stock issuance. <strong>SLB spent ~$5.9B buying back ~112 million shares over three years, then issued 141 million new shares for ChampionX.</strong> It <em>bought high and issued</em> to fund an acquisition — the net effect over the period is <em>more</em> shares outstanding, not fewer. Intrinsic value is a per-share quantity, and the share count moved the <em>wrong</em> way. This is the manual's exact warning: <em>share count is capital allocation</em>, and issuing stock as acquisition currency gives away part of every owner's claim.</li>
+</ul>
+<h3 id="the-one-dollar-test">The one-dollar test</h3>
+<p>Has each dollar retained produced at least a dollar of market value? Across the <em>last three years</em>, arguably yes — the business earned decent returns and the stock did well. But across the <em>full cycle including the acquisition currency</em>, the answer is muddier: billions were spent on deals (Cameron, Capturi) that were later impaired, and shares were issued near cyclical lows. <strong>My verdict: capable <em>operators</em>, disciplined on the balance sheet and admirably candid on the dividend — but <em>mixed</em> capital allocators, too willing to acquire and too loose on buyback price.</strong> That is a meaningful mark against the quality of the business, and it argues for a <em>wider</em> margin of safety.</p>
+<p><strong>PRINCIPLE.</strong> Judge management on the whole ledger: the courage to cut the dividend when the cycle demands it (a plus), against the discipline of <em>what price</em> they pay for buybacks and <em>how many shares</em> they issue (here, a minus). Candor is necessary but not sufficient; the arithmetic of the share count is the proof.</p>
+<hr />
+<h2 id="7-what-is-it-worth-intrinsic-value">7. WHAT IS IT WORTH? — INTRINSIC VALUE</h2>
+<p>Now the arithmetic. And I remind you of the discipline: we anchor on <strong>normalized mid-cycle owner earnings (~$4.1 billion, range $3.8–4.4B; ~$2.74/share)</strong>, <em>never</em> on the current year, and we set a <em>wide</em> range because the business is cyclical.</p>
+<p>The master equation (Chapter 1) remains the definition: <strong>IV = Σ OEₜ / (1+r)ᵗ.</strong> For a cyclical whose growth I cannot forecast with confidence, I will lean primarily on a <strong>normalized-earnings multiple</strong> and an <strong>EV/EBIT cross-check</strong>, and use the master equation's cross-checks to keep me honest.</p>
+<h3 id="the-discount-rate">The discount rate</h3>
+<p>Long rates today (Selected Yields, 6/29/26): 10-year Treasury 4.4%, <strong>30-year Treasury 4.9%</strong>, Fed Funds 3.50–3.75%, and — importantly — inflation has <em>reignited</em> (PCE 4.1%), with the Fed on hold and possibly hiking. For a cyclical business with an unforecastable revenue driver, I want a <em>premium</em> over the long bond. I will use <strong>r = 9.5%</strong> as my base (4.9% bond + ~4.6% for the uncertainty and cyclicality of the cash flows), and I will sensitize to 9–10%.</p>
+<h3 id="deriving-the-multiple-three-ways-then-reconcile">Deriving the multiple (three ways, then reconcile)</h3>
+<p><strong>(a) SLB's own historical P/E — and the cyclical trap.</strong> an independent research service reports a <strong>median P/E of 24</strong> and a trailing P/E of 17.7. <em>Stop and think before you use these.</em> A median P/E of 24 is dangerously misleading for a cyclical, because those high P/Es were often recorded when <em>earnings were depressed</em> (a low denominator inflates the ratio), and the <em>low</em> P/Es were recorded at peak earnings. The manual warns of exactly this: <em>a low P/E at peak earnings is a warning, not a bargain.</em> I will <em>not</em> apply 24× — that would capitalize the cyclical distortion. On <em>normalized</em> earnings, a fair multiple for a mid-teens-ROIC cyclical is far lower: <strong>11–15×.</strong></p>
+<p><strong>(b) Peer / industry multiple.</strong> The Oilfield Services/Equipment industry report and <em>Selection &amp; Opinion</em> give me comparables. TechnipFMC (FTI) trades at ~22× current earnings, Halliburton and Baker Hughes in the low-to-mid teens historically. The industry as a whole is <em>cyclical and cheap</em> on normalized numbers. SLB deserves a <em>premium</em> to Halliburton and Baker Hughes for its scale, international breadth, and Digital franchise — but <em>not</em> a rich absolute multiple, because the whole sector is demand-cyclical. I anchor peers at <strong>~10–12× EV/EBIT</strong> and SLB at the upper end for quality.</p>
+<p><strong>(c) Quality/growth-justified from first principles.</strong> With mid-cycle ROIC ~13% barely above r ~9.5%, and low-single-digit sustainable real growth, a first-principles multiple lands around <strong>13–14× normalized earnings</strong> — a business that clears its cost of capital modestly and grows modestly is worth low-teens earnings, not twenties.</p>
+<p><strong>Reconciliation.</strong> The three roads agree on <strong>~12–14× normalized owner earnings</strong> as the central multiple, leaning to the lower end because of the cyclicality and the mixed capital allocation.</p>
+<h3 id="base-valuation">Base valuation</h3>
+<p>At <strong>13× normalized owner earnings of $4,100M</strong>: IV ≈ $53.3B, or <strong>≈ $35.65/share.</strong></p>
+<p>Cross-checked by <strong>EV/EBIT</strong> at mid-cycle EBIT ~$5,500M and 10× EV/EBIT: EV = $55B, less net debt $7.4B = equity $47.6B ≈ <strong>$31.80/share.</strong> At 11×: ≈ <strong>$35.50/share.</strong></p>
+<p>These converge on a <strong>base intrinsic value near $32–36 per share.</strong></p>
+<h3 id="the-three-cross-checks-arithmetic-on-normalized-oe">The three cross-checks (arithmetic on normalized OE)</h3>
+<p><strong>1. No-growth floor (checks the growth assumption).</strong></p>
+<blockquote>
+<p>$4,100M ÷ 0.095 = <strong>$43,158M ≈ $28.86/share.</strong></p>
+</blockquote>
+<p>This is what SLB is worth if it <em>never grows another dollar</em> — pure normalized earning power capitalized at my discount rate. Notice something striking: the no-growth floor (~$29) is <em>close to</em> my base case (~$32–36). That tells you SLB is <strong>not</strong> primarily a growth story — most of its value is in its <em>existing</em> earning power, with only a modest premium for growth. That is honest and reassuring: I am <em>not</em> paying heroic multiples for a growth fantasy. It also means the downside is somewhat protected by the floor — <em>provided</em> my normalized figure is right.</p>
+<p><strong>2. Implied multiple (checks the output).</strong></p>
+<blockquote>
+<p>Base IV $53.3B ÷ $4,100M OE ≈ <strong>13.0× owner earnings.</strong></p>
+</blockquote>
+<p>Is 13× defensible for a ~13% total-capital-ROIC cyclical growing low single digits mid-cycle? Yes — that is a sensible, unheroic multiple. If the machine had spat out 24× (the naive an independent research service median), I would know something was wrong. It didn't. The check passes.</p>
+<p><strong>3. Owner-earnings yield vs. the long bond (checks the anchor to rates).</strong></p>
+<blockquote>
+<p>At the live price of $45.13: $4,100M ÷ (45.13 × 1,495M) = $4,100M ÷ $67,470M = <strong>6.1% owner-earnings yield.</strong></p>
+</blockquote>
+<p>Against a 30-year Treasury at 4.9%, a 6.1% yield <em>looks</em> superior — but the bond's coupon is <em>certain</em>, while SLB's "coupon" is <em>cyclical and could halve in a trough.</em> For a business this volatile, I want the yield <em>well</em> above the bond to compensate — 6.1% is only ~1.2 points over, which is <strong>thin</strong> for something that lost $10 billion twice in the last decade. This check flashes <em>caution</em> at today's price.</p>
+<h3 id="triangulating-the-range">Triangulating the range</h3>
+<p>Pulling it together, and setting the <em>width</em> by the cyclicality:</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Normalized OE</th>
+<th>Multiple / method</th>
+<th>Intrinsic value/share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Low</strong></td>
+<td>$3,800M</td>
+<td>11× / no-growth floor</td>
+<td><strong>~$28</strong></td>
+</tr>
+<tr>
+<td><strong>Base</strong></td>
+<td>$4,100M</td>
+<td>13× / 10–11× EV-EBIT</td>
+<td><strong>~$33</strong></td>
+</tr>
+<tr>
+<td><strong>High</strong></td>
+<td>$4,400M</td>
+<td>15× / 12× EV-EBIT</td>
+<td><strong>~$41–44</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Intrinsic value range: roughly $28 to $44 per share, base case ~$33–36.</strong></p>
+</blockquote>
+<p>Sanity checks:<br />
+- <em>an independent research service's 18-month target is $66 and its 2029–31 target is $90.</em> Those imply a <em>strong up-cycle</em> and a generous multiple — they are an independent research service's <em>bull-cycle</em> projection, not a normalized figure. I regard them as the optimistic scenario, not the base. My range is deliberately more conservative because I refuse to capitalize a projected cyclical peak.<br />
+- <em>Live P/E is 19.9 on 2025's depressed EPS of $2.35; ~16.5× on my normalized $2.74.</em> At $45.13, the market is paying ~16.5× normalized owner earnings — <em>above</em> my central multiple of 13×.</p>
+<p><strong>PRINCIPLE.</strong> For a cyclical, derive the multiple from <em>normalized</em> earnings and <em>reject</em> the reported median P/E, which is inflated by trough-year distortions. Set the valuation <em>range</em> wide, lean on the no-growth floor for the downside, and demand that the owner-earnings yield sit <em>well</em> above the long bond — not just barely.</p>
+<hr />
+<h2 id="8-margin-of-safety-mr-market">8. MARGIN OF SAFETY &amp; MR. MARKET</h2>
+<p>Now the decision arithmetic. The manual (Chapter 13): <strong>Margin of Safety = (Intrinsic Value − Price) / Intrinsic Value</strong>, and for a cyclical <em>all</em> the safety must come from the purchase discount, because — as the manual says of mediocre businesses — the cushion is <em>melting</em>, and a moat that does not protect absolute earnings cannot rescue a bad price.</p>
+<p><strong>Live price: $45.13.</strong> My range: $28 (low) – $33 (base) – $44 (high).</p>
+<p>Let me be honest about where that lands:<br />
+- Against my <strong>base</strong> case (~$33): the price of $45.13 is a <strong>~37% <em>premium</em></strong>, not a discount. Margin of safety = (33 − 45.13)/33 = <strong>−37%.</strong><br />
+- Against my <strong>high</strong> case (~$44): the price is roughly <em>fair</em> — no margin of safety.<br />
+- Only against a <em>strong up-cycle scenario</em> (an independent research service's $66) does today's price look cheap — but that is a bet on the cycle turning up, not a margin of safety.</p>
+<p><strong>There is no margin of safety at $45.13 against a normalized valuation.</strong> The stock is priced for the cycle to turn <em>up</em>, not for it to turn <em>down</em>. To get my required discount — say 30% below the base, which for a cyclical I would demand — I would want to pay in the <strong>low-to-mid $20s.</strong> History says that price <em>does</em> appear: the 52-week low was ~$31, and in 2020 the stock traded under $12.</p>
+<h3 id="is-mr-market-euphoric-or-depressed-on-energy-right-now">Is Mr. Market euphoric or depressed on energy right now?</h3>
+<p>This is genuinely interesting, and it cuts <em>against</em> the stock at first glance but deserves nuance. Look at the Market Monitor (Selection &amp; Opinion, 6/29/26): <strong>Oilfield Services/Equipment was the <em>single worst-performing industry</em> over the last six weeks, down 16.3%</strong>, as a Middle East ceasefire dropped oil prices and energy equities sold off. So the <em>sector</em> is currently <em>depressed</em>, not euphoric — Mr. Market is in a gloomy mood on oil services.</p>
+<p>That is exactly the mood in which bargains appear. <em>But</em> — and this is the discipline — a depressed <em>sector</em> does not automatically make an individual stock cheap <em>versus its normalized value</em>. SLB has fallen from ~$56 to $45, yet my normalized value is ~$33. <strong>The stock got cheaper, but it started expensive; it is still above my range.</strong> The 16% sector drop has not yet brought SLB to a margin of safety against <em>normalized</em> earnings — it has merely brought it from very expensive to somewhat expensive. This is the trap of buying a cyclical "on the dip" without doing the normalization: the dip can still leave you overpaying.</p>
+<p>If oil prices keep falling and this sector continues to sell off — if SLB revisits the low $30s or below — <em>then</em> Mr. Market would be handing me the melting-cushion cyclical at a price where the discount, not the moat, does the protecting. <strong>That is the price at which this becomes interesting. It is not today's price.</strong></p>
+<p><strong>PRINCIPLE.</strong> A falling sector is where you <em>hunt</em>, but the discount must be measured against <em>normalized value</em>, not against last month's higher price. "It's down 16%" is not a margin of safety; "it's 30% below normalized intrinsic value" is. At $45.13, SLB is not there.</p>
+<hr />
+<h2 id="9-the-verdict-the-lesson">9. THE VERDICT &amp; THE LESSON</h2>
+<h3 id="the-verdict">The verdict</h3>
+<p>Placing SLB on the manual's spectrum of wonderful / good / fair / avoid:</p>
+<p><strong>SLB is a GOOD business at an UNATTRACTIVE price.</strong> Let me separate the two judgments clearly, because that separation <em>is</em> the lesson.</p>
+<p><em>The business</em> is genuinely good — not wonderful, but good. It is the scale leader in a necessary industry, with real technological advantages, a fortress-for-a-cyclical balance sheet (A+), mid-teens returns on capital in normal years, positive cash flow even through catastrophic loss years, and candid management that cut its dividend when honesty required it. What keeps it from "wonderful" is the thing no oilfield-services company can escape: its earnings are hostage to the oil price, its pricing power vanishes in the trough, and its capital allocators have been too fond of acquisitions and too loose on buyback price.</p>
+<p><em>The price</em> — $45.13 — is the problem. Against my normalized intrinsic-value range of ~$28–44 (base ~$33), the stock offers <strong>no margin of safety.</strong> It is priced for the up-cycle. For a cyclical, that is precisely the wrong time to buy, because when <em>all</em> your safety must come from the purchase discount, buying at a premium leaves you naked to the next downturn.</p>
+<p><strong>The disposition: ADMIRE AND WAIT.</strong> This is a business worth owning — at the right price. That price, by my arithmetic, is in the low-to-mid $20s, and history says such prices <em>do</em> appear in this stock (it saw $31 within the year, sub-$12 in 2020). The manual's rule stands: <em>below the conservative range you buy in size; above it you admire the business and wait, however good it is.</em> Today we wait.</p>
+<h3 id="answering-the-one-question">Answering the one question</h3>
+<p><em>Through a full cycle, what is SLB's normalized owner earnings, and am I offered a wide enough discount to be protected when the cycle turns down?</em></p>
+<p>Normalized owner earnings: <strong>~$4.1 billion (~$2.74/share).</strong> Discount at $45.13: <strong>none — the price is a ~37% premium to my base case.</strong> The answer to the case is therefore <strong>no — not at this price.</strong></p>
+<h3 id="two-or-three-open-questions-be-honest-about-what-you-cannot-know">Two or three open questions (be honest about what you cannot know)</h3>
+<ol>
+<li><strong>Where is oil headed?</strong> I have deliberately <em>not</em> forecast it, and neither should you. The entire case turns on a variable outside anyone's circle of competence. My defense is normalization and a wide margin — not a forecast.</li>
+<li><strong>What is the true mid-cycle level, post-ChampionX and post-transition?</strong> The energy transition slowly lowers the ceiling on oil demand, while ChampionX and Data Center Solutions add non-drilling revenue. Is normalized owner earnings <em>really</em> $4.1B, or is the mid-cycle <em>declining</em> as the world electrifies? If the cycle's <em>average</em> is falling over time, even my normalized figure is too generous.</li>
+<li><strong>Will management's acquisitive streak destroy or create value?</strong> ChampionX was bought with 141 million shares near a cyclical low. The jury is out.</li>
+</ol>
+<h3 id="two-or-three-universal-lessons-this-is-why-we-did-the-case">Two or three universal lessons (this is why we did the case)</h3>
+<ol>
+<li><strong>Normalize cyclicals — always.</strong> The single most important habit this case teaches. SLB's earnings ranged from +$4.5B to −$10.5B in one decade. Any valuation built on one year — good <em>or</em> bad — is a fiction. Average through the cycle, then value the average.</li>
+<li><strong>The cyclical P/E trap.</strong> A <em>low</em> P/E on a cyclical often signals <em>peak</em> earnings (buy warning), and a <em>high</em> P/E often signals <em>trough</em> earnings (not necessarily expensive). An independent research service's "median P/E of 24" for SLB is exactly this distortion. Never apply a reported cyclical multiple to reported cyclical earnings without asking <em>where in the cycle</em> each was struck.</li>
+<li><strong>A cyclical needs a stronger balance sheet — and its dividend will breathe.</strong> The 2020 dividend cut was not a failure of management; it was management <em>working correctly.</em> Own a cyclical expecting a fortress balance sheet (so it survives the trough) and a dividend that rises and falls with the cycle (so it never becomes a forced borrower). If you need a steady dividend, do not buy a cyclical.</li>
+<li><strong>"Down 16%" is not "cheap."</strong> The sector's recent slump is where you hunt, but the discount must be measured against <em>normalized value</em>, not against a higher recent price. A falling knife that started overpriced can still cut you.</li>
+</ol>
+<p><em>This is a teaching case, not investment advice. The purpose is to practice the method, not to issue a recommendation.</em></p>
+<hr />
+<h2 id="10-the-valuation-checklist-chapter-15">10. THE VALUATION CHECKLIST (Chapter 15)</h2>
+<p>Running SLB through the manual's ten-question checklist. A "no" at a quality gate ends the analysis; here the business <em>passes</em> the quality gates but <em>fails</em> the price gate.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Question</th>
+<th>Verdict</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Competence</strong> — can I forecast it?</td>
+<td><strong>PASS (qualified)</strong></td>
+<td>Cannot forecast oil price or any single year; <em>can</em> bound the mid-cycle average. Inside the circle for the patient normalizer only.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Moat</strong> — durable, with pricing power?</td>
+<td><strong>PASS (qualified)</strong></td>
+<td>Real moat (tech, scale, global footprint) vs. peers, but pricing power vanishes in the trough. Demand-cyclical, not price-protected.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Returns</strong> — ROIC &gt; r? Capital-light or hungry?</td>
+<td><strong>PASS (thin)</strong></td>
+<td>Mid-cycle ROIC ~13% on total capital, just above r ~9.5%. Capital-hungry; excellent on <em>tangible</em> capital (~36%) but full price paid for goodwill.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Owner earnings</strong> — normalized, accounts clean?</td>
+<td><strong>PASS</strong></td>
+<td>~$4.1B normalized, triangulated three ways. Cash flow clean; "one-time" charges recur — haircut applied.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Financial strength</strong> — survives a bad year + shut credit market?</td>
+<td><strong>PASS (strong)</strong></td>
+<td>Net debt ~1.8× OE; coverage ~10× (survives trough at ~4.5×); laddered fixed-rate debt; funded pension; A+.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Capital allocation</strong> — one-dollar test, rational, candid, respects share count?</td>
+<td><strong>MIXED / partial fail</strong></td>
+<td>Candid dividend cut (plus); but acquisitive, buybacks above IV, and net <em>issued</em> shares for ChampionX (minus).</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Intrinsic value</strong> — conservative range, triangulated?</td>
+<td><strong>DONE</strong></td>
+<td>~$28–44/share, base ~$33; no-growth floor ~$29; implied 13×; yield 6.1% (thin vs. bond).</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Growth check</strong> — funded at ROIC &gt; r?</td>
+<td><strong>NEUTRAL</strong></td>
+<td>Growth barely value-creating (ROIC ~ r). Most value is in existing earning power, not growth.</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Margin of safety</strong> — price far below conservative range?</td>
+<td><strong>FAIL</strong></td>
+<td>$45.13 is a ~37% <em>premium</em> to base. No margin of safety. Buy price is low-to-mid $20s.</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Afterward</strong> — monitor business, sell only per Ch. 16</td>
+<td><strong>N/A</strong></td>
+<td>Not owned.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Overall: quality gates PASS; the margin-of-safety gate FAILS at $45.13. The disciplined answer is to admire and wait.</strong></p>
+<h3 id="after-the-purchase-chapter-16-the-discipline-for-if-you-owned-it">After the purchase (Chapter 16) — the discipline for <em>if</em> you owned it</h3>
+<p>Suppose you had bought SLB in the low $20s in a prior trough and now hold it at $45. The manual gives only three reasons to sell:<br />
+1. <strong>The thesis broke</strong> — the moat erodes (E&amp;P consolidation, transition faster than expected, national oil companies insourcing). Watch international market share and Digital adoption, <em>not</em> the quarterly oil price.<br />
+2. <strong>The price left the valuation far behind</strong> — if the up-cycle ran the stock to, say, $65–90 (an independent research service's targets) on <em>peak</em> earnings, the margin of safety would invert and you would hold the overpriced side. For a cyclical, <em>trimming into euphoria</em> is legitimate, because the melting cushion works in reverse: a peak multiple on peak earnings is doubly dangerous.<br />
+3. <strong>A decisively better use of capital</strong> exists within your circle at a wider margin.</p>
+<p>Everything else — the oil headlines, the Strait of Hormuz, the Fed — is Mr. Market talking. Monitor the <em>business</em> (mid-cycle earning power, moat, balance sheet), not the <em>quote.</em></p>
+<p><strong>PRINCIPLE.</strong> The checklist is a gate sequence, not a scorecard. SLB clears the quality gates and stumbles only at price — which is the <em>most</em> common way a good business fails a value test, and the easiest to mistake for a "buy." Discipline is passing on a good business at a bad price.</p>
+<hr />
+<h2 id="11-glossary">11. GLOSSARY</h2>
+<p>Every term, ratio, and formula used above — with its definition, its formula, and SLB's actual numbers.</p>
+<p><strong>Circle of competence.</strong> The set of businesses you can understand well enough to forecast. <em>SLB:</em> inside the circle only for the <em>mid-cycle average</em> (bounded within a range); <em>outside</em> it for any single-year or oil-price forecast.</p>
+<p><strong>Cyclical.</strong> A business whose earnings rise and fall with an economic or commodity cycle rather than growing steadily. <em>SLB:</em> earnings swung from +$4.5B (2014) to −$10.5B (2020); operating leverage means small revenue moves cause large profit moves.</p>
+<p><strong>Normalized / mid-cycle earnings.</strong> Earning power averaged across a full cycle, stripping peaks and troughs — the figure that enters a cyclical valuation. <em>SLB:</em> normalized owner earnings ~<strong>$4.1B (~$2.74/share)</strong>, range $3.8–4.4B; <em>not</em> the 2025 GAAP figure of $3.37B/$2.35.</p>
+<p><strong>Owner earnings.</strong> Reported earnings + non-cash charges − maintenance capex − Δworking capital; the cash an owner can withdraw without weakening the business. <em>SLB:</em> ~$4.1B, triangulated as (a) 3-yr avg adjusted net income ~$4.47B haircut to ~$4.1–4.3B, (b) 3-yr avg free cash flow ~$4.05B, (c) avg OCF $6.58B − avg D&amp;A $2.49B ≈ $4.09B.</p>
+<p><strong>Free cash flow (FCF).</strong> Operating cash flow − capital investment. <em>SLB (company definition:</em> OCF − capex − APS investments − exploration data): 2023 $4.04B, 2024 $3.99B, 2025 $4.12B.</p>
+<p><strong>Maintenance vs. growth capex.</strong> Maintenance capex preserves competitive position and unit volume; growth capex funds expansion. <em>SLB:</em> 2025 total capital investment ~$2.4B (capex $1.69B + APS $0.43B + expl. data $0.25B), <em>below</em> D&amp;A of $2.64B — currently under-investing relative to depreciation, appropriate at this point in the cycle. Mid-cycle maintenance ≈ D&amp;A.</p>
+<p><strong>ROIC (Return on Invested Capital).</strong> NOPAT ÷ Invested Capital. <em>SLB (2025 adjusted):</em> NOPAT ~$4,714M ÷ invested capital $34,715M = <strong>13.6%</strong> on total capital; ~36% on <em>tangible</em> capital (ex-goodwill). Mid-cycle ~12–14%.</p>
+<p><strong>NOPAT (Net Operating Profit After Tax).</strong> Adjusted EBIT × (1 − tax rate). <em>SLB (2025):</em> $5,820M × (1 − 0.19) ≈ <strong>$4,714M.</strong></p>
+<p><strong>Invested capital.</strong> Total debt + equity + noncontrolling interests − cash &amp; short-term investments. <em>SLB (2025):</em> $11,636M + $26,109M + $1,182M − $4,212M = <strong>$34,715M</strong> (of which $21.8B is goodwill + intangibles).</p>
+<p><strong>ROE (Return on Equity).</strong> Net income ÷ shareholders' equity. <em>SLB:</em> ~16% (2025) to an independent research service's 19.5%; runs <em>above</em> ROIC because of leverage — do not mistake it for the true return on the business.</p>
+<p><strong>Interest coverage.</strong> EBIT ÷ interest expense. <em>SLB (2025):</em> $5,820M ÷ $558M ≈ <strong>10.4×</strong> (an independent research service: 10.7×); ~4.5× even in a modeled trough — survives.</p>
+<p><strong>Net debt.</strong> Total debt − cash &amp; short-term investments. <em>SLB (2025):</em> $11,636M − $4,212M = <strong>$7,424M.</strong></p>
+<p><strong>Net debt / owner earnings.</strong> Years of owner earnings to extinguish net debt. <em>SLB:</em> $7,424M ÷ ~$4,100M ≈ <strong>1.8 years</strong> (conservative; ~3 years even at a trough).</p>
+<p><strong>Current ratio.</strong> Current assets ÷ current liabilities. <em>SLB (2025):</em> $19,513M ÷ $14,721M = <strong>1.33×.</strong></p>
+<p><strong>Cost of capital / WACC / discount rate (r).</strong> The owner's opportunity cost, anchored to long rates plus a risk premium. <em>SLB:</em> <strong>r = 9.5%</strong> base (30-yr Treasury 4.9% + ~4.6% for cyclical uncertainty); sensitized 9–10%.</p>
+<p><strong>Intrinsic value.</strong> The discounted value of all future owner earnings; a <em>range</em>, not a point. <em>SLB:</em> <strong>~$28–44/share, base ~$33–36.</strong></p>
+<p><strong>No-growth (earning-power) value.</strong> Normalized owner earnings ÷ r. <em>SLB:</em> $4,100M ÷ 0.095 = $43.2B ≈ <strong>$28.86/share</strong> — the floor, close to the base case (SLB is not chiefly a growth story).</p>
+<p><strong>Margin of safety.</strong> (Intrinsic value − price) ÷ intrinsic value; the discount cushioning error. <em>SLB (base $33 vs. $45.13):</em> <strong>−37% — a premium, no cushion.</strong> Required buy price ~ low-to-mid $20s.</p>
+<p><strong>P/E ratio.</strong> Price ÷ earnings per share. <em>SLB:</em> live P/E <strong>19.9</strong> on 2025 EPS $2.35; ~16.5× on normalized $2.74; an independent research service median 24 (distorted by cyclicality — <em>do not use naively</em>).</p>
+<p><strong>EV/EBIT.</strong> Enterprise value ÷ operating income. <em>SLB (base):</em> mid-cycle EBIT ~$5.5B × 10–11× → EV ~$55–61B, less net debt $7.4B → equity ~$32–36/share.</p>
+<p><strong>Dividend yield.</strong> Dividend ÷ price. <em>SLB:</em> live <strong>2.65%</strong> ($1.18 declared ÷ $45.13). Cut ~75% in 2020 ($2.00 → $0.50), rebuilt to $1.18 at a ~40% payout of normalized earnings.</p>
+<p><strong>Owner-earnings yield.</strong> Owner earnings ÷ market capitalization. <em>SLB (at $45.13):</em> $4,100M ÷ $67,470M = <strong>6.1%</strong> — only ~1.2 pts over the 4.9% long bond; <em>thin</em> for a cyclical.</p>
+<p><strong>Economic moat / franchise.</strong> A durable advantage protecting high returns; its signature is pricing power. <em>SLB:</em> real moat vs. peers (technology, global scale, integration, data switching costs) but <em>demand-cyclical</em> — no pricing power in the trough.</p>
+<p><strong>One-dollar test.</strong> Retain a dollar only if incremental ROIC ≥ r, creating ≥ $1 of value. <em>SLB:</em> passes in recent good years; <em>mixed</em> across the cycle given impaired acquisitions (Capturi) and shares issued near lows.</p>
+<p><strong>Cyclical P/E trap.</strong> The distortion whereby a cyclical shows a <em>low</em> P/E at peak earnings (a warning) and a <em>high</em> P/E at trough earnings. <em>SLB:</em> an independent research service's median P/E of 24 is inflated by loss/low-earnings years — the reason we value on normalized owner earnings, not reported multiples.</p>
+<p><strong>Impairment.</strong> A non-cash writedown recognizing an asset (often goodwill) is worth less than its carrying value. <em>SLB:</em> −$10B loss years in 2019 &amp; 2020 were dominated by impairments; a fresh $210M goodwill impairment on SLB Capturi in 2025 — evidence of acquisition prices exceeding value received.</p>
+<p><strong>Articulation.</strong> The internal consistency of the three financial statements (income, balance sheet, cash flow), each checking the others. <em>SLB:</em> 2025 net income $3,451M + D&amp;A $2,643M + impairments $331M + other non-cash − working-capital build = OCF $6,489M; the statements reconcile.</p>
+<p><strong>Triangulation.</strong> Cross-checking a valuation by roads that fail differently — no-growth floor, implied multiple, owner-earnings yield. <em>SLB:</em> floor ~$29, implied multiple 13× (sensible), yield 6.1% (thin vs. bond) — the checks agree that value is ~$33 and today's price is a premium.</p>
+<hr />
+<p><em>End of seminar. Remember the discipline: normalize the cyclical, demand the discount, let the balance sheet buy survival and the price buy safety — and be willing to admire a good business from a distance until Mr. Market grows fearful enough to hand it to you cheap.</em></p>
+    </div>
+  </article>
+</main>
+<footer class="site-foot">
+  <p><strong>Educational only — not investment advice.</strong> These are my own study
+  notes and intrinsic-value estimates, published to learn in public. I am not a licensed
+  financial advisor. Do your own work; verify every figure against primary filings.</p>
+  <p class="muted">Built 2026-07-12 · figures from public SEC EDGAR filings and my own arithmetic.</p>
+</footer>
+</body>
+</html>
