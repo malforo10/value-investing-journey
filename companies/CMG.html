@@ -24,14 +24,14 @@
     </header>
     
   <div class="iv-widget">
-    <div class="iv-cell"><span class="iv-lbl">IV low</span><span class="iv-val">$30</span></div>
-    <div class="iv-cell iv-base"><span class="iv-lbl">IV base</span><span class="iv-val">$40</span></div>
-    <div class="iv-cell"><span class="iv-lbl">IV high</span><span class="iv-val">$58</span></div>
+    <div class="iv-cell"><span class="iv-lbl">IV low</span><span class="iv-val">$22</span></div>
+    <div class="iv-cell iv-base"><span class="iv-lbl">IV base</span><span class="iv-val">$29</span></div>
+    <div class="iv-cell"><span class="iv-lbl">IV high</span><span class="iv-val">$37</span></div>
     <div class="iv-cell"><span class="iv-lbl">Price</span><span class="iv-val">$36.63</span></div>
-    <div class="iv-cell"><span class="iv-lbl">Margin of safety</span><span class="iv-val mos-slim">+8%</span></div>
+    <div class="iv-cell"><span class="iv-lbl">Margin of safety</span><span class="iv-val mos-rich">-26%</span></div>
   </div>
-    <p class="method"><strong>Method:</strong> Two-stage DCF on owner earnings (primary) + P/E from own history &amp; restaurant peers + reverse-DCF, triangulated</p>
-    <div class="verdict"><span class="vlbl">Verdict</span><p>Wonderful - top-tier business at a fair-to-full price with only a thin margin of safety</p></div>
+    <p class="method"><strong>Method:</strong> Two-stage DCF on owner earnings (OE0 $1.28, r=10% floored, terminal g 2.5-3%; primary) + P/E from own history &amp; restaurant peers + reverse-DCF, triangulated</p>
+    <div class="verdict"><span class="vlbl">Verdict</span><p>Wonderful business trading above fair value - no margin of safety at $35.39 (price ~22% above base IV ~$29; already prices ~12% owner-earnings growth for a decade). Margin-of-safety entry in the low-to-mid $20s.</p></div>
     <div class="seminar">
     <h1 id="chipotle-mexican-grill-cmg-a-value-investing-seminar">Chipotle Mexican Grill (CMG) — A Value-Investing Seminar</h1>
 <p><em>In the Graham–Buffett tradition</em><br />
@@ -317,23 +317,18 @@
 <p>Owner Earnings = Reported Earnings + Non-cash charges − Maintenance Capex − ΔWorking Capital</p>
 </blockquote>
 <p>The hard term is <strong>maintenance capex</strong> — the spend to <em>stand still</em> — as opposed to <strong>growth capex</strong> that builds new restaurants. Accounting lumps them into one $666.3M line. We must split them by hand, and management hands us the tools to do it (10-K, Item 7): in 2025 CMG opened <strong>334 company-owned restaurants</strong> at "about $1.5 million in development and construction costs per new restaurant." And for 2026 it explicitly guides the split — <strong>~$531.8M new-restaurant capex</strong> vs. <strong>~$266.9M for existing restaurants</strong> (remodels, equipment, technology).</p>
-<p>Let me estimate FY2025 growth capex from unit openings:</p>
-<ul>
-<li>Growth capex ≈ 334 units × $1.5M = <strong>$501.0M</strong></li>
-<li>Maintenance capex ≈ total $666.3M − $501.0M = <strong>$165.3M</strong></li>
-</ul>
-<p>Now owner earnings (per the manual's formula), treating SBC as the real cost it is by <em>not</em> adding it back for free — instead I add back the non-cash SBC but the reader should note it is a genuine dilution cost:</p>
-<pre><code>Owner Earnings = Net income 1,535.8
-               + D&amp;A          361.4
-               + SBC          119.5   (non-cash, but a real cost — see note)
-               − Maint. capex 165.3
-               − ΔWorking cap.  ~0     (negative-WC model; no drag)
-               = 1,851.4  ($M)
+<p>Let me estimate maintenance capex honestly. The tempting shortcut is a <em>residual</em>: assume 334 units × $1.5M = ~$501M of new-store construction, then call whatever is left over — total $666.3M − $501M ≈ $165M — "maintenance." But that residual <strong>understates true upkeep</strong>. It treats every dollar not spent on brand-new stores as if it vanished, when in fact a large slice of it is genuine standing-still spend: remodels, new equipment, and technology in the <em>existing</em> 4,000-store base. Management tells us so directly. Its FY2026 guidance (10-K, Item 7, MD&amp;A) breaks capital spending into <strong>~$531.8M for new restaurants</strong> and <strong>~$266.9M for investments in existing restaurants</strong> (remodels, equipment, technology). That second figure — call it ~$250M for FY2025 — is the honest maintenance charge, not $165M. We use <strong>~$250M</strong>.</p>
+<p>Now owner earnings (per the manual's formula). We do <strong>not</strong> add back stock-based compensation: SBC of $121.4M (the 10-K's critical-audit-matter, Item 8, EY report) is a <em>real cost</em>. It dilutes owners, and the company spends billions of buyback dollars partly to mop it up. A non-cash expense is still an expense; we let it stand.</p>
+<pre><code>Owner Earnings = Net income        1,535.8
+               + D&amp;A                 361.4
+               − Maintenance capex   250.0
+               − ΔWorking capital     ~0     (negative-WC model; no drag)
+               = 1,647.2  ($M)
 </code></pre>
-<p>Per share (on 1,282.7M current shares): <strong>1,851.4 ÷ 1,282.7 = $1.443</strong>.</p>
-<p><strong>BUFFETT.</strong> Compare that to reported free cash flow: operating cash flow $2,113.9M − <em>total</em> capex $666.3M = <strong>$1,447.6M</strong>, or $1.13/share. Owner earnings ($1.44/share) are <em>higher</em> than FCF ($1.13/share) — and that gap is the whole point of the exercise. Most of Chipotle's capex isn't keeping the lights on; it's <em>building new stores that don't exist yet</em>. If Chipotle stopped growing tomorrow, it would spend only ~$165M of maintenance capex and throw off dramatically more cash. <strong>The growth is a choice, funded out of a fountain of cash — not an obligation.</strong></p>
-<p><em>A note of intellectual honesty on SBC:</em> we added back $119.5M of stock comp because it is non-cash, but it is not free — it dilutes owners, and the company spends billions buying stock back partly to mop it up. A conservative analyst could subtract it right back out, which would put owner earnings near $1.34/share. We will carry $1.44 as our headline and keep $1.34 in our pocket as the cautious version. Either way, the reverse-DCF conclusion below barely moves.</p>
-<p><strong>PRINCIPLE.</strong> <em>For a fast grower, free cash flow understates the owner's true earnings, because most of the capex is discretionary expansion, not upkeep. Split capex into growth and maintenance — management's own unit economics ($1.5M per new store) and forward guidance let you do it — and owner earnings appear from behind the growth spending. And treat stock comp as a real cost even when it is non-cash; carry a conservative version of owner earnings alongside the headline.</em></p>
+<p>Per share (on 1,282.7M current shares): <strong>1,647.2 ÷ 1,282.7 = $1.28</strong>.</p>
+<p><strong>BUFFETT.</strong> Compare that to reported free cash flow: operating cash flow $2,113.9M − <em>total</em> capex $666.3M = <strong>$1,447.6M</strong>, or $1.13/share. Owner earnings ($1.28/share) sit <em>above</em> FCF ($1.13/share) — and that gap is the whole point of the exercise. Most of Chipotle's capex isn't keeping the lights on; it's <em>building new stores that don't exist yet</em>. If Chipotle stopped growing tomorrow, it would spend only its ~$250M maintenance charge and throw off more cash than reported FCF. <strong>The growth is a choice, funded out of a fountain of cash — not an obligation.</strong> Note the discipline in the number: we did <em>not</em> add SBC back and we used management's own ~$250M upkeep figure rather than the flattering $165M residual, so $1.28 is deliberately the <em>sober</em> owner-earnings estimate — sitting between FCF at $1.13 and the inflated figure a looser hand would have produced.</p>
+<p><em>One small caveat left in the base:</em> FY2025 earnings were flattered by a ~$20.1M gift-card-breakage tailwind (Note 1) — an accounting estimate, not guest cash, worth about 1% of net income. We leave it in the base for simplicity but flag it, because it makes even $1.28 a touch generous.</p>
+<p><strong>PRINCIPLE.</strong> <em>For a fast grower, free cash flow understates the owner's true earnings, because most of the capex is discretionary expansion, not upkeep — but do not overcorrect. Take maintenance capex from management's own "investments in existing restaurants" guidance, not from a residual that mislabels remodels and technology as growth. And never add stock compensation back "because it is non-cash": it is a real cost of paying employees, so it stays subtracted. One honest owner-earnings figure, conservatively built, beats a flattering headline with an asterisk.</em></p>
 <h3 id="roic-the-star-of-this-case">ROIC — the star of this case</h3>
 <p><strong>GRAHAM.</strong> The manual (Ch. 6): ROIC = NOPAT ÷ Invested Capital, and the decisive comparison is ROIC against the discount rate r. Let me compute NOPAT first:</p>
 <pre><code>NOPAT = Operating income × (1 − tax rate)
@@ -376,10 +371,10 @@
 <blockquote>
 <p>Retain a dollar only if incremental ROIC ≥ r, so that ≥ $1 of market value is created per $1 retained.</p>
 </blockquote>
-<p>CMG retains <strong>100%</strong> of earnings (no dividend). Does each retained dollar create a dollar of value? For the portion <strong>reinvested in new restaurants at ~20–60% ROIC</strong> against an ~8.5–10% cost of capital — emphatically yes. That part of the test passes with room to spare.</p>
+<p>CMG retains <strong>100%</strong> of earnings (no dividend). Does each retained dollar create a dollar of value? For the portion <strong>reinvested in new restaurants at ~20–60% ROIC</strong> against a ~10% cost of capital — emphatically yes. That part of the test passes with room to spare.</p>
 <h3 id="but-judge-the-buybacks-on-price">But judge the buybacks on PRICE</h3>
-<p><strong>BUFFETT.</strong> Here I must be the skeptic, because the manual is unambiguous: <em>buybacks create value only when the stock is bought below intrinsic value, and destroy it above.</em> Chipotle spent <strong>$2.43 billion</strong> last year retiring shares. Let's sanity-check the price it paid. An independent research service's 2025 price range was roughly $29.8–$61.2; the average repurchase was therefore struck somewhere in the $30s–$50s per share. Against our base intrinsic value of ~$40 (derived below), a good chunk of 2025's buyback was done <strong>around or above fair value</strong> — value-neutral at best, mildly value-destructive at worst. The buybacks done in the low $30s (like today's price) are fine; the ones in the high $50s in prior years were not.</p>
-<p>At <strong>30× earnings, a buyback is not automatically a gift to remaining owners.</strong> Management would arguably create more value returning some of that cash as a special dividend when the stock is dear, and concentrating buybacks when it is cheap. That is the one place I would press this otherwise excellent management.</p>
+<p><strong>BUFFETT.</strong> Here I must be the skeptic, because the manual is unambiguous: <em>buybacks create value only when the stock is bought below intrinsic value, and destroy it above.</em> Chipotle spent <strong>$2.43 billion</strong> last year retiring shares — and against our base intrinsic value of ~$29 (derived below), that money was <strong>largely value-neutral-to-destructive.</strong> an independent research service's 2025 price range was roughly $29.8–$61.2, so the company was buying its stock in the <strong>$40s and $50s through 2025</strong> — well <em>above</em> ~$29 of intrinsic value — and even the Q1-2026 repurchases at ~$36 (10-Q) were struck above base value. Buying a dollar of value for a dollar-forty destroys forty cents for the remaining owners. This was not shrewd capital allocation; it was spending $2.4B to retire shares at prices richer than the business was worth.</p>
+<p>At <strong>30× earnings and above intrinsic value, a buyback is not a gift to remaining owners — it is a transfer away from them.</strong> Management would have created more value banking the cash and concentrating repurchases only when the stock trades below intrinsic value (the low-to-mid $20s on our numbers). That is the one place I would press this otherwise excellent management hard: the reinvestment is superb, but the 2025–Q1-2026 buyback program bought high.</p>
 <h3 id="candor">Candor</h3>
 <p>Management discloses the ugly plainly: the negative comps, the transaction declines, the margin pressure, the decision to forgo price increases, the gift-card-breakage tailwind, the tariff impact (~15 bps ongoing). No boastful EBITDA-first framing. That candor earns trust.</p>
 <p><strong>PRINCIPLE.</strong> <em>Retaining every dollar is only justified if every dollar clears the one-dollar test. CMG's reinvestment passes easily; its buybacks must be judged on price, and buying back stock at 30–60× earnings is not automatically shareholder-friendly — the price paid is everything. Praise the reinvestment, question the buyback discipline, and reward the candor.</em></p>
@@ -391,12 +386,12 @@
 </blockquote>
 <p>We will triangulate three independent roads to value — a DCF, a P/E built from CMG's own history and its peers, and a first-principles quality multiple — and then reconcile them. <strong>The business deserves a DCF as the primary method</strong>, because its cash flows are forecastable-ish and it is a compounder; the multiples are cross-checks.</p>
 <h3 id="the-discount-rate-gravity-manual-ch-11">The discount rate — gravity (manual Ch. 11)</h3>
-<p>The manual says r is the owner's opportunity cost, anchored to long rates plus a premium for cash-flow uncertainty. From Selection &amp; Opinion (2026-06-26): the <strong>10-year Treasury yields 4.47%</strong>, the 30-year 4.97%. CMG's beta is 1.1. A reasonable equity discount rate:</p>
-<pre><code>r = long-rate ~4.5% + equity/uncertainty premium ~4.5% = ~9.0% (base)
+<p>The manual says r is the owner's opportunity cost — the return you <em>require</em> to part with your money — anchored to a <strong>normalized</strong> long-term rate. We do <strong>not</strong> build it from a beta. Beta measures share-price wobble, not the odds of being wrong about the business; risk in this framework lives in the circle of competence, in conservative inputs, and above all in the margin of safety — not in a rate we scale up and down by a stock's volatility. From Selection &amp; Opinion (2026-06-26) today's <strong>10-year Treasury yields 4.47%</strong>; but we do not discount at spot, because spot rates are themselves a moment in a cycle. Instead we <strong>normalize and floor</strong> the owner's hurdle:</p>
+<pre><code>r = normalized owner's hurdle, floored near ~10%  (base)
 </code></pre>
-<p>We'll run r from <strong>8.5%</strong> (very durable franchise) to <strong>10%</strong> (respecting the forecast uncertainty of same-store sales). <em>When rates move, revisit this — that is gravity at work.</em></p>
+<p>We use <strong>r = 10%</strong> as the base and run it up to <strong>11%</strong> and <strong>12%</strong> to respect the forecast uncertainty of same-store sales. There is no beta and no company-specific premium bolted on — the 10% floor already embeds a sober required return for an equity owner. <em>When the normalized rate environment shifts, revisit this — that is gravity at work.</em></p>
 <h3 id="road-1-two-stage-dcf-on-owner-earnings">Road 1 — Two-stage DCF on owner earnings</h3>
-<p>Starting owner earnings per share: <strong>$1.443</strong> (derived above).</p>
+<p>Starting owner earnings per share: <strong>$1.28</strong> (derived above). Base r = 10%.</p>
 <table>
 <thead>
 <tr>
@@ -410,79 +405,66 @@
 <tbody>
 <tr>
 <td><strong>Low</strong></td>
-<td>8%</td>
+<td>6%</td>
 <td>2.5%</td>
 <td>10.0%</td>
-<td><strong>$29.48</strong></td>
+<td><strong>~$22</strong></td>
 </tr>
 <tr>
 <td><strong>Base</strong></td>
-<td>11%</td>
-<td>3.0%</td>
-<td>9.0%</td>
-<td><strong>$45.69</strong></td>
+<td>9%</td>
+<td>2.5%</td>
+<td>10.0%</td>
+<td><strong>~$29</strong></td>
 </tr>
 <tr>
 <td><strong>High</strong></td>
-<td>13%</td>
-<td>3.5%</td>
-<td>8.5%</td>
-<td><strong>$63.03</strong></td>
+<td>12%</td>
+<td>3.0%</td>
+<td>10.0%</td>
+<td><strong>~$37</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Every input is individually reasonable. The base assumes CMG grows owner earnings at 11% — new units plus a <em>recovery</em> of same-store sales from this year's dip — which is well below its historical clip and reflects a maturing U.S. base.</p>
+<p>Every input is individually reasonable. The base assumes CMG grows owner earnings at 9% — new units plus a partial <em>recovery</em> of same-store sales from this year's dip — which is below its historical clip and reflects a maturing U.S. base.</p>
 <h3 id="dcf-sensitivity-the-false-precision-lesson-manual-ch-12">DCF sensitivity — the false-precision lesson (manual Ch. 12)</h3>
-<p>Base 11% OE growth for 10 years; vary r and terminal g:</p>
+<p>Vary stage-1 OE growth and the discount rate (terminal g 2.5%); values are IV/share:</p>
 <table>
 <thead>
 <tr>
-<th>r ↓ / g →</th>
-<th>2.0%</th>
-<th>2.5%</th>
-<th>3.0%</th>
-<th>3.5%</th>
+<th>r ↓ / g₁ →</th>
+<th>6%</th>
+<th>8%</th>
+<th>10%</th>
+<th>12%</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>8.0%</strong></td>
-<td>$49.10</td>
-<td>$52.21</td>
-<td>$55.94</td>
-<td>$60.49</td>
+<td><strong>10%</strong></td>
+<td>$23</td>
+<td>$26</td>
+<td>$30</td>
+<td>$35</td>
 </tr>
 <tr>
-<td><strong>8.5%</strong></td>
-<td>$44.84</td>
-<td>$47.36</td>
-<td>$50.34</td>
-<td>$53.91</td>
+<td><strong>11%</strong></td>
+<td>$20</td>
+<td>$23</td>
+<td>$26</td>
+<td>$30</td>
 </tr>
 <tr>
-<td><strong>9.0%</strong></td>
-<td>$41.20</td>
-<td>$43.27</td>
-<td>$45.69</td>
-<td>$48.55</td>
-</tr>
-<tr>
-<td><strong>10.0%</strong></td>
-<td>$35.32</td>
-<td>$36.77</td>
-<td>$38.42</td>
-<td>$40.33</td>
-</tr>
-<tr>
-<td><strong>11.0%</strong></td>
-<td>$30.79</td>
-<td>$31.84</td>
-<td>$33.02</td>
-<td>$34.35</td>
+<td><strong>12%</strong></td>
+<td>$18</td>
+<td>$20</td>
+<td>$23</td>
+<td>$27</td>
 </tr>
 </tbody>
 </table>
-<p><strong>BUFFETT.</strong> Look at that spread — from ~$31 to ~$60, all from assumptions no one could call unreasonable. <em>This is the point, not a defect.</em> Anyone quoting you a single "target price" for Chipotle to the penny is selling false precision. The honest output is a <strong>range</strong>, and the decision comes from the margin of safety, not the decimal.</p>
+<p>A no-growth floor is the cleanest reality check: with zero growth, IV = OE ÷ r = $1.28 / 0.10 = <strong>~$13</strong>. Everything above that is what you are paying for growth.</p>
+<p><strong>BUFFETT.</strong> Look at that spread — from ~$18 to ~$35, all from assumptions no one could call unreasonable. <em>This is the point, not a defect.</em> Anyone quoting you a single "target price" for Chipotle to the penny is selling false precision. The honest output is a <strong>range</strong>, and the decision comes from the margin of safety, not the decimal.</p>
 <h3 id="road-2-pe-from-history-and-peers">Road 2 — P/E, from history and peers</h3>
 <p><strong>GRAHAM.</strong> Where does a multiple come from? Three honest sources:</p>
 <ul>
@@ -491,20 +473,20 @@
 <li>Applying the band to live EPS of $1.17: 25× = $29.25; <strong>30× = $35.10</strong>; 35× = $40.95; 45× = $52.65.</li>
 </ul>
 <h3 id="road-3-quality-and-roic-justified-multiple-from-first-principles">Road 3 — quality-and-ROIC-justified multiple, from first principles</h3>
-<p>A business earning 20%+ on incremental capital, growing owner earnings ~11%, with no debt, deserves a premium multiple. The DCF <em>is</em> that multiple, expressed as cash flows. At the base case, IV ~$45 ÷ EPS $1.17 = an implied <strong>~38× P/E</strong> — which tells us the base DCF is on the optimistic edge of the peer band. Pulling toward the peer evidence and the negative-comp reality, we haircut the base.</p>
+<p>A business earning 20%+ on incremental capital, growing owner earnings ~9%, with no debt, deserves a premium multiple. The DCF <em>is</em> that multiple, expressed as cash flows. At the base case, IV ~$29 ÷ EPS $1.17 = an implied <strong>~25× P/E</strong> — squarely inside the peer band rather than above it. That is a feature, not an accident: because we refused to add SBC back, used management's honest maintenance capex, and floored r at 10%, the DCF no longer floats out to an optimistic multiple. It agrees with the peers.</p>
 <h3 id="reconciliation-the-triangle">Reconciliation — the triangle</h3>
 <p><strong>BUFFETT.</strong> Let me put the three roads side by side and reconcile:</p>
 <ul>
-<li>DCF: low <strong>$29</strong> / base <strong>$46</strong> / high <strong>$63</strong></li>
+<li>DCF (OE₀ $1.28, r=10%): low <strong>$22</strong> / base <strong>$29</strong> / high <strong>$37</strong></li>
 <li>P/E (peer-anchored, 25–35× on $1.17): low <strong>$29</strong> / base <strong>$35</strong> / high <strong>$41</strong></li>
 <li>An independent research service's own targets: 18-month $42 midpoint ($25–$59 range); 2029–31 target $60–$85.</li>
 </ul>
-<p>The DCF base ($46) and the peer-P/E base ($35) disagree — and that disagreement is <em>informative</em>. The DCF trusts an 11% owner-earnings growth that this year's negative comps call into question. The peer P/E trusts the multiple the market actually pays comparable businesses. Splitting the difference and leaning conservative (because comps are <em>falling</em>, not rising), we set:</p>
+<p>The disciplined DCF base ($29) now sits <em>below</em> the peer-P/E base ($35) — and that disagreement is <em>informative</em>. The DCF, built on sober owner earnings and a 10% floored hurdle, says the market's habitual 30–35× multiple for Chipotle already embeds optimism about growth and margin recovery that this year's negative comps call into question. When a cash-flow model built on honest inputs comes in <em>under</em> the multiple the crowd is paying, that is a signal the multiple — not the model — is stretched. Leaning on the DCF (it is the method the business deserves, and it is the more conservative road), we set:</p>
 <blockquote>
-<p><strong>Intrinsic value: low $30 · base $40 · high $58 per share.</strong></p>
+<p><strong>Intrinsic value: low ~$22 · base ~$29 · high ~$37 per share.</strong></p>
 </blockquote>
 <h3 id="value-creating-vs-value-consuming-growth-manual-ch-10">Value-creating vs. value-consuming growth (manual Ch. 10)</h3>
-<p>One more check the manual insists on: <em>is CMG's growth the good kind?</em> g = reinvestment rate × ROIC. Because incremental ROIC (~20–60%) hugely exceeds r (~9%), <strong>every dollar CMG reinvests in new restaurants creates well more than a dollar of value.</strong> This is a compounding machine, not a value trap that grows itself poorer. The only question was never <em>whether</em> the growth creates value — it does — but <em>how much of that value the current price already claims.</em></p>
+<p>One more check the manual insists on: <em>is CMG's growth the good kind?</em> g = reinvestment rate × ROIC. Because incremental ROIC (~20–60%) hugely exceeds r (~10%), <strong>every dollar CMG reinvests in new restaurants creates well more than a dollar of value.</strong> This is a compounding machine, not a value trap that grows itself poorer. The only question was never <em>whether</em> the growth creates value — it does — but <em>how much of that value the current price already claims.</em></p>
 <p><strong>PRINCIPLE.</strong> <em>Choose the method the business deserves — a DCF for a forecastable compounder — but never trust one road. Build each multiple from a named source (own history, peers, quality logic), and when the roads disagree, the disagreement is the finding: here, the DCF's optimism collides with negative comps, so we anchor conservative. And always confirm the growth is value-creating (ROIC &gt; r) before you pay up for it — CMG's is, decisively.</em></p>
 <hr />
 <h2 id="margin-of-safety-mr-market">MARGIN OF SAFETY &amp; MR. MARKET</h2>
@@ -514,23 +496,22 @@
 </blockquote>
 <p>Against each point of our range:</p>
 <ul>
-<li>vs. <strong>base $40</strong>: (40 − 35.39) / 40 = <strong>+11.5% discount</strong> — a <em>thin</em> cushion.</li>
-<li>vs. <strong>low $30</strong>: (30 − 35.39) / 30 = <strong>−18.0%</strong> — price is <em>above</em> our conservative estimate.</li>
-<li>vs. <strong>high $58</strong>: (58 − 35.39) / 58 = <strong>+39.0%</strong> — only if the optimistic case holds.</li>
+<li>vs. <strong>base ~$29</strong>: (29 − 35.39) / 29 = <strong>−22%</strong> — the price is <em>above</em> base intrinsic value; the margin of safety is <strong>negative</strong>.</li>
+<li>vs. <strong>low ~$22</strong>: (22 − 35.39) / 22 = <strong>−61%</strong> — the price is far above our conservative estimate.</li>
+<li>vs. <strong>high ~$37</strong>: (37 − 35.39) / 37 = <strong>+4%</strong> — a sliver of discount, and <em>only</em> if the optimistic 12%-growth case holds.</li>
 </ul>
-<p><strong>The reverse-DCF closes the argument.</strong> Ask the mirror-image question: <em>what growth does $35.39 already require?</em> Solving the two-stage model for the growth rate that makes IV = $35.39, at r = 9% and 3% terminal:</p>
-<pre><code>$35.39 implies ~7.7% owner-earnings growth for 10 years (r=9%)
-$35.39 implies ~6.5% growth (at a gentler r=8.5%)
-$35.39 implies ~9.9% growth (at a sterner r=10%)
+<p><strong>The reverse-DCF closes the argument.</strong> Ask the mirror-image question: <em>what growth does $35.39 already require?</em> Solving the two-stage model for the stage-1 growth rate that makes IV = $35.39, at terminal g 2.5%:</p>
+<pre><code>$35.39 implies ~12% owner-earnings growth for 10 years (r=10%)
+$35.39 implies ~14% owner-earnings growth (at a sterner r=11%)
 </code></pre>
-<p><strong>BUFFETT.</strong> <em>That</em> is the most useful number in the whole case. At today's price you are paying for roughly <strong>6–8% owner-earnings growth for a decade.</strong> Is that a hurdle Chipotle clears? Given a real unit-growth runway and eventual comp recovery — quite plausibly, yes. The price is <em>not</em> demanding heroics. But it is also not <em>cheap</em>: there is no fat margin of safety here. You are paying a fair-to-full price for a wonderful business, with an ~11% cushion to our base case and none at all to our conservative case.</p>
+<p><strong>BUFFETT.</strong> <em>That</em> is the most useful number in the whole case. At today's price you are paying for roughly <strong>12% owner-earnings growth for a decade</strong> — and closer to 14% if you demand an 11% return. That is not a benign hurdle; it is a <em>demanding</em> one. Chipotle grew net income barely at all in FY2025 and posted negative comps. To underwrite $35.39 you must believe those cash flows compound at 12% a year for ten years, off a base already at ~$12B of revenue and a maturing U.S. footprint. The price is not asking for the plausible; it is asking for the optimistic. There is <strong>no margin of safety</strong> here — the cushion is negative against base value.</p>
 <h3 id="is-mr-market-euphoric-depressed-or-rational">Is Mr. Market euphoric, depressed, or rational?</h3>
-<p><strong>GRAHAM.</strong> Here is a delicious detail for the class. The an independent research service report of 2026-05-15 shows a price of <strong>$31.98</strong>; the live price is <strong>$35.39</strong> — the stock has risen ~11% in the seven weeks since. An independent research service notes the shares were "trading near seven-year lows" on a valuation basis and had fallen <strong>38% over the prior year</strong> (an independent research service % Total Return). So Mr. Market spent the last year in a <em>sour</em> mood on Chipotle — punishing the negative comps and margin pressure — and is now recovering. He is neither euphoric (he just marked it down 38%) nor deeply depressed (it isn't a giveaway). Today he is roughly <strong>rational-to-mildly-optimistic</strong>: pricing in a normal 6–8% growth recovery, no more.</p>
-<p><strong>PRINCIPLE.</strong> <em>Compute the margin of safety as arithmetic against your whole range, not one number — and let the reverse-DCF tell you what the price already assumes. When the price implies growth the business can plausibly deliver, Mr. Market is being rational, and a rational Mr. Market offers no bargain. A margin of safety is a discount you can see, not a story you can tell; at $35.39 there isn't much of one.</em></p>
+<p><strong>GRAHAM.</strong> Here is a detail for the class. The an independent research service report of 2026-05-15 shows a price of <strong>$31.98</strong>; the live price is <strong>$35.39</strong> — the stock has risen ~11% in the seven weeks since. An independent research service notes the shares had fallen <strong>38% over the prior year</strong> (an independent research service % Total Return), so Mr. Market spent much of last year <em>souring</em> on Chipotle, punishing the negative comps and margin pressure. But he has recovered, and at $35.39 he is now pricing in ~12% owner-earnings growth for a decade. That is not depression and it is not a giveaway — if anything he is <strong>rational-to-mildly-optimistic, arguably slightly rich</strong>: he is extrapolating a strong recovery from a business that just posted a flat year. A patient owner does not buy from a mildly optimistic Mr. Market; he waits for the next sour mood.</p>
+<p><strong>PRINCIPLE.</strong> <em>Compute the margin of safety as arithmetic against your whole range, not one number — and let the reverse-DCF tell you what the price already assumes. When the price implies growth the business must strain to deliver, Mr. Market is optimistic, not generous, and there is no bargain to be had. A margin of safety is a discount you can see, not a story you can tell; at $35.39 there is none — the price sits above base value.</em></p>
 <hr />
 <h2 id="the-verdict-the-lesson">THE VERDICT &amp; THE LESSON</h2>
-<p><strong>BUFFETT.</strong> Let me answer <strong>THE ONE QUESTION</strong> directly. <em>Chipotle is a wonderful business at a fair-to-full price.</em> On business quality — the ROIC, the debt-free balance sheet, the brand, the reinvestment runway — it is close to the top of its class. On price, at $35.39 you are paying ~30× earnings for a business the reverse-DCF says need only grow owner earnings 6–8% to justify. That is not a foolish price. It is also <strong>not a margin-of-safety price.</strong> Our verdict, in the manual's vocabulary: <strong>a Wonderful business; a fair price; wait for a wider discount before acting.</strong></p>
-<p>Where <em>would</em> a real cushion begin? A one-third margin of safety to our $40 base would be about <strong>$27</strong>; to the low end, below <strong>$30</strong>. In the last year the stock traded as low as ~$29.8 (an independent research service). So the market has <em>offered</em> margin-of-safety prices on Chipotle within the past twelve months — which is exactly why the patient investor keeps this one on a watch list and lets Mr. Market's next sour mood do the work.</p>
+<p><strong>BUFFETT.</strong> Let me answer <strong>THE ONE QUESTION</strong> directly. <em>Chipotle is a wonderful business trading ABOVE fair value.</em> On business quality — the ROIC, the debt-free balance sheet, the brand, the reinvestment runway — it is close to the top of its class. But on price, at $35.39 there is <strong>no margin of safety</strong> — the price already demands ~12% owner-earnings growth for a decade, and it sits ~22% above our base intrinsic value of ~$29. A genuine margin-of-safety entry sits in the <strong>low-to-mid $20s</strong>, not $27. Our verdict, in the manual's vocabulary: <strong>a Wonderful business at a price above fair value; do nothing until Mr. Market offers a real discount.</strong></p>
+<p>Where <em>would</em> a real cushion begin? A one-third margin of safety to our ~$29 base would be about <strong>$19–$20</strong>; even reaching <em>base</em> value means waiting for the low-to-mid $20s. In the last year the stock traded as low as ~$29.8 (an independent research service) — still above our base — so the market has <em>not yet</em> offered a margin-of-safety price in the past twelve months. That is exactly why the patient investor keeps this one on a watch list and lets Mr. Market's next sour mood do the work.</p>
 <h3 id="two-or-three-open-questions-we-cannot-yet-answer">Two or three open questions we cannot yet answer</h3>
 <ol>
 <li><strong>Do same-store sales recover, or has the U.S. base matured?</strong> FY2025's −1.7% comp is the crux. If it's a pause, the DCF base holds; if it's the new normal, value is nearer our low case.</li>
@@ -575,48 +556,48 @@ $35.39 implies ~9.9% growth (at a sterner r=10%)
 <td>3</td>
 <td><strong>ROIC vs. cost of capital</strong></td>
 <td><strong>PASS (emphatic)</strong></td>
-<td>ROIC ~20.7% incl. leases (~52% on equity, ~60% tangible) vs. r ~9%. Capital-light operating model; growth creates value.</td>
+<td>ROIC ~20.7% incl. leases (~52% on equity, ~60% tangible) vs. r ~10%. Capital-light operating model; growth creates value.</td>
 </tr>
 <tr>
 <td>4</td>
 <td><strong>Trustworthy numbers &amp; management</strong></td>
 <td><strong>PASS</strong></td>
-<td>EY unqualified since 1997; candid disclosure; SBC expensed. One caveat: $20M gift-card-breakage tailwind flattered FY2025.</td>
+<td>EY unqualified since 1997; candid disclosure; SBC expensed (and not added back in owner earnings). One caveat: $20M gift-card-breakage tailwind flattered FY2025.</td>
 </tr>
 <tr>
 <td>5</td>
 <td><strong>Valuation method + sensitized assumption</strong></td>
 <td><strong>PASS</strong></td>
-<td>Two-stage DCF (primary) + peer/own P/E (cross-check); sensitivity table across r (8–11%) and g (2–3.5%) shows a $31–$60 spread.</td>
+<td>Two-stage DCF (primary, OE₀ $1.28) + peer/own P/E (cross-check); sensitivity table across r (10–12%) and g₁ (6–12%) shows a ~$18–$35 spread.</td>
 </tr>
 <tr>
 <td>6</td>
 <td><strong>Margin of safety today</strong></td>
-<td><strong>FAIL / UNSURE</strong></td>
-<td>At $35.39: only ~+11% vs. $40 base, and <em>negative</em> vs. $30 low. Reverse-DCF: price already prices ~6–8% growth. No real cushion.</td>
+<td><strong>FAIL</strong></td>
+<td>At $35.39: price is ~22% <em>ABOVE</em> base ~$29 (negative MoS), and ~61% above low ~$22. Reverse-DCF: price already prices ~12% growth for a decade. No cushion — the price exceeds base value.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Overall:</strong> four clean quality passes, one narrowing pass, and <strong>the margin-of-safety gate does not clear at today's price.</strong> In the manual's logic, a "no" at the margin-of-safety gate means: excellent business, admire it, wait.</p>
+<p><strong>Overall:</strong> four clean quality passes, one narrowing pass, and <strong>the margin-of-safety gate fails outright — the price sits above base intrinsic value.</strong> In the manual's logic, a "no" at the margin-of-safety gate means: excellent business, admire it, wait.</p>
 <hr />
 <h2 id="glossary-terms-formulas-with-cmgs-numbers-plugged-in">GLOSSARY — TERMS &amp; FORMULAS (with CMG's numbers plugged in)</h2>
 <ul>
-<li><strong>Intrinsic value.</strong> The discounted value of all owner earnings a business will produce over its life. <em>IV = Σ OEₜ/(1+r)ᵗ.</em> CMG base ≈ <strong>$40/share</strong>.</li>
-<li><strong>Owner earnings.</strong> Cash an owner can withdraw without weakening the business. <em>OE = Net income + non-cash charges − maintenance capex − ΔWC.</em> CMG: 1,535.8 + 361.4 + 119.5 − 165.3 ≈ <strong>$1,851M</strong>, or <strong>$1.44/share</strong>.</li>
-<li><strong>Maintenance vs. growth capex.</strong> Maintenance = spend to stand still; growth = expansion. CMG FY2025: total capex $666.3M split into ~$501M growth (334 units × $1.5M) and <strong>~$165M maintenance</strong>.</li>
+<li><strong>Intrinsic value.</strong> The discounted value of all owner earnings a business will produce over its life. <em>IV = Σ OEₜ/(1+r)ᵗ.</em> CMG base ≈ <strong>$29/share</strong> (range ~$22–$37).</li>
+<li><strong>Owner earnings.</strong> Cash an owner can withdraw without weakening the business. <em>OE = Net income + non-cash charges − maintenance capex − ΔWC.</em> SBC is a <em>real</em> cost and is <strong>not</strong> added back. CMG: 1,535.8 + 361.4 − 250.0 ≈ <strong>$1,647M</strong>, or <strong>$1.28/share</strong>.</li>
+<li><strong>Maintenance vs. growth capex.</strong> Maintenance = spend to stand still; growth = expansion. CMG FY2025: total capex $666.3M; maintenance taken from management's own "investments in existing restaurants" guidance at <strong>~$250M</strong> (not the flattering ~$165M residual), the rest growth.</li>
 <li><strong>Free cash flow.</strong> Operating cash flow − total capex. CMG: 2,113.9 − 666.3 = <strong>$1,447.6M</strong> ($1.13/share) — <em>below</em> owner earnings because most capex is growth.</li>
 <li><strong>ROIC.</strong> <em>NOPAT ÷ invested capital.</em> NOPAT = 1,935.8 × (1−0.236) = $1,478.9M. Incl. lease capital ($7,142M): <strong>20.7%</strong>; on equity: <strong>52.2%</strong>; tangible: <strong>~60%</strong>.</li>
 <li><strong>NOPAT.</strong> After-tax operating profit. CMG: 1,935.8 × 0.764 = <strong>$1,478.9M</strong>.</li>
 <li><strong>ROE.</strong> <em>Net income ÷ average equity.</em> CMG: 1,535.8 ÷ 3,243.1 = <strong>47.4%</strong> (VL: ~50.5% on year-end equity); flattered by buyback-shrunk equity, not by debt (debt = 0).</li>
 <li><strong>Moat / economic franchise.</strong> A durable advantage protecting high returns; signature is pricing power. CMG: brand + throughput + density; pricing power <em>tested</em> (forwent 2026 price hike, comps −1.7%).</li>
-<li><strong>Discount rate (r).</strong> Owner's opportunity cost; long rate + uncertainty premium. CMG: 10-yr Treasury 4.47% + ~4.5% premium ≈ <strong>9.0%</strong> (range 8.5–10%).</li>
-<li><strong>Terminal growth (g).</strong> Perpetual growth after the explicit forecast. CMG: <strong>3%</strong> base (2.5–3.5%).</li>
-<li><strong>Two-stage DCF.</strong> <em>IV = Σₜ₌₁ⁿ OEₜ/(1+r)ᵗ + [OEₙ₊₁/(r−g)]/(1+r)ⁿ.</em> CMG base (OE₀ $1.44, 11% 10 yr, g 3%, r 9%) = <strong>$45.69</strong>.</li>
-<li><strong>Reverse DCF.</strong> Solve for the growth the price implies. CMG at $35.39 (r 9%, g 3%) implies <strong>~7.7% owner-earnings growth</strong> for 10 years.</li>
-<li><strong>Value-creating growth.</strong> Growth adds value only when ROIC &gt; r. CMG: ~20–60% ROIC vs. 9% r → <strong>strongly value-creating</strong>.</li>
-<li><strong>One-dollar test.</strong> Retain a dollar only if it creates ≥ $1 of value (incremental ROIC ≥ r). CMG reinvestment: <strong>passes</strong>; buybacks at 30–60× earnings: <strong>price-dependent</strong>.</li>
-<li><strong>Margin of safety.</strong> <em>(IV − Price) ÷ IV.</em> CMG at $35.39 vs. $40 base = <strong>+11.5%</strong> (thin); vs. $30 low = <strong>−18%</strong> (none).</li>
-<li><strong>Mr. Market.</strong> The manic partner quoting daily prices. On CMG: down 38% over the past year, recently recovering ($31.98 → $35.39) — <strong>rational-to-mildly-optimistic</strong>, not a bargain.</li>
+<li><strong>Discount rate (r).</strong> Owner's opportunity cost, a <strong>normalized</strong> long-term hurdle <strong>floored near ~10%</strong> — no beta, no company-specific premium bolted on. CMG: base <strong>10.0%</strong> (range 10–12%). Today's 10-yr Treasury is 4.47%, but we normalize and floor rather than discount at spot.</li>
+<li><strong>Terminal growth (g).</strong> Perpetual growth after the explicit forecast. CMG: <strong>2.5%</strong> base (2.5–3.0%).</li>
+<li><strong>Two-stage DCF.</strong> <em>IV = Σₜ₌₁ⁿ OEₜ/(1+r)ᵗ + [OEₙ₊₁/(r−g)]/(1+r)ⁿ.</em> CMG base (OE₀ $1.28, 9% 10 yr, g 2.5%, r 10%) ≈ <strong>$29</strong>.</li>
+<li><strong>Reverse DCF.</strong> Solve for the growth the price implies. CMG at $35.39 (r 10%, g 2.5%) implies <strong>~12% owner-earnings growth</strong> for 10 years (~14% at r 11%).</li>
+<li><strong>Value-creating growth.</strong> Growth adds value only when ROIC &gt; r. CMG: ~20–60% ROIC vs. 10% r → <strong>strongly value-creating</strong>.</li>
+<li><strong>One-dollar test.</strong> Retain a dollar only if it creates ≥ $1 of value (incremental ROIC ≥ r). CMG reinvestment: <strong>passes</strong>; buybacks in the $40s–$50s (2025) and ~$36 (Q1-2026) above ~$29 IV: <strong>value-neutral-to-destructive</strong>.</li>
+<li><strong>Margin of safety.</strong> <em>(IV − Price) ÷ IV.</em> CMG at $35.39 vs. ~$29 base = <strong>−22%</strong> (price above value); vs. ~$22 low = <strong>−61%</strong> (none).</li>
+<li><strong>Mr. Market.</strong> The manic partner quoting daily prices. On CMG: down 38% over the past year, recently recovering ($31.98 → $35.39) and now pricing ~12% growth for a decade — <strong>rational-to-mildly-optimistic, arguably slightly rich</strong>, not a bargain.</li>
 <li><strong>Book value (why we ignore it).</strong> CMG equity fell to $2,830.6M while the business grew, because $2,490.7M of buybacks retired stock — proof book value understates a great business.</li>
 </ul>
 <p><em>Prepared as a teaching case, July 4, 2026. Not investment advice.</em></p>
@@ -627,7 +608,7 @@ $35.39 implies ~9.9% growth (at a sterner r=10%)
   <p><strong>Educational only — not investment advice.</strong> These are my own study
   notes and intrinsic-value estimates, published to learn in public. I am not a licensed
   financial advisor. Do your own work; verify every figure against primary filings.</p>
-  <p class="muted">Built 2026-07-13 · figures from public SEC EDGAR filings and my own arithmetic.</p>
+  <p class="muted">Built 2026-07-14 · figures from public SEC EDGAR filings and my own arithmetic.</p>
 </footer>
 </body>
 </html>
